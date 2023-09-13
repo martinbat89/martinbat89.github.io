@@ -32,6 +32,21 @@ body {
     justify-content: center;
   }
 
+  .parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+    
+  }
+  .parallax-container .section {
+      width: 100%;
+    }
+   .parallax, img{
+      
+      
+    }
+
 #baner-sect{
     height: 200px;
 }
@@ -272,6 +287,11 @@ span{
   font-size: 18px;
   line-height:1.6;
 } 
+
+.parallax-container .section {
+  position: absolute;
+  top: 40%;
+}
 
   #mi_mirm{
     font-family: 'Brush Script MT', cursive;
