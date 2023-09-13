@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link type="text/css" rel="stylesheet" href="../css/proy-app.css"/>
+    <title>Martin Batarev</title>
+</head>
+<div id="contenedorCargador" class="contpreloader">
+  <div class="preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<body>
+  <div id="index-banner" class="parallax-container">
+    <div class="section scrollspy no-pad-bot" id="par_inicio">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-1"><b>Modelado y Visualización de Negocio de venta a Granel</b></h1>
+        <div class="row center">
+          <h5 class="header col s12 light blue-grey-text darken-4-text">Preprocesamiento, modelado y visualización de datos de comercio a granel utilizando Power BI Desktop.</h5>
+        </div>
+        <div class="row center">
+          <a href="#seccion1"  class="btn-large waves-effect waves-light teal lighten-1">
+            <i class="material-icons left">arrow_downward</i>Ver Mas</a>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax responsive-img"><img src="../assets/img/banner_me1.png" id="img_paral" alt="Unsplashed background img 1"></div>
+  </div>
+   <!--Menu de opciones-->
+   <div class="fixed-action-btn click-to-toggle">
+    <a class="btn-floating btn-large cyan darken-1">
+      <i class="large material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a href="/index.html" class="btn-floating blue lighten-1 btn tooltipped" data-position="left" data-tooltip="Volver al Inicio"><i class="material-icons">keyboard_return</i></a></li>
+      <li><a href="#par_inicio" class="btn-floating blue-grey darken-2 btn tooltipped" data-position="left" data-tooltip="Subir"><i class="material-icons">arrow_upward</i></a></li>
+    </ul>
+  </div>
+<main>    
+  <div class="container">
+    <!--ícono de Paracaidas-->
+    <div id="iconBackTag">
+      <i class="large material-icons right" >paragliding</i>
+      <div id="boxParaIco" class="waves-effect waves-light card teal lighten-2 white-text pulse center-align">
+      PROYECTO DE BUSINESS INTELLIGENCE</div>
+    </div>
+    <div class="row">
+      <br>
+      <div class="col s12 m12 l12 teal lighten-4">
+        <blockquote>
+          <b>Herramientas: </b>Power query - Power BI.
+        </blockquote>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <div class="divider"></div>
+        <div class="section scrollspy" id="seccion1">
+          <h5 class="header">Introducción:</h5>
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <p>En este proyecto, creamos un dashboard con Power BI para una tienda natural 
+                que le permitió tomar decisiones informadas sobre su inventario y sus ventas. 
+                Utilizamos dos tablas generadas a partir del sistema de la empresa. 
+                Una con la información del inventario y otra con las ventas diarias por artículo 
+                en unidades y en pesos. 
+                 </p>
+            </div>
+          </div>
+        </div>
+      <div class="divider"></div>
+        <div class="section">
+          <h5 class="header">Preprocesamiento y modelado de Datos:</h5>
+          <div class="row">
+            <div class="col s12 m12 l12">
+             <p>Los datos se encontraban en formato .csv y se importaron utilizando <b>Power Query.</b> 
+              No fue necesario modificar en gran medida las tablas. Solo se ajustaron formatos y 
+              se agregaron campos calculados para reflejar por ejemplo, el margen porcentual de ganancias.</p> 
+            </div>
+            <div class="col s10 m10 offset-m1 l10 offset-l1">
+              <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASHBOARDS POWERBI/model1.png">
+            </div>
+            <div class="col s12 m12 l12">
+              <p>Para mostrar una evolución histórica de la información, se incorporó una tabla de fechas con la función DAX Calendar. 
+                Con las tres tablas importadas al modelo de datos se crearon las relaciones necesarias.</p>
+                <p>Por un lado se relaciono la tabla de stock con las ventas por artículo, con el campo 
+                 común id de artículo. Por otro lado, se relacionó la tabla de fechas con la de ventas 
+                 diarias por artículo con el campo común fecha:</p>
+            </div>
+            <div class="col s12 m10 offset-m1 l10 offset-l1">
+              <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASHBOARDS POWERBI/model2.png">
+            </div>
+          </div>  
+        </div>
+        <div class="section">
+          <h5 class="header">Visualización de Datos:</h5>
+          <div class="row">
+            
+            <div class="col s12 m12 l6">
+              <p>El dashboard final cuenta con diferentes elementos que muestran información relevante.  
+                A continuación se detallan los mismos:</p>
+                <p><b>Segmentación de fechas: </b>con la tabla de fechas y su relación se creó una segmentación 
+                  de fechas que permite definir rangos que se conectan con todas las vizualizaciones de 
+                  forma dinámica:</p>
+            </div>
+            <div class="col s12 m10 offset-m1 l5 offset-l1">
+              <br>
+              <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASHBOARDS POWERBI/fecha_sel.png ">
+            </div>
+            <div class="col col s12 m12 l12">
+              <p><b>KPIs principales: </b>Cuatro indicadores principales que reflejan margen de ganancia promedio por 
+                artículo (Con una marca de objetivo establecida en el 50% del valor de venta), Kg vendidos 
+                (Para artículos de venta al peso), unidades vendidas(Para artículos de venta unitaria) y, 
+                por último, ventas totales en pesos.</p> 
+             </div>
+             <div class="col s12 m10 offset-m1 l10 offset-l1">
+               <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASHBOARDS POWERBI/dash-kpi1.png">
+             </div>
+             <div class="col col s12 m12 l12">
+              <p><b>Grafico burbujas: </b>El mismo brinda un top 10 de artículos vendidos en pesos. Cada burbuja 
+                representa un artículo, y el tamaño de la burbuja se agranda para reflejar la participación 
+                del artículo respecto al total.</p> 
+             </div>
+             <div class="col s12 m10 offset-m1 l10 offset-l1">
+               <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASHBOARDS POWERBI/dash-kpi2.png">
+             </div>
+             <div class="col col s12 m12 l12">
+              <p><b>Mapa de árbol: </b>Este gráfico refleja la participación 
+                de ventas en pesos de cada familia. Solo se incluyen las 15 principales familias:</p> 
+             </div>
+             <div class="col s12 m10 offset-m1 l10 offset-l1">
+               <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASHBOARDS POWERBI/dash-kpi3.png">
+             </div>
+             <div class="col col s12 m12 l12">
+              <p><b>Grafico de lineas históricas:: </b>muestra la evolución a lo largo del tiempo de las ventas en pesos. Dependiendo
+                 de la amplitud de tiempo fijada en la segmentación de fechas establecida por el usuario, se ajustan
+                  las fechas del eje x en días, meses o trimestres para facilitar la visualización.</p> 
+             </div>
+             <div class="col s12 m10 offset-m1 l10 offset-l1">
+               <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASHBOARDS POWERBI/dash-kpi4.png">
+             </div>
+             <div class="col s12 m12 l12">
+              <p><b>Gráfico de doughnut estado inventario: </b> El mismo refleja el estado del stock según el reporte de 
+                inventario. Permite identificar la particupación del stock para verificar que artículos están 
+                existencias apropiadas o si se deben definir ordenes de compra inmediatas o futuras:</p> 
+             </div>
+             <div class="col s12 m10 offset-m1 l10 offset-l1">
+               <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASHBOARDS POWERBI/dash-kpi5.png">
+               </div>
+             <div class="col s12 m12 l12">
+              <br><br>
+              <p><b><i>Conexión de visualizaciones:</i> </b>Al existir relaciones entre las tablas del modelo de datos, 
+                todo el dashboard se muestra de forma dinámica. Por ejemplo, si el usuario selecciona una 
+                familia, los KPIs y los gráficos se filtran automáticamente la información en función de la 
+                selección.</p> 
+             </div>
+          </div>  
+        </div>       
+        <div class="divider"></div>
+        <div class="section">
+          <h5 class="header">Conclusión del Proyecto</h5>
+          <div class="row">
+            <div class="col s12 m10 offset-m1 l12">
+              <p>El dashboard creado permitió a la tienda natural tomar decisiones más informadas y 
+                eficientes en cuanto a su inventario y ventas. La utilidad más destacada del dashboard 
+                radica en la combinación de datos de stock y ventas, lo que permitió a la empresa identificar
+                 las existencias sobre las cuales las acciones tienen un mayor impacto. Por ejemplo, si se 
+                 selecciona una familia de artículos que tiene una amplia representación en el gráfico de 
+                 mapa de árbol y se detecta que algunos de estos artículos tienen un nivel de inventario 
+                 por debajo del punto de pedido, es fundamental solicitar al área de compras que libere 
+                 los pedidos lo antes posible. </p>
+                <p>Si estás interesado en saber más sobre cómo creamos este dashboard y cómo podemos ayudar 
+                  a tu empresa a tomar mejores decisiones, no dudes en contactarme.</p>
+                
+            </div>
+          </div>
+        </div> 
+        <div class="divider"></div>
+        <a class="waves-effect waves-teal btn-flat right" href="/index.html"><b>Volver al inicio</b></a>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="page-footer teal darken-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">¡Antes que nada...Gracias!</h5>
+        <p class="grey-text text-lighten-4">Si llegaste hasta acá, es porque te tomaste el tiempo para ver mi portafolio. En estos tiempos tan acelerados, en los que nos cuesta parar un poco, solamente puedo decirte gracias por tu visita.</p>
+        <text class="right" id="mi_mirm"><b>Martin.</b></text>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links de Interés</h5>
+        <ul>
+          <li>
+            <div id="icon-redes22">
+              <a class="white-text" href="https://www.linkedin.com/in/martin-batarev-9a48b849/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg></a>
+              <a class="white-text" href="https://github.com/martinbat89" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li><h6><a class="grey-text text-lighten-3 teal darken-2 btn" id="resumeImg3" ><i class="material-icons left">file_download</i>Descarga Mi CV</a></h6></li>
+          
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+  <div class="footer-copyright teal darken-3">
+    <div class="container">
+    Portafolio de Martin Batarev
+    <b><a class="grey-text text-lighten-4 right" href="#ppio_sli">Volver al Principio</a></b>
+    </div>
+  </div>
+</footer>
+
+  
+    <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="../js/materialize.min.js"></script>
+  <script type="text/javascript" src="../js/proy-app.js"></script>
+</body>
+</html>

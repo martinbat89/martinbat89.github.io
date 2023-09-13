@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link type="text/css" rel="stylesheet" href="../css/proy-app.css"/>
+    <title>Martin Batarev</title>
+</head>
+<div id="contenedorCargador" class="contpreloader">
+  <div class="preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<body>
+  <div id="index-banner" class="parallax-container">
+    <div class="section scrollspy no-pad-bot" id="par_inicio">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-1"><b>Dashboard Para Gestión De Cajas</b></h1>
+        <div class="row center">
+          <h5 class="header col s12 light blue-grey-text darken-4-text">Dashboard para conocer el cierre de Cajas y la fecha estimada de cierre administrativo mensual.</h5>
+        </div>
+        <div class="row center">
+          <a href="#seccion1"  class="btn-large waves-effect waves-light teal lighten-1">
+            <i class="material-icons left">arrow_downward</i>Ver Mas</a>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax responsive-img"><img src="../assets/img/banner_me1.png" id="img_paral" alt="Unsplashed background img 1"></div>
+  </div>
+   <!--Menu de opciones-->
+   <div class="fixed-action-btn click-to-toggle">
+    <a class="btn-floating btn-large cyan darken-1">
+      <i class="large material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a href="/index.html" class="btn-floating blue lighten-1 btn tooltipped" data-position="left" data-tooltip="Volver al Inicio"><i class="material-icons">keyboard_return</i></a></li>
+      <li><a href="#par_inicio" class="btn-floating blue-grey darken-2 btn tooltipped" data-position="left" data-tooltip="Subir"><i class="material-icons">arrow_upward</i></a></li>
+    </ul>
+  </div>
+<main>    
+  <div class="container">
+    <!--ícono de Paracaidas-->
+    <div id="iconBackTag">
+      <i class="large material-icons right" >paragliding</i>
+      <div id="boxParaIco" class="waves-effect waves-light card teal lighten-2 white-text pulse center-align">
+        PROYECTO DE ANÁLISIS DE DATOS</div>
+    </div>
+    <div class="row">
+      <br>
+      <div class="col s12 m12 l12 teal lighten-4">
+        <blockquote>
+          <span><b>Herramientas: </b>Html - Javascript - CSS - Leaflet - Chart.js - Danfo.js - Papaparse.</span>
+        </blockquote>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <div class="divider"></div>
+        <div class="section scrollspy" id="seccion1">
+          <h5 class="header">Introducción:</h5>
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <p>El proyecto consistió en la creación de un tablero para visualizar el estado mensual de la gestión administrativa de cajas de diferentes locales de una empresa de retail. La empresa quería contar con información acerca de la disponibilidad de la papelería que se envía desde cada local a la oficina central y, además, saber en qué estado se encontraba el control administrativo de cada local para cumplir con las fechas de cierre.<br><br> 
+                Para esto, la organización contaba con dos reportes. El primero muestra por local el día operativo, si se controló la papelería y quién la controló. El segundo muestra el detalle de la papelería que se envió desde cada local, indicando local, fecha y si ya llegó la misma. Con ambos reportes, la tarea consistió en desarrollar un tablero que permita conocer el estado de la documentación y del control administrativo. </p>
+            </div>
+          </div>
+         </div>
+      <div class="divider"></div>
+        <div class="section">
+          <h5 class="header">Importación de la información:</h5>
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <p>El tablero se dividió en dos grupos:</p>
+                <ol>
+                  <li><p>Control administrativo de cajas.</p></li>
+                  <li><p>Estado de la papelería o documentación.</p></li>
+                </ol>
+                <br>
+                <p><b>Primer paso: </b>Leer los reportes y transformarlos a un formato que permita procesar la información.</p>
+                <p>El reporte de control administrativo de cajas se encontraba en formato .csv. Utilizando la herramienta PapaParse, 
+                se procesó el archivo CSV para obtener los datos en un formato que permita luego procesarlos. 
+                A continuación, parte del código utilizado. Al completarse la lectura del reporte, se ejecuta una función que procesará la información, la cual se incluye en los parámetros de la misma:</p>
+            </div>
+            <div class="col s12 m10 offset-m1 l10 offset-l1">
+               <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASH HTML CON MAPA/mapa1.png">
+            </div>
+            <div class="col s12 m12 l12">
+              <p>El reporte de confirmación de papelería en oficina central se encontraba en formato XLS (versión 1997-2003). Para leer este archivo, se utilizó el objeto FileReader. A continuación, se muestra la función a partir de la cual se cargan los datos del archivo en una variable objeto llamada "result".</p>
+            </div>
+            <div class="col s12 m10 offset-m1 l10 offset-l1">
+              <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASH HTML CON MAPA/mapa2.png">
+           </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m12 l12">
+             <p><b>Segundo paso: </b>Procesamiento de datos con Danfo.js para visualización y estimaciones:</p>
+              <p> Se procesó la información utilizando la librería Danfo.js, que permitió agrupar y manipular
+                 los datos necesarios para su visualización en el mapa y en los gráficos del dashboard.
+                 Danfo.js es una herramienta de manipulación de datos en JavaScript que ofrece funcionalidades
+                  como filtrado, agrupamiento, unión y transformación de datos, lo que facilitó la preparación 
+                  y organización de los datos. A través de la creación de DataFrames, se pudo procesar la 
+                  información estadística en formatos como JSON, arreglos y objetos para su posterior visualización 
+                  en formato web. Se incluye un ejemplo de código en el que se crea un DataFrame con información de 
+                  confirmación de papelería y se agrupan los datos por sucursal utilizando la operación de conteo para
+                   obtener la cantidad de papelería que llegó por sucursal:</p>
+            </div>
+            <div class="col s12 m10 offset-m1 l10 offset-l1">
+               <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASH HTML CON MAPA/mapa3.png">
+            </div>
+            <div class="col s12 m12 l12">
+              <p>Con la ayuda de Danfo.js, se agruparon los datos por local y se calcularon los promedios y la 
+                cantidad de cajas controladas por cada administrativo. Estos datos se tomaron con posterioridad 
+                para el armado de la visualización.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m12 l12">
+             <p><b>Tercer Paso: </b>Procesamiento de datos con Danfo.js para visualización y estimaciones:</p>
+              <p> Se buscó estimar la fecha de cierre contable del sector, la cual debe cumplir con una fecha
+                 límite mensual establecida por la organización. Para lograrlo, se decidió utilizar la herramienta
+                  Brain.js para entrenar los datos de confirmación. Una vez que se tenían los datos de las cajas 
+                  administrativas controladas en una fecha determinada y las que quedaban pendientes, se utilizó
+                   la mencionada librería para predecir la fecha de cierre estimada. De esta manera, la jefatura 
+                   pudo anticiparse y tomar medidas preventivas en caso de ser necesario para asegurarse de cumplir
+                    con la fecha límite establecida.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m12 l12">
+             <p><b>Cuarto Paso: </b>Visualización de datos clara y atractiva. Se desarrolla en la siguiente sección.</p>
+            </div>
+          </div>
+         </div>
+        <div class="divider"></div>
+        <div class="section">
+          <h5 class="header">Visualización de Datos</h5>
+          <p>El dashboard se dividió en dos secciónes:</p>
+          <div class="row">
+                <div class="col s12 m12 l12">
+                  <p><b>a) Sección de Cajas Controladas:</b></p>
+                  <p>Para presentar los datos de manera más clara y visual, al inicio de esta sección se ha creado una 
+                    tarjeta con información relevante referida al control administrativo de cajas. A continuación, se 
+                    presentan los valores principales:</p>
+                </div>
+                <div class="col s12 m10 offset-m1 l10 offset-l1">
+                    <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASH HTML CON MAPA/dashCaj1.png">
+                </div>
+                <div class="col s12 m12 l12">
+                  <p>Esta visualización proporciona una descripción completa y concisa de los datos de cajas controladas, 
+                    permitiendo una fácil comprensión y análisis de los mismos. La fecha estimada de cierre explicada en 
+                    el <b>paso cuatro</b> se refleja en esta parte.<br><br>
+                    Después de eso, se creó un gráfico de líneas que representa la evolución diaria de las cajas controladas,
+                    mostrando dos series: la serie real y una serie suavizada utilizando el promedio de los valores. La serie 
+                    suavizada se utilizó para entrenar la red que estima la fecha de cierre. </p>
+                </div> 
+                <div class="col s12 m10 offset-m1 l10 offset-l1">
+                  <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASH HTML CON MAPA/dashCaj2.png">
+                </div>
+                <div class="col s12 m12 l12">
+                  <p>En tercer lugar, se creó un mapa utilizando la librería de código abierto <b>Leaflet</b>. Se incluyeron marcadores que 
+                    indicaban la cantidad de cajas que se estaban controlando en cada local, con el tamaño de la burbuja del marcador
+                    aumentando a medida que se controlaban más cajas.<br><br> Se utilizó un sistema de colores para indicar el progreso del 
+                    trabajo. Las burbujas se pintaban en rojo si se había completado menos de un tercio del trabajo, amarillo si se 
+                    había completado entre un tercio y dos tercios, y verde si se había completado más de dos tercios. Dado que los 
+                    datos ya habían sido agrupados en la etapa de preprocesamiento, sólo se necesitaba crear y configurar el mapa. <br><br>
+                    Esta funcionalidad permitió una rápida visualización del progreso del trabajo en cada local. A continuación se
+                    muestra un extracto del código que configura el mapa: </p>
+                </div>  
+                <div class="col s12 m10 offset-m1 l10 offset-l1">
+                  <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASH HTML CON MAPA/mapa4.png">
+              </div> 
+              <div class="col s12 m10 offset-m1 l10 offset-l1">
+                <br><br>
+                <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASH HTML CON MAPA/dashCaj3.png">
+              </div>
+              <div class="col s12 m12 l12">
+                <p>En cuarto lugar, se creó un gráfico de Polar Area Chart que muestra la cantidad de cajas realizadas por cada administrativo. 
+                  A continuación se presentará una imagen del mencionado gráfico.<br><br>
+                  En quinto lugar, y como último gráfico del apartado de control administrativo de cajas, se diseñó un gráfico de doughnut para 
+                  ilustrar la relación entre el total de cajas pendientes y el total de cajas confirmadas.  </p>
+              </div> 
+              <div class="col s12 m10 offset-m1 l10 offset-l1">
+                <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASH HTML CON MAPA/dashCaj10.png">
+              </div>    
+          </div>
+          <br>
+          <div class="row">
+            <div class="col s12 m12 l12">
+                <p><b>b) Papelería recibida en oficina central:</b></p>
+            </div>
+            <div class="col s12 m12 l6">
+              <p>El apartado de "Papelería recibida en oficina central" sigue un diseño similar al apartado de "Cajas controladas", 
+                pero con información diferente. En este caso, se muestra si la papelería está llegando a tiempo. Los datos del reporte
+                 ya están procesados, por lo que se agruparon según la necesidad de cada opción de visualización utilizando danfo.js.<br><br>
+                En primer lugar, se generó un gráfico de torta que muestra el total de documentación recibida y la documentación que
+                 aún está pendiente. Cada etiqueta muestra el valor numérico y el porcentaje que representa del total. A continuación 
+                 se presenta una imagen del gráfico mencionado.<br><br>
+               </p>
+            </div>
+            <div class="col s10 offset-s1 m10 offset-m1 l4 offset-l1">
+              <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASH HTML CON MAPA/dashCaj6.png">
+            </div>
+            <div class="col s12 m12 l12">
+              <p> El reporte de documentación recibida incluye la fecha de la papelería y la fecha de confirmación en la oficina central. 
+                A partir de esta información, se agregó un campo de "demora" para obtener estadísticas de las sucursales con mayores retrasos.
+                A continuación se presenta el código utilizado para calcular la demora:  </p>
+            </div>
+            <div class="col s12 m10 offset-m1 l10 offset-l2">
+              <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASH HTML CON MAPA/mapa5.png">
+            </div>
+            <div class="col s12 m12 l12">
+              <p>Con la información de la demora, se generó una tabla que muestra las 14 sucursales con mayor retraso, incluyendo
+                 el promedio de demora en días, el desvío estándar y la cantidad de cajas confirmadas. Se muestra una imagen de la 
+                 tabla con las 5 peores sucursales.</p>
+            </div>
+            <div class="col s12 m10 offset-m1 l10 offset-l2">
+              <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASH HTML CON MAPA/dashCaj11.png">
+            </div>
+            <div class="col s12 m12 l12">
+              <p>En tercer lugar se agregó un histograma que muestra las sucursales con mas documentación pendiente, ordenadas de mayor
+                 a menor.</p>
+            </div>
+            <div class="col s12 m10 offset-m1 l10 offset-l1">
+              <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASH HTML CON MAPA/dashCaj8.png">
+            </div>
+            <div class="col s12 m12 l12">
+              <p>Por último, en esta sección también se agregó un mapa que muestra el estado de confirmación de documentación de cada local,
+                 con la misma escala de colores y los mismos marcadores. Se utilizó Leaflet también y lo único que cambia es el valor numérico,
+                  que se refiere a la documentación confirmada en la oficina central.</p>
+            </div>
+            <div class="col s12 m10 offset-m1 l10 offset-l1">
+              <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/DASH HTML CON MAPA/dashCaj9.png">
+            </div> 
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+          <h5 class="header">Conclusión del Proyecto</h5>
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <p>El dashboard desarrollado para la gestión administrativa de cajas en la empresa de retail fue una herramienta valiosa 
+                que permitió una mejor visualización del progreso del trabajo en cada local y en la oficina central, así como también 
+                identificar rápidamente áreas de mejora. La inclusión de un mapa web con marcadores y un sistema de colores para indicar
+                 el cumplimiento de los objetivos fue una funcionalidad innovadora y efectiva. Además, los gráficos generados con Chart.js 
+                 proporcionaron una visualización clara y rápida del rendimiento de cada administrativo y del progreso general del trabajo.</p>
+                  <p>La estimación de fechas de cierre con Brain.js también agregó valor, permitiendo una gestión de recursos más eficiente 
+                  en caso de que la fecha estimada no se cumpliera.</p>
+                <p>En resumen, el proyecto fue un éxito y demostró cómo el análisis de datos puede ser una herramienta poderosa para mejorar la eficiencia y productividad de una empresa, brindando una mejor experiencia al cliente y aumentando la rentabilidad. </p>
+            </div>
+          </div>
+          
+        </div> <div class="divider">
+          
+        </div>
+        <a class="waves-effect waves-teal btn-flat right" href="/index.html"><b>Volver al inicio</b></a>
+
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="page-footer teal darken-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">¡Antes que nada...Gracias!</h5>
+        <p class="grey-text text-lighten-4">Si llegaste hasta acá, es porque te tomaste el tiempo para ver mi portafolio. En estos tiempos tan acelerados, en los que nos cuesta parar un poco, solamente puedo decirte gracias por tu visita.</p>
+        <text class="right" id="mi_mirm"><b>Martin.</b></text>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links de Interés</h5>
+        <ul>
+          <li>
+            <div id="icon-redes22">
+              <a class="white-text" href="https://www.linkedin.com/in/martin-batarev-9a48b849/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg></a>
+              <a class="white-text" href="https://github.com/martinbat89" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li><h6><a class="grey-text text-lighten-3 teal darken-2 btn" id="resumeImg3" ><i class="material-icons left">file_download</i>Descarga Mi CV</a></h6></li>
+          
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+  <div class="footer-copyright teal darken-3">
+    <div class="container">
+    Portafolio de Martin Batarev
+    <b><a class="grey-text text-lighten-4 right" href="#ppio_sli">Volver al Principio</a></b>
+    </div>
+  </div>
+</footer>
+
+  
+    <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="../js/materialize.min.js"></script>
+  <script type="text/javascript" src="../js/proy-app.js"></script>
+</body>
+</html>

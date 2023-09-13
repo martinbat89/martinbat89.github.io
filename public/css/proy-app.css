@@ -1,0 +1,239 @@
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    
+    background-size:cover;
+    background-blend-mode:soft-light;
+    background-color: #fcfdfd;
+    background-repeat: repeat;
+    scroll-behavior: smooth;
+  }
+
+
+  main {
+    flex: 1 0 auto;
+    
+  } 
+
+  
+  .contpreloader{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  blockquote{
+    border-left: 5px solid #133f3f;
+  }
+  
+#baner-sect{
+    height: 200px;
+}
+
+.parallax-container {
+  height: 100vh;
+}
+
+
+
+/*animación tag fondo tema proyecto*/
+#iconBackTag{
+  z-index: -999;
+  position:fixed;
+  display: flex;
+  max-width: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-name: btn-anim-tag;
+  animation-duration: 25s;
+  animation-iteration-count:infinite;
+ 
+}
+  
+
+@keyframes btn-anim-tag {
+  0%   {left:900px; top:20px;display: flex;}
+  10%  {color:#78a19a;left:60px; top:30px;rotate: 20deg;display: flex;z-index: -1500;}
+  20%  {color:#b6a440;left:60px;top:40px;rotate: -20deg;display: flex;z-index: -1700}
+  30%  {color:#83e4d4;left:60px; top:50px;rotate: 30deg;display: flex;z-index: -1800}
+  40% {color:#c5dada;left:60px; top:70px;rotate: -10deg;display: flex;z-index: -2500}
+  50%  {color:rgb(48, 202, 184);left:1110px; top:120px;rotate: 20deg;}
+  60% {color:#b8f7ec;left:1110px; top:150px;rotate: -10deg;}
+  70% {color:#59b8b0;left:1110px; top:220px;rotate: 20deg;}
+  80%  {color:rgb(138, 175, 171);left:960px; top:395px;rotate: -30deg;}
+  90% {color:#f7ca90;left:1110px;top:1000px;rotate: 10deg;}
+  92% {color:#f7d499;left:1110px; top:550px;rotate: -20deg; }
+  94% {color:#f7d499;left:1110px; top:550px;rotate: -20deg;}
+  95% {color:#f7d499;left:60px; top:550px;rotate: -20deg;}
+  98% {color:#f7d499;left:60px; top:550px;rotate: -20deg;}
+  100% {color:#f7d499;left:1050px; top:550px;rotate: -20deg;}
+}
+
+#boxParaIco{
+  padding:10px; 
+  margin: -5px;
+  
+}
+
+#card-hab{
+border-radius: 10px;
+color:#394879;
+border: 1 px solid gray;
+background: #00695c ;
+}
+
+#btnContBoostrp{
+  padding-left: -10px ;
+  margin: 5px ;
+}
+
+
+
+
+
+
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+  /* Tus estilos para dispositivos móviles aquí */
+  body {
+    background-size: contain; /* Keeps the entire image visible */
+    background-repeat: no-repeat;
+    /* You can also use 'auto' or specify specific dimensions like 'background-size: 100% 100%;' depending on your needs */
+  }
+  p{
+    font-size: 17px;
+    line-height:1.6;
+  }
+
+  li{
+    font-size: 17px;
+    line-height:1.6;
+  }
+
+  span{
+    font-size: 17px;
+    line-height:1.6;
+  }
+
+  h1{
+    font-size: 45px;
+  }
+
+  #mi_mirm{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 25px;
+    overflow: hidden;
+    animation: writeSignature 6s steps(500) backwards;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes writeSignature {
+    0% {width: 0;}
+    10% {width: 10%;text-align: right;}
+    20% {width: 20%;text-align: right;}
+    30% {width: 30%;text-align: right;}
+    40% {width: 40%;text-align: right;}
+    50% {width: 50%;text-align: right;}
+    80% {width: 60%;text-align: right;}
+    100% {width: 100%;text-align: right;}
+}
+  
+
+}
+
+/* Estilos para tabletas */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  /* Tus estilos para tabletas aquí */
+  body {
+    background-size: contain; /* Keeps the entire image visible */
+    background-repeat: no-repeat;
+    /* You can also use 'auto' or specify specific dimensions like 'background-size: 100% 100%;' depending on your needs */
+}
+p{
+  font-size: 18px;
+  line-height:1.6;
+  
+}
+
+li{
+  font-size: 18px;
+  line-height:1.6;
+}
+
+span{
+  font-size: 18px;
+  line-height:1.6;
+}  
+
+  #mi_mirm{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 25px;
+    overflow: hidden;
+    animation: writeSignature 6s steps(500) backwards;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes writeSignature {
+    0% {width: 0;}
+    10% {width: 10%;text-align: right;}
+    20% {width: 20%;text-align: right;}
+    30% {width: 30%;text-align: right;}
+    40% {width: 40%;text-align: right;}
+    50% {width: 50%;text-align: right;}
+    80% {width: 60%;text-align: right;}
+    100% {width: 100%;text-align: right;}
+}
+
+
+}
+
+/* Estilos para escritorio */
+@media screen and (min-width: 993px) {
+  /* Tus estilos para escritorio aquí */
+  p{
+    font-size: 15px;
+    line-height:1.5;
+}
+
+li{
+  font-size: 15px;
+  line-height:1.5;
+}
+
+span{
+  font-size: 15px;
+  line-height:1.5;
+} 
+
+  #mi_mirm{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 25px;
+    overflow: hidden;
+    animation: writeSignature 6s steps(500) backwards;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes writeSignature {
+    0% {width: 0;}
+    10% {width: 10%;text-align: right;}
+    20% {width: 20%;text-align: right;}
+    30% {width: 30%;text-align: right;}
+    40% {width: 40%;text-align: right;}
+    50% {width: 50%;text-align: right;}
+    80% {width: 60%;text-align: right;}
+    100% {width: 100%;text-align: right;}
+}
+
+
+}

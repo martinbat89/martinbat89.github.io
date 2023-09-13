@@ -1,0 +1,477 @@
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: url("../assets/img/banner_me1.png");
+    background-position: top, bottom;
+    background-attachment: fixed;
+    background-size:cover;
+    background-blend-mode:soft-light;
+    background-color: #1f3030;
+    background-repeat: repeat;
+    scroll-behavior: smooth;
+  }
+
+
+  main {
+    flex: 1 0 auto;
+    
+  } 
+
+  .contpreloader{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+#baner-sect{
+    height: 200px;
+}
+
+/* Animación aparecer secciones */
+.animado {
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/*animación bichito fondo*/
+#iconBack{
+  z-index: -999;
+  position:fixed;
+  animation-name: btn-anim-bichito;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+ 
+}
+
+@keyframes btn-anim-bichito {
+  0%   {left:350px; top:20px;}
+  10%  {color:#004d40;left:100px; top:80px;rotate: 10deg;}
+  20%  {color:#4db4a3;left:450px;top:180px;rotate: 20deg;}
+  30%  {color:#0deec8;left:700px; top:80px;rotate: 30deg;}
+  40% {color:#212525;left:800px; top:400px;rotate: 50deg;}
+  50%  {color:rgb(230, 238, 237);left:600px; top:200px;rotate: 60deg;}
+  60% {color:#004d40;left:160px; top:550px;rotate: 70deg;}
+  70% {color:#aa7b16;left:300px; top:300px;rotate: 80deg;}
+  80%  {color:rgb(207, 250, 245);left:900px; top:0px;rotate: 90deg;}
+  90% {color:#004d40;left:450px;top:180px;rotate: 100deg;}
+  100% {color:#252017;left:350px; top:20px;rotate: 0deg;}
+}
+
+.card:hover{
+  background: #2d9481;
+  color: white;
+  backface-visibility:visible;
+
+  .card, a{
+    color: rgb(250, 145, 9);
+    font-weight: 700;
+    font-size: large;
+    animation-name: btn-anim-ancla;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+
+  }
+  
+}
+
+.card-content:hover{
+  
+  /* Estilos del ícono cuando el contenedor está en hover */
+  animation: animacionFlechaCont 1s; /* Aplicar la animación al ícono */
+
+
+}
+
+@keyframes animacionFlechaCont {
+  /* Definición de la animación */
+  0% {
+    transform: scale(1); /* Estado inicial del ícono */
+  }
+  50% {
+    transform: scale(1.1); /* Escala durante la mitad de la animación */
+  }
+  100% {
+    transform: scale(1); /* Estado final del ícono */
+  }
+}
+
+
+
+#btnContBoostrp{
+  padding-left: -10px ;
+  margin: 5px ;
+}
+
+
+
+
+
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+  /* Tus estilos para dispositivos móviles aquí */
+  body {
+    background-size: contain; /* Keeps the entire image visible */
+    background-repeat: no-repeat;
+    /* You can also use 'auto' or specify specific dimensions like 'background-size: 100% 100%;' depending on your needs */
+  }
+  p{
+    font-size: 17px;
+    line-height:1.6;
+   
+  }
+
+  li{
+    font-size: 17px;
+    line-height:1.6;
+    
+  }
+
+  span{
+    font-size: 17px;
+    line-height:1.6;
+   
+  }
+
+  #mi_mirm{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 25px;
+    overflow: hidden;
+    animation: writeSignature 6s steps(500) backwards;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes writeSignature {
+    0% {width: 0;}
+    10% {width: 10%;text-align: right;}
+    20% {width: 20%;text-align: right;}
+    30% {width: 30%;text-align: right;}
+    40% {width: 40%;text-align: right;}
+    50% {width: 50%;text-align: right;}
+    80% {width: 60%;text-align: right;}
+    100% {width: 100%;text-align: right;}
+}
+  
+
+  /*animación btn mail contacto*/
+#cop_mail {
+  display: flex;
+  align-items: center;
+  max-width: 170px;
+  position: relative;
+  animation-name: btn-mail-anim;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes btn-mail-anim {
+0%   {left:0px; top:0px;}
+15%  {left:70px; top:0px;}
+30%  {left:140px; top:0px;}
+45%  {left:180px; top:0px;}
+60% { left:0px; top:0px;}
+75%  {left:40px; top:0px;}
+90% { left:0px; top:0px;}
+100% { left:0px; top:0px;}
+}
+
+/*animación btn linkedin contacto*/
+#btn-link-Large {
+  display: flex;
+  align-items: center;
+  max-width: 170px;
+  position: relative;
+  animation-name: btn-anim-linke;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes btn-anim-linke {
+  0%   {left:0px; top:0px;}
+  15%  {left:30px; top:0px;}
+  30%  {left:70px; top:0px;}
+  45%  {left:100px; top:0px;}
+  60% { left:40px; top:0px;}
+  75%  {left:10px; top:0px;}
+  90% { left:0px; top:0px;}
+  100% { left:0px; top:0px;}
+}
+
+
+/*animación btn github contacto*/
+#btn-github-Large {
+  display: flex;
+  align-items: center;
+  max-width: 170px;
+  
+  flex-direction: row;
+  position: relative;
+  animation-name: btn-anim-git;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes btn-anim-git {
+  0%   {left:0px; top:0px;}
+15%  {left:70px; top:0px;}
+30%  {left:100px; top:0px;}
+45%  {left:120px; top:0px;}
+60% { left:0px; top:0px;}
+75%  {left:40px; top:0px;}
+90% { left:0px; top:0px;}
+100% { left:0px; top:0px;}
+}
+
+}
+
+/* Estilos para tabletas */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  /* Tus estilos para tabletas aquí */
+  body {
+    background-size: contain; /* Keeps the entire image visible */
+    background-repeat: no-repeat;
+    /* You can also use 'auto' or specify specific dimensions like 'background-size: 100% 100%;' depending on your needs */
+}
+p{
+  font-size: 18px;
+  line-height:1.6;
+}
+
+li{
+  font-size: 18px;
+  line-height:1.6;
+}
+
+span{
+  font-size: 18px;
+  line-height:1.6;
+} 
+
+  #mi_mirm{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 25px;
+    overflow: hidden;
+    animation: writeSignature 6s steps(500) backwards;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes writeSignature {
+    0% {width: 0;}
+    10% {width: 10%;text-align: right;}
+    20% {width: 20%;text-align: right;}
+    30% {width: 30%;text-align: right;}
+    40% {width: 40%;text-align: right;}
+    50% {width: 50%;text-align: right;}
+    80% {width: 60%;text-align: right;}
+    100% {width: 100%;text-align: right;}
+}
+
+  #cop_mail {
+    display: flex;
+    align-items: center;
+    max-width: 170px;
+    position: relative;
+    animation-name: btn-mail-anim;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+  }
+
+  
+@keyframes btn-mail-anim {
+  0%  {left:200px; top:0px;}
+15%  {left:300px; top:0px;}
+30%  {left:150px; top:0px;}
+45%  {left:450px; top:0px;}
+60% {left: 100px; top:0px;}
+75%  {left:50px; top:0px;}
+90% {left:0x; top:0px;}
+100% { left:0px; top:0px;}
+}
+
+/*animación btn linkedin contacto*/
+#btn-link-Large {
+  display: flex;
+  align-items: center;
+  max-width: 170px;
+  
+  position: relative;
+  animation-name: btn-anim-linke;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes btn-anim-linke {
+  0%  {left:450px; top:0px;}
+  15%  {left:200px; top:0px;}
+  30%  {left:330px; top:0px;}
+  45%  {left:205px; top:0px;}
+  60% {left:155px; top:0px;}
+  75%  {left:50px; top:0px;}
+  90% {left:0x; top:0px;}
+  100% { left:0px; top:0px;}
+}
+
+
+/*animación btn github contacto*/
+#btn-github-Large {
+  display: flex;
+  align-items: center;
+  max-width: 170px;
+  
+  position: relative;
+  animation-name: btn-anim-git;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes btn-anim-git {
+  0%  {left:0px; top:0px;}
+15%  {left:200px; top:0px;}
+30%  {left:150px; top:0px;}
+45%  {left:50px; top:0px;}
+60% {left:500px; top:0px;}
+75%  {left:50px; top:0px;}
+90% {left:0x; top:0px;}
+100% { left:0px; top:0px;}
+}
+
+}
+
+/* Estilos para escritorio */
+@media screen and (min-width: 993px) {
+  /* Tus estilos para escritorio aquí */
+  p{
+    font-size: 15px;
+    line-height:1.5;
+    
+}
+
+li{
+  font-size: 15px;
+  line-height:1.5;
+  
+}
+
+span{
+  font-size: 15px;
+  line-height:1.5;
+}
+
+  #mi_mirm{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 25px;
+    overflow: hidden;
+    animation: writeSignature 6s steps(500) backwards;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes writeSignature {
+    0% {width: 0;}
+    10% {width: 10%;text-align: right;}
+    20% {width: 20%;text-align: right;}
+    30% {width: 30%;text-align: right;}
+    40% {width: 40%;text-align: right;}
+    50% {width: 50%;text-align: right;}
+    80% {width: 60%;text-align: right;}
+    100% {width: 100%;text-align: right;}
+}
+
+/*animación btn mail contacto*/
+#cop_mail {
+  display: flex;
+  align-items: center;
+  max-width: 170px;
+  position: relative;
+  animation-name: btn-mail-anim;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes btn-mail-anim {
+0%   {left:0px; top:0px;}
+15%  {left:280px; top:0px;}
+30%  {left:570px; top:0px;}
+45%  {left:570px; top:70px;}
+60% { left:280px; top:70px;}
+75%  {left:0px; top:70px;}
+90% { left:0px; top:0px;}
+100% { left:0px; top:0px;}
+}
+
+/*animación btn linkedin contacto*/
+#btn-link-Large {
+  display: flex;
+  align-items: center;
+  max-width: 170px;
+  position: relative;
+  animation-name: btn-anim-linke;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes btn-anim-linke {
+0%   {left:0px; top:0px;}
+15%  {left:0px; top:70px;}
+30%  {left:-280px; top:70px;}
+45%  {left:280px; top:0px;}
+60% {left:0px; top:0px;}
+75%  {left:0px; top:70px;}
+90% { left:0px; top:0px;}
+100% { left:0px; top:0px;}
+}
+
+
+/*animación btn github contacto*/
+#btn-github-Large {
+  display: flex;
+  align-items: center;
+  max-width: 170px;
+  position: relative;
+  animation-name: btn-anim-git;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes btn-anim-git {
+  0%   {left:0px; top:0px;}
+  15%  {left:0px; top:70px;}
+  30%  {left:-280px; top:70px;}
+  45%  {left:-580px; top:0px;}
+  60% {left:0px; top:0px;}
+  75%  {left:0px; top:70px;}
+  90% { left:0px; top:0px;}
+  100% { left:0px; top:0px;}
+}
+
+
+}
