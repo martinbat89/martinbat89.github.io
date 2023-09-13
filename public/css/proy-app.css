@@ -6,7 +6,7 @@ body {
     
     background-size:cover;
     background-blend-mode:soft-light;
-    background-color: #fcfdfd;
+    background-color: #e9ffff;
     background-repeat: repeat;
     scroll-behavior: smooth;
   }
@@ -82,6 +82,7 @@ body {
 #boxParaIco{
   padding:10px; 
   margin: -5px;
+  border-radius: 10px;;
   
 }
 
