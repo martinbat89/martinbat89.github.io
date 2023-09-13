@@ -28,9 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
     var instTtip = M.Tooltip.init(elemTtip, {});
 
     //inicializamos scrollspy
-    
+
     var elemScrl = document.querySelectorAll('.scrollspy');
-    var instScrol = M.ScrollSpy.init(elemScrl, {throttle:300});
+    var instScrol = M.ScrollSpy.init(elemScrl, {
+      throttle: 100
+    
+    });
 
     //quitamos el preloader
     setTimeout(function(){document.getElementById('contenedorCargador').className = "hide"}, "1000")
