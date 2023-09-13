@@ -17,6 +17,9 @@ body {
     
   } 
 
+  img{
+    border: 1px solid gray;
+  }
   
   .contpreloader{
     position: fixed;

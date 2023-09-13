@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     //inicializamos el slider 
     var elemsSlid = document.querySelectorAll('.slider');
     var instSli = M.Slider.init(elemsSlid, {
-        
-        height:600
+        height:610,
+        interval:4000
     });
    
 
