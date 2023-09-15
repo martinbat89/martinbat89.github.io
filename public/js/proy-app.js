@@ -31,9 +31,17 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
+document.getElementById('resumeImg2').addEventListener("click", function(){
+
+  let hrefResume="/public/assets/files/cv_martinb_esp_202309.pdf";
+
+  window.open(hrefResume, '_blank')
+
+})
+ 
 document.getElementById('resumeImg3').addEventListener("click", function(){
 
-  let hrefResume="/public/assets/files/resume-mbat1.pdf";
+  let hrefResume="/public/assets/files/res_martinb_202309.pdf";
 
   window.open(hrefResume, '_blank')
 
