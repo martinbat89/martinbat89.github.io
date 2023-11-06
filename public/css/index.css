@@ -23,6 +23,16 @@ body {
     
   } 
 
+  .switch{
+    padding: 15px;
+    position: fixed;
+    z-index: 999;
+    border-radius: 15px;
+    margin: 10px;
+    
+  }
+
+  
 
   .contpreloader{
     position: fixed;
@@ -172,6 +182,9 @@ body {
    
   }
 
+  label{
+    font-size: 17px;
+  }
 
   #mi_mirm{
     font-family: 'Brush Script MT', cursive;
@@ -290,6 +303,10 @@ span{
   line-height:1.6;
 } 
 
+label{
+  font-size: 18px;
+}
+
 .parallax-container .section {
   position: absolute;
   top: 40%;
@@ -405,6 +422,10 @@ li{
 span{
   font-size: 15px;
   line-height:1.5;
+}
+
+label{
+  font-size: 15px;
 }
 
   #mi_mirm{

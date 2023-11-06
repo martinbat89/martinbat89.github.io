@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
      <!--Import Google Icon Font-->
@@ -9,7 +9,7 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link type="text/css" rel="stylesheet" href="../css/proy-app.css"/>
-    <title>🏔️ Portafolio Martin Batarev</title>
+    <title>🏔️ Martin Batarev</title>
 </head>
 <div id="contenedorCargador" class="contpreloader">
   <div class="preloader-wrapper big active">
@@ -25,16 +25,24 @@
   </div>
 </div>
 <body>
+  <div class="switch hoverable teal">
+    <label class="white-text">
+      Español
+      <input type="checkbox" id="ch-lang">
+      <span class="lever"></span>
+      English
+    </label>
+  </div>
   <div id="index-banner" class="parallax-container">
     <div class="section scrollspy no-pad-bot" id="par_inicio">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-1"><b>Dashboard y App de Cuentas Corrientes en GAS</b></h1>
+        <h1 class="header center teal-text text-lighten-1" id="tit-uno-p1"><b>Dashboard y App de Cuentas Corrientes en GAS</b></h1>
         <div class="row center">
-          <h5 class="header col s12 light blue-grey-text darken-4-text">Dashboard en Looker y Aplicación para el seguimiento de cuentas corrientes desarrollado con Google Apps Scripts.</h5>
+          <h5 class="header col s12 light blue-grey-text darken-4-text" id="subtit-p1">Dashboard en Looker y Aplicación para el seguimiento de cuentas corrientes desarrollado con Google Apps Scripts.</h5>
         </div>
         <div class="row center">
-          <a href="#seccion1"  class="btn-large waves-effect waves-light teal lighten-1">
+          <a href="#seccion1"  class="btn-large waves-effect waves-light teal lighten-1" id="btnMas-p1">
             <i class="material-icons left">arrow_downward</i>Ver Mas</a>
         </div>
         <br><br>
@@ -48,8 +56,8 @@
       <i class="large material-icons">menu</i>
     </a>
     <ul>
-      <li><a href="/index.html" class="btn-floating blue lighten-1 btn tooltipped" data-position="left" data-tooltip="Volver al Inicio"><i class="material-icons">keyboard_return</i></a></li>
-      <li><a href="#par_inicio" class="btn-floating blue-grey darken-2 btn tooltipped" data-position="left" data-tooltip="Subir"><i class="material-icons">arrow_upward</i></a></li>
+      <li><a href="/index.html" class="btn-floating blue lighten-1 btn tooltipped" data-position="left" data-tooltip="Volver al Inicio" id="ttip-volver"><i class="material-icons">keyboard_return</i></a></li>
+      <li><a href="#par_inicio" class="btn-floating blue-grey darken-2 btn tooltipped" data-position="left" data-tooltip="Subir" id="ttip-subir"><i class="material-icons">arrow_upward</i></a></li>
     </ul>
   </div>
 <main>    
@@ -64,11 +72,11 @@
       <br>
       <div class="col s12 m12 l12 teal lighten-4">
         <blockquote>
-          <b>Herramientas: </b> Google Apps Script - Google Sheets - HTML - CSS - Javascript - Google Looker Studio.
+          <span id="herram-p1"><b>Herramientas: </b> Google Apps Script - Google Sheets - HTML - CSS - Javascript - Google Looker Studio.</span>
         </blockquote>
       </div>
     </div>
-    <div class="row">
+    <div class="row" id="contCuerpo">
       <div class="col s12 m12 l12">
         <div class="divider"></div>
         <div class="section scrollspy" id="seccion1">
@@ -207,7 +215,7 @@
     </div>
   </div>
 </main>
-<footer class="page-footer teal darken-4">
+<footer class="page-footer teal darken-4" id="pieCont">
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
@@ -250,5 +258,8 @@
     <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript" src="../js/materialize.min.js"></script>
   <script type="text/javascript" src="../js/proy-app.js"></script>
+  <!--Import i18next traductor-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.5.1/i18next.min.js" integrity="sha512-C2hlr1aDo7JovvX0ek3m40fkT5+/DDgHY6rL+mcYODMLn2sZ+rKBDSIdO0NU7Yzai7WMJdhTUNEeWICljXrycQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script type="text/javascript" src="../translations/tran-ctas-ctes.js"></script>
 </body>
 </html>

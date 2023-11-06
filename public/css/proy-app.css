@@ -21,6 +21,20 @@ body {
     
   } 
 
+  .switch{
+    padding: 15px;
+    position: fixed;
+    z-index: 999;
+    border-radius: 15px;
+    margin: 10px;
+    
+  }
+
+  #tit-uno-p1{
+    font-weight: bold;
+  }
+
+  
   img{
     border: 1px solid gray;
   }

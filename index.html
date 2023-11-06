@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
      <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
+     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="./public/css/materialize.min.css"  media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link type="text/css" rel="stylesheet" href="./public/css/index.css"/>
-    <title>🏔️ Portafolio Martin Batarev</title>
+    <title>🏔️ Martin Batarev</title>
 </head>
 <div id="contenedorCargador" class="contpreloader">
   <div class="preloader-wrapper big active">
@@ -26,59 +26,72 @@
 </div>
 
 <body>
+  <!-- Switch -->
+   <!-- Switch -->
+   <div class="switch hoverable teal">
+    <label class="white-text">
+      Español
+      <input type="checkbox" id="ch-lang">
+      <span class="lever"></span>
+      English
+    </label>
+  </div>
+
+ 
   <div class="slider scrollspy carousel-slider" id="ppio_sli">
     <ul class="slides">
       <li>
         <img class="responsive-img" src="./public/assets/img/bannerme_5.jpeg"> 
         <div class="caption center-align black-text">
           <h1><b>Martin Batarev</b></h2>
-          <h5 class="light">¡Gracias por visitar mi portafolio!</h5>
+          <h5 class="light" id="tit-uno">¡Gracias por visitar mi portafolio!</h5>
         </div>
       </li>
       <li>
         <img src="./public/assets/img/banner_me6.jpeg"> 
         <div class="caption left-align black-text">
-          <h3>Análisis de Datos</h3>
-          <h5 class="light">Procesar, analizar y visualizar datos.</h5>
+          <h3 id="tit-dos">Análisis de Datos</h3>
+          <h5 class="light" id="tit-tres">Procesar, analizar y visualizar datos.</h5>
         </div>
       </li>
       <li>
         <img src="./public/assets/img/banner_me2.png"> 
         <div class="caption right-align black-text">
-          <h3>Inteligencia de Negocios</h3>
-          <h5 class="light">Decisiones inteligentes con los datos de tu negocio.</h5>
+          <h3 id="tit-cuatro">Inteligencia de Negocios</h3>
+          <h5 class="light" id="tit-cinco">Decisiones inteligentes con los datos de tu negocio.</h5>
         </div>
       </li>
       <li>
         <img src="./public/assets/img/banner_me3.png"> 
         <div class="caption center-align black-text">
-          <h3>Procesos internos</h3>
-          <h5 class="light">Mejora tus procesos internos con el uso de las nuevas tecnologías.</h5>
+          <h3 id="tit-seis">Procesos internos</h3>
+          <h5 class="light" id="tit-siete">Mejora tus procesos internos con el uso de las nuevas tecnologías.</h5>
         </div>
       </li>
     </ul>
   </div>
   <!--Menu de opciones-->
   <div class="fixed-action-btn click-to-toggle" >
-    <a class="btn-floating btn-large cyan darken-3 pulse">
+    <a class="btn-floating btn-large cyan darken-3 pulse left-align">
       <i class="large material-icons">menu</i>
     </a>
     <ul>
-      <li><a href="#sec_acerca" class="btn-floating teal accent-4 btn tooltipped"  data-position="left" data-tooltip="Acerca De Mi"><i class="material-icons">person</i></a></li>
-      <li><a href="#sec_ss" class="btn-floating deep-purple lighten-1 btn tooltipped"  data-position="left" data-tooltip="Servicios"><i class="material-icons">settings</i></a></li>
-      <li><a href="#mis_cert" class="btn-floating blue lighten-1 btn tooltipped"  data-position="left" data-tooltip="Certificados"><i class="material-icons">school</i></a></li>
-      <li><a href="#mis_hab"  class="btn-floating yellow darken-1 btn tooltipped"  data-position="left" data-tooltip="Herramientas"><i class="material-icons">build</i></a></li>
-      <li><a href="#mi_porta"  class="btn-floating green btn tooltipped" data-position="left" data-tooltip="Portafolio"><i class="material-icons">insert_chart</i></a></li>
-      <li><a href="#contacto_form"  class="btn-floating amber darken-4 btn tooltipped" data-position="left" data-tooltip="Contacto"><i class="material-icons">mail</i></a></li>
+      <li><a href="#sec_acerca" class="btn-floating teal accent-4 btn tooltipped"  data-position="left" data-tooltip="Acerca De Mi" id="ttp-1"><i class="material-icons">person</i></a></li>
+      <li><a href="#sec_ss" class="btn-floating deep-purple lighten-1 btn tooltipped"  data-position="left" data-tooltip="Servicios" id="ttp-2"><i class="material-icons">settings</i></a></li>
+      <li><a href="#mi_porta"  class="btn-floating green btn tooltipped" data-position="left" data-tooltip="Portafolio" id="ttp-5"><i class="material-icons">insert_chart</i></a></li>
+      <li><a href="#mis_cert" class="btn-floating blue lighten-1 btn tooltipped"  data-position="left" data-tooltip="Certificados" id="ttp-3"><i class="material-icons">school</i></a></li>
+      <li><a href="#mis_hab"  class="btn-floating yellow darken-1 btn tooltipped"  data-position="left" data-tooltip="Herramientas" id="ttp-4"><i class="material-icons">build</i></a></li>
+      <li><a href="#contacto_form"  class="btn-floating amber darken-4 btn tooltipped" data-position="left" data-tooltip="Contacto" id="ttp-6"><i class="material-icons">mail</i></a></li>
       <!--<li><a id="resumeImg" href="index.html"  class="btn-floating red darken-1 btn tooltipped"  data-position="left" data-tooltip="Descargá mi CV"><i class="material-icons">attach_file</i></a></li>-->
-      <li><a href="#ppio_sli"  class="btn-floating red darken-1 btn tooltipped"  data-position="left" data-tooltip="Subir"><i class="material-icons">arrow_upward</i></a></li>
+      <li><a href="#ppio_sli"  class="btn-floating red darken-1 btn tooltipped"  data-position="left" data-tooltip="Subir" id="ttp-7"><i class="material-icons">arrow_upward</i></a></li>
     </ul>
   </div>
+  
   
      <!--Acerca de Mi Section-->
       <div class="container section scrollspy" id="sec_acerca">
         <div class="section">
-            <h3 class="header center blue-grey-text text-lighten-4">Acerca De Mi</h3>
+            <h3 class="header center blue-grey-text text-lighten-4" id="yo1">Acerca De Mi</h3>
             <div class="divider"></div><br>
             <div class="row">
                 <div class="col s12 m12 l12">
@@ -88,12 +101,12 @@
                             <img src="./public/assets/img/moto_mini.png" id="img_acerca" alt="" class="responsive-img center-align"> <!-- notice the "circle" class -->
                         </div>
                         <div class="col s12 m12 l7">
-                            <h5><b>Hola, soy Martin! 🙌</b></h5>
-                            <p>Contador Público con nueve años de experiencia en el sector <b>retail</b> dentro de el ambito del control interno y procesamiento de pagos.</p>
-                            <p>En los últimos años me he centrado en el <b>análisis de datos</b> e <b>inteligencia de negocios</b>, adquiriendo dominio en una variedad de lenguajes y herramientas de programación. 👩‍💻📲</p>                
-                            <p>Me gusta mucho aprender nuevas habilidades y ver cómo se pueden aplicar en la práctica, más aún si me ayudan a hacer mi trabajo más fácil y rápido. Aprende, prueba, comete errores y vuelve a aprender. Este es mi lema de todos los días.</p>
+                          <h5 id="yo2">Hola, soy Martin! 🙌</h5>
+                            <p id="yo3">Contador Público con nueve años de experiencia en el sector <b>retail</b> dentro de el ambito del control interno y procesamiento de pagos.</p>
+                            <p id="yo4">En los últimos años me he centrado en el <b>análisis de datos</b> e <b>inteligencia de negocios</b>, adquiriendo dominio en una variedad de lenguajes y herramientas de programación. 👩‍💻📲</p>                
+                            <p id="yo5">Me gusta mucho aprender nuevas habilidades y ver cómo se pueden aplicar en la práctica, más aún si me ayudan a hacer mi trabajo más fácil y rápido. Aprende, prueba, comete errores y vuelve a aprender. Este es mi lema de todos los días.</p>
                             <!--<p>Hace poco decidí emprender mi camino emprendedor y así nació el proyecto <b><a clas="teal" href="https://sites.google.com/view/alerce-mejoramos-negocios/inicio">Equipo Alerce.</a></b> </p>-->
-                            <p>Me gusta estar al aire libre y pasar tiempo con mi familia y amigos. Me encanta viajar para desconectar. Si puedo elegir, prefiero el sol y la montaña. 🏔️⛺ </p>
+                            <p id="yo6">Me gusta estar al aire libre y pasar tiempo con mi familia y amigos. Me encanta viajar para desconectar. Si puedo elegir, prefiero el sol y la montaña. 🏔️⛺ </p>
                             <text class="right" id="mi_mirm"><b>Martin.</b></text>
                           </div>
                     </div>
@@ -107,7 +120,7 @@
           <div class="container">
             <br><br>
             <div class="row center">
-              <h5 class="header col s12 light blue-grey-text darken-4-text">Análisis de datos: el corazón del emprendimiento moderno.</h5>
+              <h5 class="header col s12 light blue-grey-text darken-4-text" id="parax1">Análisis de datos: el corazón del emprendimiento moderno.</h5>
             </div>
             <br><br>
           </div>
@@ -120,15 +133,15 @@
       <div class="container section scrollspy" id="sec_ss">
         <i class="large material-icons" id="iconBack">bug_report</i>
         <div class="section">
-         <h2 class="header center blue-grey-text text-lighten-4">Mis Servicios</h2>
+         <h2 class="header center blue-grey-text text-lighten-4" id="miss1">Mis Servicios</h2>
          <div class="divider"></div><br>  
           <!--   fila servicios datos  -->
           <div class="row">
             <div class="col s10 push-s1 m8 push-m2 l4 hoverable">
               <div class="icon-block">
                 <h2 class="center blue-grey-text text-lighten-4"><i class="large material-icons">cleaning_services</i></h2>
-                <h5 class="center blue-grey-text text-lighten-4">Limpieza de Datos</h5>
-                <p class="blue-grey-text text-lighten-4 light">Cuando tenemos datos provenientes de diversas fuentes, 
+                <h5 class="center blue-grey-text text-lighten-4" id="miss2">Limpieza de Datos</h5>
+                <p class="blue-grey-text text-lighten-4 light" id="miss3">Cuando tenemos datos provenientes de diversas fuentes, 
                   es necesario someterlos a un proceso de preparación antes de sacar conclusiones. Esta 
                   fase de limpieza de datos comprende una serie de tareas, como la normalización de formatos, la 
                   identificación y corrección de valores nulos o atípicos, entre otras.</p>
@@ -137,8 +150,8 @@
             <div class="col s10 push-s1 m8 push-m2 l4 hoverable">
                 <div class="icon-block">
                   <h2 class="center blue-grey-text text-lighten-4"><i class="large material-icons">data_exploration</i></h2>
-                  <h5 class="center blue-grey-text text-lighten-4">Exploración de Datos</h5>
-                  <p class="blue-grey-text text-lighten-4 light">La etapa de exporación es un proceso fundamental,
+                  <h5 class="center blue-grey-text text-lighten-4" id="miss4">Exploración de Datos</h5>
+                  <p class="blue-grey-text text-lighten-4 light" id="miss5">La etapa de exporación es un proceso fundamental,
                     donde nos adentramos en los datos para descubrir patrones, tendencias y relaciones ocultas. 
                     Este proceso implica la utilización de herramientas y técnicas que nos permiten comprender mejor la información analizada.</p>
                 </div>
@@ -146,8 +159,8 @@
             <div class="col s10 push-s1 m8 push-m2 l4 hoverable">
                 <div class="icon-block">
                   <h2 class="center blue-grey-text text-lighten-4"><i class="large material-icons">analytics</i></h2>
-                  <h5 class="center blue-grey-text text-lighten-4">Visualización de Datos</h5>
-                  <p class="blue-grey-text text-lighten-4 light">A través de gráficos, tablas y otros recursos 
+                  <h5 class="center blue-grey-text text-lighten-4" id="miss6">Visualización de Datos</h5>
+                  <p class="blue-grey-text text-lighten-4 light" id="miss7">A través de gráficos, tablas y otros recursos 
                     visuales, transformamos la información en representaciones comprensibles. Esto no 
                     solo hace que los datos sean accesibles, sino que también facilita la comunicación de resultados 
                     y la comprensión de los usuarios finales. </p>
@@ -160,9 +173,9 @@
             <div class="col s10 push-s1 m8 push-m2 l4 hoverable">
               <div class="icon-block">
                 <h2 class="center blue-grey-text text-lighten-4"><i class="large material-icons">insights</i></h2>
-                <h5 class="center blue-grey-text text-lighten-4">Automatización de Procesos</h5>
+                <h5 class="center blue-grey-text text-lighten-4" id="miss8">Automatización de Procesos</h5>
 
-                <p class="blue-grey-text text-lighten-4 light">La automatización de procesos emplea tecnología para simplificar 
+                <p class="blue-grey-text text-lighten-4 light" id="miss9">La automatización de procesos emplea tecnología para simplificar 
                   tareas repetitivas, acelerar operaciones y reducir errores. Cuando se integra con la gestión de flujo de datos, 
                   optimiza la eficiencia empresarial y la toma de decisiones informadas y oportunas.</p>
               </div>
@@ -170,9 +183,9 @@
             <div class="col s10 push-s1 m8 push-m2 l4 hoverable">
                 <div class="icon-block">
                   <h2 class="center blue-grey-text text-lighten-4"><i class="large material-icons">devices</i></h2>
-                  <h5 class="center blue-grey-text text-lighten-4">Pequeños ERP para Negocios</h5>
+                  <h5 class="center blue-grey-text text-lighten-4" id="miss10">Pequeños ERP para Negocios</h5>
       
-                  <p class="blue-grey-text text-lighten-4 light">Las pequeñas aplicaciones administrativas, son soluciones
+                  <p class="blue-grey-text text-lighten-4 light" id="miss11">Las pequeñas aplicaciones administrativas, son soluciones
                      tecnológicas que simplifican la gestión empresarial. Estas herramientas automatizan procesos, mejoran la 
                      eficiencia y facilitan el control operativo.</p>
                 </div>
@@ -180,9 +193,9 @@
             <div class="col s10 push-s1 m8 push-m2 l4 hoverable">
                 <div class="icon-block">
                   <h2 class="center blue-grey-text text-lighten-4"><i class="large material-icons">storefront</i></h2>
-                  <h5 class="center blue-grey-text text-lighten-4">Asesoramiento de Negocios</h5>
+                  <h5 class="center blue-grey-text text-lighten-4" id="miss12">Asesoramiento de Negocios</h5>
       
-                  <p class="blue-grey-text text-lighten-4 light">Con experiencia en retail, auditoría, control interno 
+                  <p class="blue-grey-text text-lighten-4 light" id="miss13">Con experiencia en retail, auditoría, control interno 
                     y análisis de datos, ofrezco asesoramiento en procesos de negocio. Mi enfoque como Contador impulsa la eficiencia
                      financiera y la gestión de datos, contribuyendo a la optimización operativa en diversas áreas del negocio.</p>
                 </div>
@@ -196,16 +209,120 @@
           <div class="container">
             <br><br>
             <div class="row center">
-              <h5 class="header col s12 light blue-grey-text darken-4-text">Convertir los datos en oportunidades de negocio.</h5>
+              <h5 class="header col s12 light blue-grey-text darken-4-text" id="parax2">Convertir los datos en oportunidades de negocio.</h5>
             </div>
             <br><br>
           </div>
         </div>
         <div class="parallax"><img src="./public/assets/img/compu_dash1.jpeg" id="img_paral" alt="Unsplashed background img 1"></div>
+      </div> 
+      
+    <!--Portafolio Section-->
+<div class="container section scrollspy" id="mi_porta">
+  <h2 class="header center blue-grey-text text-lighten-4" id="portaTit">Portafolio</h2>
+  <div class="divider"></div><br>
+  <div class="row">
+    <div class="col s12 m6 l6">
+      <div class="card medium hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="./public/assets/img/portafolio-img/DASH HTML CON MAPA/dashCaj3-COLLAGE.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator" id="porta2">Dashboard Gestión Cajas<i class="material-icons right" id="flecha-porta">arrow_upward</i></span>
+          <p><a href="./public/views/proy-dash-caja.html" id="portaVer">Ver Proyecto Completo</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4" id="portaRes">Resumen del Proyecto<i class="material-icons right">close</i></span>
+          <p class="grey-text text-darken-4" id="porta3">Descubre cómo un dashboard en HTML creado con papaparse y Chart.js permitió a una empresa de retail 
+            conocer el estado mensual de la gestión administrativa de cajas en diferentes locales.  <br> <br> Con Leaflet, 
+            se creó un mapa web que mostraba el progreso del trabajo y se utilizó una pequeña red neuronal para 
+            predecir la fecha de finalización.  <br> <br> Además, se incluyen gráficos de torta y doughnut para un análisis más detallado. 
+            <br> <br> ¡Entra para ver los detalles y visualizaciones!</p>
+            <p><a class="teal-text"  id="portaVer" href="./public/views/proy-dash-caja.html">Ver Proyecto Completo</a></p>
+        </div>
       </div>
+    </div>
+    <div class="col s12 m6 l6">
+      <div class="card medium hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="./public/assets/img/portafolio-img/COMP ELECTR ADRI/comprob1.png" >
+        </div>
+        <div class="card-content">
+          <span class="card-title activator" id="porta7">Envío automático de comprobantes<i class="material-icons right">arrow_upward</i></span>
+          <p><a href="./public/views/proy-comp-adri.html" id="portaVer">Ver Proyecto Completo</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4" id="portaRes">Resumen del Proyecto<i class="material-icons right">close</i></span>
+          <p class="grey-text text-darken-4" id="porta4">Con ayuda de Google Apps Scripts, 
+            se desarrolló un sistema automatizado para 
+            enviar facturas y comprobantes a los clientes.<br><br> 
+            Con esta herramienta, es posible cargar los datos 
+            de los nuevos clientes y escanear las facturas desde 
+            el celular para enviarlas automáticamente al correo 
+            electrónico previamente cargado. <br><br>Esto significa que 
+            no hay necesidad de preocuparse por el envío manual de facturas, 
+            lo que ahorra tiempo y reduce errores. <br> <br> 
+            Si te interesa este apartado, dale click para ver mas. </p>
+            <p><a class="teal-text" href="./public/views/proy-comp-adri.html"  id="portaVer">Ver Proyecto Completo</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l6">
+      <div class="card medium hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator responsive-img" src="./public/assets/img/portafolio-img/DASHBOARDS POWERBI/fotodashcompleto22.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator" id="porta8">Dashboard Power BI Tienda Granel<i class="material-icons right">arrow_upward</i></span>
+          <p><a href="./public/views/proy-po-bi-granel.html" id="portaVer">Ver Proyecto Completo</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4" id="portaRes">Resumen del Proyecto<i class="material-icons right">close</i></span>
+          <p class="grey-text text-darken-4" id="porta5">Creación un panel de control (dashboard) utilizando Power BI 
+            para una tienda de productos naturales. <br> <br> Este panel muestra información
+             importante sobre las ventas y el inventario, para tomar decisiones informadas 
+             sobre la gestión de productos.</p>
+             <p><a class="teal-text" href="./public/views/proy-po-bi-granel.html"  id="portaVer">Ver Proyecto Completo</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l6">
+      <div class="card medium hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="./public/assets/img/portafolio-img/gestion-ctas-ctes/dashctasCtes.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator" id="porta9">Gestión En Cuentas Corrientes<i class="material-icons right">arrow_upward</i></span>
+          <p><a href="./public/views/proy-ctas-ctes.html" id="portaVer">Ver Proyecto Completo</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4" id="portaRes">Resumen del Proyecto<i class="material-icons right">close</i></span>
+          <p class="grey-text text-darken-4" id="porta6">En este proyecto se utilizó Google Apps Scripts para procesar y agrupar 
+            comentarios de gestión de cuentas corrientes, eliminando los registros 
+            sin información relevante, generando totales por región y estado de cuentas corrientes. 
+            <br><br>Los datos procesados se visualizaron en un tablero creado en Google Looker 
+            (Data Studio), lo que permitió una gestión eficiente y atractiva de los datos. </p>
+            <p><a class="teal-text" href="./public/views/proy-ctas-ctes.html"  id="portaVer">Ver Proyecto Completo</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div id="baner-sect" class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <div class="row center">
+          <h5 class="header col s12 light blue-grey-text darken-4-text" id="parax3">Las decisiones basadas en datos impulsan el éxito empresarial.</h5>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="./public/assets/img/compu_dash1.jpeg" id="img_paral" alt="Unsplashed background img 1"></div>
+  </div>
 <!--Certificados Section-->
 <div class="container section scrollspy" id="mis_cert">
-  <h2 class="header center blue-grey-text text-lighten-4">Mis Certificados </h2> 
+  <h2 class="header center blue-grey-text text-lighten-4" id="certif0">Mis Certificados </h2> 
   <div class="divider"></div><br>
   <div class="row">
     <div class="col s12 m6">
@@ -214,10 +331,10 @@
           <img class="materialboxed" src="./public/assets/img/martin batarev - Python.png">
         </div>
         <div class="card-content">
-          <span class="card-title">Introducción a la programación</span>
+          <span class="card-title" id="certif1">Introducción a la programación</span>
         </div>
         <div class="card-action">
-          <a href="https://www.kaggle.com/learn/certification/martinbatarev/python" target="_blank">Ver Certificado</a>
+          <a href="https://www.kaggle.com/learn/certification/martinbatarev/python" target="_blank" id="titCertif">Ver Certificado</a>
         </div>
       </div>
     </div>
@@ -227,10 +344,10 @@
           <img class="materialboxed" src="./public/assets/img/martin batarev - Intro to Machine Learning.png">
         </div>
         <div class="card-content">
-          <span class="card-title">Introducción a Machine Learning </span>
+          <span class="card-title" id="certif2">Introducción a Machine Learning </span>
         </div>
         <div class="card-action">
-          <a href="https://www.kaggle.com/learn/certification/martinbatarev/intro-to-machine-learning" target="_blank">Ver Certificado</a>
+          <a href="https://www.kaggle.com/learn/certification/martinbatarev/intro-to-machine-learning" target="_blank" id="titCertif">Ver Certificado</a>
         </div>
       </div>
     </div>
@@ -242,10 +359,10 @@
           <img class="materialboxed" src="./public/assets/img/martin batarev - Pandas.png">
         </div>
         <div class="card-content">
-          <span class="card-title">Pandas</span>
+          <span class="card-title" id="certif3">Pandas</span>
         </div>
         <div class="card-action">
-          <a href="https://www.kaggle.com/learn/certification/martinbatarev/pandas" target="_blank">Ver Certificado</a>
+          <a href="https://www.kaggle.com/learn/certification/martinbatarev/pandas" target="_blank" id="titCertif">Ver Certificado</a>
         </div>
       </div>
     </div>
@@ -255,10 +372,10 @@
           <img class="materialboxed" src="./public/assets/img/martin batarev - Intermediate Machine Learning.png">
         </div>
         <div class="card-content">
-          <span class="card-title">Machine Learning Intermedio </span>
+          <span class="card-title" id="certif4">Machine Learning Intermedio </span>
         </div>
         <div class="card-action">
-          <a href="https://www.kaggle.com/learn/certification/martinbatarev/intermediate-machine-learning" target="_blank">Ver Certificado</a>
+          <a href="https://www.kaggle.com/learn/certification/martinbatarev/intermediate-machine-learning" target="_blank" id="titCertif">Ver Certificado</a>
         </div>
       </div>
     </div>
@@ -270,10 +387,10 @@
           <img class="materialboxed" src="./public/assets/img/martin batarev - Data Visualization.png">
         </div>
         <div class="card-content">
-          <span class="card-title">Visualización de datos</span>
+          <span class="card-title" id="certif5">Visualización de datos</span>
         </div>
         <div class="card-action">
-          <a href="https://www.kaggle.com/learn/certification/martinbatarev/data-visualization" target="_blank">Ver Certificado</a>
+          <a href="https://www.kaggle.com/learn/certification/martinbatarev/data-visualization" target="_blank" id="titCertif">Ver Certificado</a>
         </div>
       </div>
     </div>
@@ -283,10 +400,10 @@
           <img class="materialboxed" src="./public/assets/img/martin batarev - Intro to SQL.png">
         </div>
         <div class="card-content">
-          <span class="card-title">Introducción a SQL</span>
+          <span class="card-title" id="certif6">Introducción a SQL</span>
         </div>
         <div class="card-action">
-          <a href="https://www.kaggle.com/learn/certification/martinbatarev/intro-to-sql" target="_blank">Ver Certificado</a>
+          <a href="https://www.kaggle.com/learn/certification/martinbatarev/intro-to-sql" target="_blank" id="titCertif">Ver Certificado</a>
         </div>
       </div>
     </div>
@@ -298,10 +415,10 @@
           <img class="materialboxed" src="./public/assets/img/fci_img_ingles.png">
         </div>
         <div class="card-content">
-          <span class="card-title">First Certificate In English (Cambridge)</span>
+          <span class="card-title" id="certif7">First Certificate In English (Cambridge)</span>
         </div>
         <div class="card-action">
-          <a href="https://drive.google.com/file/d/1R6d_Bo9OCPB2g18q8ytwz7Cxaiirz4Wp/view?usp=sharing" target="_blank">Ver Certificado</a>
+          <a href="https://drive.google.com/file/d/1R6d_Bo9OCPB2g18q8ytwz7Cxaiirz4Wp/view?usp=sharing" target="_blank" id="titCertif">Ver Certificado</a>
         </div>
       </div>
     </div>
@@ -311,10 +428,10 @@
           <img class="materialboxed" src="./public/assets/img/titulo_img.png">
         </div>
         <div class="card-content">
-          <span class="card-title">Título Universitario</span>
+          <span class="card-title" id="certif8">Título Universitario</span>
         </div>
         <div class="card-action">
-          <a href="https://drive.google.com/file/d/159CWMcSI8u23yt0Gvyu0OpSwceGVnAsx/view?usp=sharing" target="_blank">Ver Título</a>
+          <a href="https://drive.google.com/file/d/159CWMcSI8u23yt0Gvyu0OpSwceGVnAsx/view?usp=sharing" target="_blank" id="verTit">Ver Título</a>
         </div>
       </div>
     </div>
@@ -325,7 +442,7 @@
     <div class="container">
       <br><br>
       <div class="row center">
-        <h5 class="header col s12 light blue-grey-text darken-4-text">Automatización: Acelerar tareas, reducir errores y potenciar la productividad.</h5>
+        <h5 class="header col s12 light blue-grey-text darken-4-text" id="parax4">Automatización: Acelerar tareas, reducir errores y potenciar la productividad.</h5>
       </div>
       <br><br>
     </div>
@@ -334,7 +451,7 @@
 </div>
 <!--habilidades Section-->
 <div class="container section scrollspy" id="mis_hab">
-  <h2 class="header center blue-grey-text text-lighten-4">Conocimientos </h2> 
+  <h2 class="header center blue-grey-text text-lighten-4" id="titConoc">Conocimientos </h2> 
   <div class="divider"></div><br>
   <div class="card hoverable blue-grey lighten-5" id="card-hab">
     <div class="row">
@@ -365,7 +482,7 @@
     </div>
     <div class="row">
       <div class="col s6 m5 push-m1 l3">
-        <h6 class="header center blue-grey-text text-darken-2">javascript <b>(60%)</b> </h6> 
+        <h6 class="header center blue-grey-text text-darken-2">Javascript <b>(60%)</b> </h6> 
         <div class="progress">
           <div class="determinate" style="width: 60%;"></div>
         </div>
@@ -423,7 +540,7 @@
         </div>
       </div>
       <div class="col s6 m5 push-m1 l3">
-        <h6 class="header center blue-grey-text text-darken-2">Python y Librerías <b>(60%)</b> </h6> 
+        <h6 class="header center blue-grey-text text-darken-2">Python<b>(60%)</b> </h6> 
         <div class="progress">
           <div class="determinate" style="width: 60%"></div>
         </div>
@@ -476,121 +593,20 @@
     <div class="container">
       <br><br>
       <div class="row center">
-        <h5 class="header col s12 light blue-grey-text darken-4-text">Los pequeños ERP potencian negocios y simplifican la administración.</h5>
+        <h5 class="header col s12 light blue-grey-text darken-4-text" id="parax5">Los pequeños ERP potencian negocios y simplifican la administración.</h5>
       </div>
       <br><br>
     </div>
   </div>
   <div class="parallax"><img src="./public/assets/img/compu_dash1.jpeg" id="img_paral" alt="Unsplashed background img 1"></div>
 </div>
-<!--Portafolio Section-->
-<div class="container section scrollspy" id="mi_porta">
-  <h2 class="header center blue-grey-text text-lighten-4">Portafolio</h2>
-  <div class="divider"></div><br>
-  <div class="row">
-    <div class="col s12 m6 l6">
-      <div class="card medium hoverable">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="./public/assets/img/portafolio-img/DASH HTML CON MAPA/dashCaj3-COLLAGE.jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator">Dashboard Gestión Cajas<i class="material-icons right" id="flecha-porta">arrow_upward</i></span>
-          <p><a href="./public/views/proy-dash-caja.html">Ver Proyecto Completo</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Resumen del Proyecto<i class="material-icons right">close</i></span>
-          <p class="grey-text text-darken-4">Descubre cómo un dashboard en HTML creado con papaparse y Chart.js permitió a una empresa de retail 
-            conocer el estado mensual de la gestión administrativa de cajas en diferentes locales.  <br> <br> Con Leaflet, 
-            se creó un mapa web que mostraba el progreso del trabajo y se utilizó una pequeña red neuronal para 
-            predecir la fecha de finalización.  <br> <br> Además, se incluyen gráficos de torta y doughnut para un análisis más detallado. 
-            <br> <br> ¡Entra para ver los detalles y visualizaciones!</p>
-            <p><a class="teal-text" href="./public/views/proy-dash-caja.html">Ver Proyecto Completo</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l6">
-      <div class="card medium hoverable">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="./public/assets/img/portafolio-img/COMP ELECTR ADRI/comprob1.png" >
-        </div>
-        <div class="card-content">
-          <span class="card-title activator">Envío automático de comprobantes<i class="material-icons right">arrow_upward</i></span>
-          <p><a href="./public/views/proy-comp-adri.html">Ver Proyecto Completo</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Resumen del Proyecto<i class="material-icons right">close</i></span>
-          <p class="grey-text text-darken-4">Con ayuda de Google Apps Scripts, 
-            se desarrolló un sistema automatizado para 
-            enviar facturas y comprobantes a los clientes.<br><br> 
-            Con esta herramienta, es posible cargar los datos 
-            de los nuevos clientes y escanear las facturas desde 
-            el celular para enviarlas automáticamente al correo 
-            electrónico previamente cargado. <br><br>Esto significa que 
-            no hay necesidad de preocuparse por el envío manual de facturas, 
-            lo que ahorra tiempo y reduce errores. <br> <br> 
-            Si te interesa este apartado, dale click para ver mas. </p>
-            <p><a class="teal-text" href="./public/views/proy-comp-adri.html">Ver Proyecto Completo</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l6">
-      <div class="card medium hoverable">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator responsive-img" src="./public/assets/img/portafolio-img/DASHBOARDS POWERBI/fotodashcompleto22.png">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator">Dashboard Power BI Tienda Granel<i class="material-icons right">arrow_upward</i></span>
-          <p><a href="./public/views/proy-po-bi-granel.html">Ver Proyecto Completo</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Resumen del Proyecto<i class="material-icons right">close</i></span>
-          <p class="grey-text text-darken-4">Creamos un panel de control (dashboard) utilizando Power BI 
-            para una tienda de productos naturales. <br> <br> Este panel muestra información
-             importante sobre las ventas y el inventario, para tomar decisiones informadas 
-             sobre la gestión de productos.</p>
-             <p><a class="teal-text" href="./public/views/proy-po-bi-granel.html">Ver Proyecto Completo</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l6">
-      <div class="card medium hoverable">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="./public/assets/img/portafolio-img/gestion-ctas-ctes/dashctasCtes.png">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator">Gestión En Cuentas Corrientes<i class="material-icons right">arrow_upward</i></span>
-          <p><a href="./public/views/proy-ctas-ctes.html">Ver Proyecto Completo</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Resumen del Proyecto<i class="material-icons right">close</i></span>
-          <p class="grey-text text-darken-4">En este proyecto se utilizó Google Apps Scripts para procesar y agrupar 
-            comentarios de gestión de cuentas corrientes, eliminando los registros 
-            sin información relevante, generando totales por región y estado de cuentas corrientes. 
-            <br><br>Los datos procesados se visualizaron en un tablero creado en Google Looker 
-            (Data Studio), lo que permitió una gestión eficiente y atractiva de los datos. </p>
-            <p><a class="teal-text" href="./public/views/proy-ctas-ctes.html">Ver Proyecto Completo</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  <div id="baner-sect" class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <div class="row center">
-          <h5 class="header col s12 light blue-grey-text darken-4-text">Las decisiones basadas en datos impulsan el éxito empresarial.</h5>
-        </div>
-        <br><br>
-      </div>
-    </div>
-    <div class="parallax"><img src="./public/assets/img/compu_dash1.jpeg" id="img_paral" alt="Unsplashed background img 1"></div>
-  </div>
+
+  
   <!--Contacto Section-->
   <div class="container section scrollspy" id="contacto_form">
-    <h2 class="header center blue-grey-text text-lighten-4">Trabajemos Juntos</h2>
+    <h2 class="header center blue-grey-text text-lighten-4" id="titContacto">Trabajemos Juntos</h2>
     <div class="divider"></div>
-    <h5 class="header center blue-grey-text text-lighten-4">Tenés una idea o querés hacer una consulta, te dejo mis canales de contacto:</h5>
+    <h5 class="header center blue-grey-text text-lighten-4" id="detalleCont">Tenés una idea o querés hacer una consulta, te dejo mis canales de contacto:</h5>
     <br>
     <div class="row">
       <div class="col s12 m12 l4 center-align">
@@ -628,12 +644,12 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">¡Antes que nada...Gracias!</h5>
-          <p class="grey-text text-lighten-4">Si llegaste hasta acá, es porque te tomaste el tiempo para ver mi portafolio. En estos tiempos tan acelerados, en los que nos cuesta parar un poco, solamente puedo decirte gracias por tu visita.</p>
+          <h5 class="white-text" id="tit1Foot">¡Antes que nada...Gracias!</h5>
+          <p class="grey-text text-lighten-4" id="tit2Foot">Si llegaste hasta acá, es porque te tomaste el tiempo para ver mi portafolio. En estos tiempos tan acelerados, en los que nos cuesta parar un poco, solamente puedo decirte gracias por tu visita.</p>
           <text class="right" id="mi_mirm"><b>Martin.</b></text>
         </div>
         <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links de Interés</h5>
+          <h5 class="white-text" id="linkInte">Links de Interés</h5>
           <ul>
             <li>
               <div id="icon-redes22">
@@ -648,17 +664,17 @@
                 </a>
               </div>
             </li>
-            <li><h6><a class="grey-text text-lighten-3 teal darken-2 btn tooltipped" id="resumeImg2" data-position="bottom" data-tooltip="Descargá mi Curriculum Vitae en formato PDF (Español)"><i class="material-icons left">file_download</i>Descarga Mi CV En Español</a></h6></li>
-            <li><h6><a class="grey-text text-lighten-3 teal darken-2 btn tooltipped" id="resumeImg3" data-position="bottom" data-tooltip="Descargá mi Curriculum Vitae en formato PDF (Inglés)"><i class="material-icons left">file_download</i>Descarga Mi CV En Inglés</a></h6></li>
+            <li id="li-foot1"><h6><a class="grey-text text-lighten-3 teal darken-2 btn" id="resumeImg2" ><i class="material-icons left">file_download</i>Descarga Mi CV En Español</a></h6></li>
+            <li id="li-foot2"><h6><a class="grey-text text-lighten-3 teal darken-2 btn" id="resumeImg3" ><i class="material-icons left">file_download</i>Descarga Mi CV En Inglés</a></h6></li>
           </ul>
         </div>
         
       </div>
     </div>
     <div class="footer-copyright teal darken-3">
-      <div class="container">
+      <div class="container" id="pieIzq1">
       Portafolio de Martin Batarev
-      <b><a class="grey-text text-lighten-4 right" href="#ppio_sli">Volver al Principio</a></b>
+      <b><a class="grey-text text-lighten-4 right" href="#ppio_sli"><span id="pieDer">Volver al Principio</span></a></b>
       </div>
     </div>
   </footer>
@@ -667,5 +683,10 @@
     <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript" src="./public/js/materialize.min.js"></script>
   <script type="text/javascript" src="./public/js/index.js"></script>
+  <!--Import i18next traductor-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.5.1/i18next.min.js" integrity="sha512-C2hlr1aDo7JovvX0ek3m40fkT5+/DDgHY6rL+mcYODMLn2sZ+rKBDSIdO0NU7Yzai7WMJdhTUNEeWICljXrycQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Carga el js de tradduccion -->
+  <script type="text/javascript" src="./public/translations/tran-index.js"></script>
+
 </body>
 </html>

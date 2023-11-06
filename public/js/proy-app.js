@@ -30,20 +30,26 @@ document.addEventListener('DOMContentLoaded', function() {
     
   });
 
+var footerCambia = document.getElementById('pieCont')
+footerCambia.addEventListener("click", function(ev){
+      if(ev.target.id === "resumeImg2"){
+        let hrefResume="/public/assets/files/cv_martinb_esp_202309.pdf";
+        console.log("entro")
+        window.open(hrefResume, '_blank')
 
-document.getElementById('resumeImg2').addEventListener("click", function(){
-
-  let hrefResume="/public/assets/files/cv_martinb_esp_202309.pdf";
-
-  window.open(hrefResume, '_blank')
-
-})
+      }
+    })
  
-document.getElementById('resumeImg3').addEventListener("click", function(){
+    footerCambia.addEventListener("click", function(ev2){
 
-  let hrefResume="/public/assets/files/res_martinb_202309.pdf";
+  if(ev2.target.id === "resumeImg3"){
+    let hrefResume="/public/assets/files/res_martinb_202309.pdf";
+    console.log("entro")
+    window.open(hrefResume, '_blank')
 
-  window.open(hrefResume, '_blank')
+  }
+
+
 
 })
  

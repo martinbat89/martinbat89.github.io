@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         height:610,
         interval:4000
     });
-   
 
     //inicializamos el parallax
     var elemsParall = document.querySelectorAll('.parallax');
@@ -35,9 +34,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
     });
 
+    // Inicializa la página con el contenido predeterminado en el idioma especificado
+    changeLanguage('es');
+
     //quitamos el preloader
     setTimeout(function(){document.getElementById('contenedorCargador').className = "hide"}, "1000")
     
+    
+
+
   });
 
 // Función para animar un elemento cuando entra al viewport
