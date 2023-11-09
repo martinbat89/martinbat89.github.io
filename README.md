@@ -10,6 +10,8 @@ Este es mi portafolio personal, donde muestro mis proyectos y habilidades como a
 
 - [Google Material Icons](https://fonts.google.com/) (Licencia Apache 2.0): Se utilizan íconos de Google para mejorar la tipografía y la legibilidad del contenido. Podés encontrar los términos de la Licencia Apache 2.0 [aquí](https://www.apache.org/licenses/LICENSE-2.0)
 
+- [i18next](https://www.i18next.com/) (Licencia MIT): Se emplea para agregar las traducciónes de español a ingles y viceversa.
+
 ## Instalación
 
 1. Clona este repositorio en tu máquina local:
