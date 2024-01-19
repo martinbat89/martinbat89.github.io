@@ -40,7 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
     //quitamos el preloader
     setTimeout(function(){document.getElementById('contenedorCargador').className = "hide"}, "1000")
     
-    
+    //cargamos el maximo para el input range de certificados
+    let maxCertif = document.getElementById('mis_cert').querySelectorAll('.card').length
+    document.getElementById('rangeCertif').value = maxCertif
+    document.getElementById('rangeCertif').setAttribute('max', maxCertif)
 
 
   });
@@ -116,6 +119,29 @@ document.getElementById('resumeImg3').addEventListener("click", function(){
 
   window.open(hrefResume, '_blank')
 
+})
+
+//la siguiente fc oculta o muestra certificados segun lo que indique el usuario
+document.getElementById('rangeCertif').addEventListener('input', rg => {
+
+  var cantDejar = document.getElementById('rangeCertif').value
+  var contCertifRows = document.getElementById('mis_cert').querySelectorAll('.card')
+  var numItems = 1
+  contCertifRows.forEach( card => {
+    
+    if (numItems > cantDejar){
+
+      // Ocultar la tarjeta
+      card.classList.add('hide');
+
+    }else{
+
+      // Mostrar la tarjeta
+      card.classList.remove('hide');
+    }
+    
+    numItems += 1
+  })
 })
 
  
