@@ -41,6 +41,7 @@ i18next.init({
             "miss-13": "Con experiencia en retail, auditoría, control interno y análisis de datos, ofrezco asesoramiento en procesos de negocio. Mi enfoque como Contador impulsa la eficiencia financiera y la gestión de datos, contribuyendo a la optimización operativa en diversas áreas del negocio.",
             "parax-2": "Convertir los datos en oportunidades de negocio.",
             "porta-Tit": "Portafolio",
+            "slid-porta": "Mostrar/Ocultar Proyectos",
             "porta-ver": "Ver Proyecto Completo",
             "porta-2": "Dashboard Gestión Cajas<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
             "porta-Res": "Resumen del Proyecto<i class='material-icons right'>close</i>",
@@ -54,6 +55,7 @@ i18next.init({
              "porta-10": "Prueba A/B Marketing En Streamlit<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
              "porta-11": "A través de un conjunto de datos obtenidos de Kaggle, se realiza una prueba Z de proporciones, para evaluar la influencia de una campaña publicitaria en las conversiones de clientes de una empresa. <br><br> La aplicación, implementada en Streamlit, permite al usuario ajustar parámetros como el tamaño de la muestra y el nivel de confianza, visualizando resultados detallados y gráficos informativos.",
              "parax-3": "Las decisiones basadas en datos impulsan el éxito empresarial.",
+             "slid-cert": "Mostrar/Ocultar Certificados",
              "certif-ver": "Ver Certificado",
              "certif-1": "Introducción a la programación",
              "certif-2": "Introducción a Machine Learning",
@@ -118,6 +120,7 @@ i18next.init({
             "miss-13": "With experience in retail, auditing, internal control and data analysis, I offer advice on business processes. My approach as an Accountant drives financial efficiency and data management, contributing to operational optimization in various areas of the business.",
             "parax-2": "Turn data into business opportunities.",
             "porta-Tit": "Portfolio",
+            "slid-porta": "Show/Hide Projects",
             "porta-ver": "Read Complete Project",
             "porta-2": "Admnistrative Dashboard <i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
             "porta-Res": "Project Summary<i class='material-icons right'>close</i>",
@@ -131,6 +134,7 @@ i18next.init({
             "porta-10": "A/B Test Marketing In Streamlit<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
             "porta-11": "Through a dataset from Kaggle, a proportions Z-test is conducted to assess the impact of an advertising campaign on a company's customer conversions. <br><br> The application, deployed on Streamlit, enables users to adjust parameters such as sample size and confidence level, presenting detailed results and informative graphics.",
             "parax-3": "Data-based decisions drive business success.",
+            "slid-cert": "Show/Hide Certificates",
             "certif-ver": "View Certificate",
             "certif-1": "Introduction to programming",
             "certif-2": "Introducción to Machine Learning",
@@ -200,6 +204,7 @@ function changeLanguage(language) {
         document.getElementById('miss13').textContent = t('miss-13');
         document.getElementById('parax2').textContent = t('parax-2');
         document.getElementById('portaTit').textContent = t('porta-Tit');
+        document.getElementById('labSlidPorta').innerHTML = t('slid-porta');
         var verProyArr = document.querySelectorAll('#portaVer')
         verProyArr.forEach(x =>{
             x.textContent = t('porta-ver');
@@ -221,7 +226,7 @@ function changeLanguage(language) {
         document.getElementById('porta11').innerHTML = t('porta-11');
 
         document.getElementById('parax3').textContent = t('parax-3');
-
+        document.getElementById('labSlidCert').innerHTML = t('slid-cert');
         for(let ce = 1;ce < 9; ce++ ){
             let IdCert = 'certif' + ce;
             let tradCert = 'certif-' + ce
