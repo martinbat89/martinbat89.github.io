@@ -20,18 +20,20 @@ i18next.init({
                 <div class="col s12 m12 l12">
                   <p>Este proyecto tuvo como finalidad desarrollar una aplicación en Streamlit que
                     permita identificar si una campaña publicitaria puede ser exitosa, y en que medida
-                    ese éxito se puede atribuir a los avisos recibidos por los clientes. </p>
-                    <p>La base de datos empleada (Fuente : <a href="https://www.kaggle.com/datasets/faviovaz/marketing-ab-testing?resource=download" target="_blank">Kaggle - Marketing A/B Testing</a>
-                    ) proviene de un experimento donde los participantes se dividieron en dos grupos:</p>
+                    ese éxito se puede atribuir a los avisos recibidos por los clientes. <br><br>
+                    La base de datos empleada (Fuente : 
+                    <a href="https://www.kaggle.com/datasets/faviovaz/marketing-ab-testing?resource=download" target="_blank">Kaggle - Marketing A/B Testing</a>) proviene de un experimento donde los participantes se dividieron 
+                    en dos grupos:
+                    </p>
                     <ol>
                       <li>Aquellos expuestos a anuncios (Grupo AD). </li>
                       <li>Aquellos que solo recibieron anuncios públicos (PSA) o ninguno. A estos últimos los llamamos grupo de control.</li>
                     </ol> 
-                    <p>
-                    La elección de realizar una prueba de hipótesis Z de proporciones se basa en la 
+                    <p>La elección de realizar una prueba de hipótesis Z de proporciones se basa en la 
                     necesidad de comparar la proporción de personas que realizaron compras en ambos grupos.
                      Es esencial determinar si la campaña publicitaria genera efectos significativos en la 
                      conversión de clientes.
+    
                      </p>
                 </div>
               </div>
@@ -98,7 +100,7 @@ i18next.init({
                   <p><b>2-Definición del Nivel de Confianza:</b><br><br>Durante el desarrollo del modelo, se 
                     definió un nivel de confianza del 95%, lo que implica un alpha del 5%. En la aplicación
                      desplegada en Streamlit, se agregó la opción de cambiar este valor.</p>
-                  <p><b>3-Cálculos, Estadístico de Contraste y P-Valor:</b><br><br>Para este paso, se utilizó 
+                  <p><b>3-Cálculos, Estadístico de Contraste y p-valor:</b><br><br>Para este paso, se utilizó 
                     el módulo proportions_ztest de Statsmodel para obtener el p-valor. Comparar este valor 
                     con el alpha determina si se acepta o rechaza la hipótesis nula. Se detalla el código:<br><br>
                   </p>
@@ -177,43 +179,6 @@ i18next.init({
             
             <a class="waves-effect waves-teal btn-flat right" href="/index.html"><b>Volver al Home</b></a>
           </div>
-          <div class="col s12 m10 offset-m1 l10 offset-l1">
-    <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/prueba-ab-strmlit/img-6-tit.png">
-</div>
-</div>  
-</div>     
-<div class="divider"></div>
-<div class="section">
-    <h5 class="header">Project Conclusion</h5>
-    <div class="row">
-        <div class="col s12 m10 offset-m1 l12">
-            <p>In summary, this project has thoroughly examined the influence of the advertising campaign on customers' purchase decisions. From the initial data cleaning and analysis to the implementation of A/B tests using a Z-test of proportions, the study sought to determine the effectiveness of the campaign.</p>
-                               
-            <p>The implementation in Streamlit offered an interactive experience, allowing any user to explore the results by adjusting key parameters. Visual presentation through pie charts complemented numerical information, providing a complete understanding of the distribution and conversion rates between groups.</p>
-                    
-            <p>In addition to confirming the success of the campaign, the application provides a detailed interpretation, offering users a deep insight backed by experimental data and rigorous statistical analysis. Ultimately, this project not only answers the initial question but also establishes a solid framework for future data-driven analyses and decisions.</p>
-        </div>
-    </div>
-    <div class="divider"></div><br>
-    <div class="row">
-        <div class="col s12 m10 offset-m1 l12">
-            <i>Below are the links to the Github repository and the application deployed on Streamlit:</i><br><br><br>
-            <div class="row" style="display: flex; gap: 10px; justify-content: center;">
-                <a class="waves-effect waves-light grey darken-4 btn-large center btn tooltipped" data-position="bottom" id="btn-github-Large" data-tooltip="View Github repository" href="https://github.com/martinbat89/Proyecto-AB-Con-Streamlit" target="_blank">
-                    <svg id="btnContBoostrp" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                    <span style="margin-left: 1rem;">Github</span></a>
-                    <a target="_blank" href="https://proyecto-ab-con-app.streamlit.app/" class="waves-effect waves-light red darken-1 btn-large tooltipped" data-position="bottom" data-tooltip="View app on Streamlit."><i class="material-icons left">ads_click</i>Streamlit</a>
-                </div>  
-            </div>
-        </div> 
-    </div>
-    <div class="divider"></div>
-    
-    <a class="waves-effect waves-teal btn-flat right" href="/index.html"><b>Back to Home</b></a>
-</div>
-
           `,
           "pieComp": ` <div class="container">
           <div class="row">
