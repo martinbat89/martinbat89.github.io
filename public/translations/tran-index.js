@@ -55,6 +55,7 @@ i18next.init({
              "porta-10": "Prueba A/B Marketing En Streamlit<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
              "porta-11": "A través de un conjunto de datos obtenidos de Kaggle, se realiza una prueba Z de proporciones, para evaluar la influencia de una campaña publicitaria en las conversiones de clientes de una empresa. <br><br> La aplicación, implementada en Streamlit, permite al usuario ajustar parámetros como el tamaño de la muestra y el nivel de confianza, visualizando resultados detallados y gráficos informativos.",
              "parax-3": "Las decisiones basadas en datos impulsan el éxito empresarial.",
+             "certif-tit": "Mis Certificados",
              "slid-cert": "Mostrar/Ocultar Certificados",
              "certif-ver": "Ver Certificado",
              "certif-1": "Introducción a la programación",
@@ -135,6 +136,7 @@ i18next.init({
             "porta-11": "Through a dataset from Kaggle, a proportions Z-test is conducted to assess the impact of an advertising campaign on a company's customer conversions. <br><br> The application, deployed on Streamlit, enables users to adjust parameters such as sample size and confidence level, presenting detailed results and informative graphics.",
             "parax-3": "Data-based decisions drive business success.",
             "slid-cert": "Show/Hide Certificates",
+            "certif-tit": "My Certificates",
             "certif-ver": "View Certificate",
             "certif-1": "Introduction to programming",
             "certif-2": "Introducción to Machine Learning",
@@ -226,6 +228,8 @@ function changeLanguage(language) {
         document.getElementById('porta11').innerHTML = t('porta-11');
 
         document.getElementById('parax3').textContent = t('parax-3');
+        
+        document.getElementById('certif0').textContent = t('certif-tit');
         document.getElementById('labSlidCert').innerHTML = t('slid-cert');
         for(let ce = 1;ce < 9; ce++ ){
             let IdCert = 'certif' + ce;
