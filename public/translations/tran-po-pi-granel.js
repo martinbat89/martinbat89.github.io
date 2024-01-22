@@ -274,7 +274,7 @@ i18next.init({
                 </div>
                 </div> 
             <div class="divider"></div>
-            <a class="waves-effect waves-teal btn-flat right" href="/index.html"><b>Return To Home</b></a>
+            <a class="waves-effect waves-teal btn-flat right" href="/index.html"><b>Back To Home</b></a>
           </div>
         `,
         "pieComp": `<div class="container">

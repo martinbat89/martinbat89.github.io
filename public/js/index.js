@@ -39,10 +39,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //quitamos el preloader
     setTimeout(function(){document.getElementById('contenedorCargador').className = "hide"}, "1000")
+
     
     //cargamos el maximo para el input range de certificados
+    let maxPorta = document.getElementById('mi_porta').querySelectorAll('.card').length
+    document.getElementById('rangePorta').setAttribute('max', maxPorta)
+    document.getElementById('rangePorta').value = maxPorta
+
+    //cargamos el maximo para el input range de certificados
     let maxCertif = document.getElementById('mis_cert').querySelectorAll('.card').length
-    document.getElementById('rangeCertif').value = maxCertif
     document.getElementById('rangeCertif').setAttribute('max', maxCertif)
 
 
@@ -119,6 +124,30 @@ document.getElementById('resumeImg3').addEventListener("click", function(){
 
   window.open(hrefResume, '_blank')
 
+})
+
+//la siguiente fc oculta o muestra proyectos segun lo que indique el usuario
+document.getElementById('rangePorta').addEventListener('input', rg => {
+
+  var cantDejar = document.getElementById('rangePorta').value
+  var contPortaRows = document.getElementById('mi_porta').querySelectorAll('.card')
+  var numItems = 1
+
+  contPortaRows.forEach( card => {
+    
+    if (numItems > cantDejar){
+
+      // Ocultar la tarjeta
+      card.classList.add('hide');
+
+    }else{
+
+      // Mostrar la tarjeta
+      card.classList.remove('hide');
+    }
+    
+    numItems += 1
+  })
 })
 
 //la siguiente fc oculta o muestra certificados segun lo que indique el usuario

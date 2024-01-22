@@ -219,6 +219,16 @@
   <h2 class="header center blue-grey-text text-lighten-4" id="portaTit">Portafolio</h2>
   <div class="divider"></div><br>
   <div class="row">
+    <div class="col s8 m4 push-m4 push-s2">
+      <form action="#">
+        <p class="range-field">
+          <input type="range" id="rangePorta" min="1" value="2"/>
+          <label class="white-text large" for="test5">Mostrar/Ocultar Proyectos</label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <div class="row">
     <div class="col s12 m6 l6">
       <div class="card medium hoverable">
         <div class="card-image waves-effect waves-block waves-light">
@@ -264,6 +274,8 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="row">
     <div class="col s12 m6 l6">
       <div class="card medium hoverable">
         <div class="card-image waves-effect waves-block waves-light">
@@ -304,6 +316,52 @@
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col s12 m6 l6">
+      <div class="card medium hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator responsive-img" src="./public/assets/img/portafolio-img/prueba-ab-strmlit/img-2-tit.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator" id="porta10">Prueba A/B Marketing En Streamlit<i class="material-icons right">arrow_upward</i></span>
+          <p><a href="./public/views/proy-prueba-ab-strlit.html" id="portaVer">Ver Proyecto Completo</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4" id="portaRes">Resumen del Proyecto<i class="material-icons right">close</i></span>
+          <p class="grey-text text-darken-4" id="porta11">A través de un conjunto de datos obtenidos de Kaggle, 
+            se realiza una prueba Z de proporciones, para evaluar la influencia de una campaña publicitaria 
+            en las conversiones de clientes de una empresa. <br><br> La aplicación, implementada en Streamlit, permite al usuario 
+            ajustar parámetros como el tamaño de la muestra y el nivel de confianza, visualizando resultados detallados
+             y gráficos informativos.
+            </p>
+             <p><a class="teal-text" href="./public/views/proy-prueba-ab-strlit.html"  id="portaVer">Ver Proyecto Completo</a></p>
+        </div>
+      </div>
+    </div>
+    <!--- tarjeta para prox proyecto a agregar*****
+    <div class="col s12 m6 l6">
+      <div class="card medium hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="./public/assets/img/portafolio-img/gestion-ctas-ctes/dashctasCtes.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator" id="porta9">Gestión En Cuentas Corrientes<i class="material-icons right">arrow_upward</i></span>
+          <p><a href="./public/views/proy-ctas-ctes.html" id="portaVer">Ver Proyecto Completo</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4" id="portaRes">Resumen del Proyecto<i class="material-icons right">close</i></span>
+          <p class="grey-text text-darken-4" id="porta6">En este proyecto se utilizó Google Apps Scripts para procesar y agrupar 
+            comentarios de gestión de cuentas corrientes, eliminando los registros 
+            sin información relevante, generando totales por región y estado de cuentas corrientes. 
+            <br><br>Los datos procesados se visualizaron en un tablero creado en Google Looker 
+            (Data Studio), lo que permitió una gestión eficiente y atractiva de los datos. </p>
+            <p><a class="teal-text" href="./public/views/proy-ctas-ctes.html"  id="portaVer">Ver Proyecto Completo</a></p>
+        </div>
+      </div>
+    </div>
+  -->
+  </div>
   </div>
   <div id="baner-sect" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -325,8 +383,8 @@
     <div class="col s8 m4 push-m4 push-s2">
       <form action="#">
         <p class="range-field">
-          <input type="range" id="rangeCertif" min="2" />
-          <label class="white-text large" ="test5">Mostrar/Ocultar Certificados</label>
+          <input type="range" id="rangeCertif" min="1" value="2"/>
+          <label class="white-text large" for="rangeCertif">Mostrar/Ocultar Certificados</label>
         </p>
       </form>
     </div>
@@ -363,7 +421,7 @@
   
   <div class="row">
     <div class="col s12 m6">
-      <div class="card">
+      <div class="card hide">
         <div class="card-image">
           <img class="materialboxed" src="./public/assets/img/martin batarev - Pandas.png">
         </div>
@@ -376,7 +434,7 @@
       </div>
     </div>
     <div class="col s12 m6">
-      <div class="card">
+      <div class="card hide">
         <div class="card-image">
           <img class="materialboxed" src="./public/assets/img/martin batarev - Intermediate Machine Learning.png">
         </div>
@@ -391,7 +449,7 @@
   </div>
   <div class="row">
     <div class="col s12 m6">
-      <div class="card">
+      <div class="card hide">
         <div class="card-image">
           <img class="materialboxed" src="./public/assets/img/martin batarev - Data Visualization.png">
         </div>
@@ -404,7 +462,7 @@
       </div>
     </div>
     <div class="col s12 m6">
-      <div class="card">
+      <div class="card hide">
         <div class="card-image">
           <img class="materialboxed" src="./public/assets/img/martin batarev - Intro to SQL.png">
         </div>
@@ -419,7 +477,7 @@
   </div>
   <div class="row">
     <div class="col s12 m6">
-      <div class="card">
+      <div class="card hide">
         <div class="card-image">
           <img class="materialboxed" src="./public/assets/img/fci_img_ingles.png">
         </div>
@@ -432,7 +490,7 @@
       </div>
     </div>
     <div class="col s12 m6">
-      <div class="card">
+      <div class="card hide">
         <div class="card-image">
           <img class="materialboxed" src="./public/assets/img/titulo_img.png">
         </div>

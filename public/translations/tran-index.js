@@ -51,6 +51,8 @@ i18next.init({
              "porta-7": "Envío Automático de Comprobantes <i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
              "porta-8": "Dashboard Power BI Tienda Granel<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
              "porta-9": "Gestión En Cuentas Corrientes<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
+             "porta-10": "Prueba A/B Marketing En Streamlit<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
+             "porta-11": "A través de un conjunto de datos obtenidos de Kaggle, se realiza una prueba Z de proporciones, para evaluar la influencia de una campaña publicitaria en las conversiones de clientes de una empresa. <br><br> La aplicación, implementada en Streamlit, permite al usuario ajustar parámetros como el tamaño de la muestra y el nivel de confianza, visualizando resultados detallados y gráficos informativos.",
              "parax-3": "Las decisiones basadas en datos impulsan el éxito empresarial.",
              "certif-ver": "Ver Certificado",
              "certif-1": "Introducción a la programación",
@@ -126,6 +128,8 @@ i18next.init({
             "porta-7": "Automatic Invoice Sending <i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
             "porta-8": "Dashboard Natural Store<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
             "porta-9": "Customers Accounts Management<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
+            "porta-10": "A/B Test Marketing In Streamlit<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
+            "porta-11": "Through a dataset from Kaggle, a proportions Z-test is conducted to assess the impact of an advertising campaign on a company's customer conversions. <br><br> The application, deployed on Streamlit, enables users to adjust parameters such as sample size and confidence level, presenting detailed results and informative graphics.",
             "parax-3": "Data-based decisions drive business success.",
             "certif-ver": "View Certificate",
             "certif-1": "Introduction to programming",
@@ -213,7 +217,9 @@ function changeLanguage(language) {
         document.getElementById('porta7').innerHTML = t('porta-7');
         document.getElementById('porta8').innerHTML = t('porta-8');
         document.getElementById('porta9').innerHTML = t('porta-9');
-        
+        document.getElementById('porta10').innerHTML = t('porta-10');
+        document.getElementById('porta11').innerHTML = t('porta-11');
+
         document.getElementById('parax3').textContent = t('parax-3');
 
         for(let ce = 1;ce < 9; ce++ ){

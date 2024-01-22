@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+     <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link type="text/css" rel="stylesheet" href="../css/proy-app.css"/>
+    <title>🏔️ Martin Batarev</title>
+</head>
+<div id="contenedorCargador" class="contpreloader">
+  <div class="preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<body>
+  <div class="switch hoverable teal">
+    <label class="white-text">
+      Español
+      <input type="checkbox" id="ch-lang">
+      <span class="lever"></span>
+      English
+    </label>
+  </div>
+  <div id="index-banner" class="parallax-container">
+    <div class="section scrollspy no-pad-bot" id="par_inicio">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-1" id="tit-uno-p1"><b>Prueba A/B Marketing En Streamlit</b></h1>
+        <div class="row center">
+          <h5 class="header col s12 light blue-grey-text darken-4-text" id="subtit-p1">Análisis Riguroso de la Influencia Publicitaria en Decisiones de Compra: Datos, Pruebas Estadísticas y Resultados.</h5>
+        </div>
+        <div class="row center">
+          <a href="#seccion1"  class="btn-large waves-effect waves-light teal lighten-1" id="btnMas-p1">
+            <i class="material-icons left">arrow_downward</i>Ver Mas</a>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax responsive-img"><img src="../assets/img/bannerme_5.jpeg" id="img_paral" alt="Unsplashed background img 1"></div>
+  </div>
+   <!--Menu de opciones-->
+   <div class="fixed-action-btn click-to-toggle">
+    <a class="btn-floating btn-large cyan darken-1">
+      <i class="large material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a href="/index.html" class="btn-floating blue lighten-1 btn tooltipped" data-position="left" data-tooltip="Volver al Inicio" id="ttip-volver"><i class="material-icons">keyboard_return</i></a></li>
+      <li><a href="#par_inicio" class="btn-floating blue-grey darken-2 btn tooltipped" data-position="left" data-tooltip="Subir" id="ttip-subir"><i class="material-icons">arrow_upward</i></a></li>
+    </ul>
+  </div>
+<main>    
+  <div class="container">
+    <!--ícono de Paracaidas-->
+    <div id="iconBackTag">
+      <i class="large material-icons right" >paragliding</i>
+      <div id="boxParaIco" class="waves-effect waves-light card teal lighten-2 white-text pulse center-align">
+      PROYECTO DE BUSINESS INTELLIGENCE</div>
+    </div>
+    <div class="row">
+      <br>
+      <div class="col s12 m12 l12 teal lighten-4">
+        <blockquote>
+          <span id="herram-p1"><b>Herramientas: </b>Jupyter Notebook - VS Code - Python - Streamlit - Pandas - Numpy - Matplotlib - Statsmodels.</span>
+        </blockquote>
+      </div>
+    </div>
+    <div class="row" id="contCuerpo">
+      <div class="col s12 m12 l12">
+        <div class="divider"></div>
+        <div class="section scrollspy" id="seccion1">
+          <h5 class="header">Introducción:</h5>
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <p>Este proyecto tuvo como finalidad desarrollar una aplicación en Streamlit que
+                permita identificar si una campaña publicitaria puede ser exitosa, y en que medida
+                ese éxito se puede atribuir a los avisos recibidos por los clientes. <br><br>
+
+                
+                La base de datos empleada (Fuente : 
+                <a href="https://www.kaggle.com/datasets/faviovaz/marketing-ab-testing?resource=download" target="_blank">Kaggle - Marketing A/B Testing</a>) proviene de un experimento donde los participantes se dividieron 
+                en dos grupos:
+                <ol>
+                  <li>Aquellos expuestos a anuncios (Grupo AD). </li>
+                  <li>Aquellos que solo recibieron anuncios públicos (PSA) o ninguno. A estos últimos los llamamos grupo de control.</li>
+                </ol> 
+                 <br>
+
+                La elección de realizar una prueba de hipótesis Z de proporciones se basa en la 
+                necesidad de comparar la proporción de personas que realizaron compras en ambos grupos.
+                 Es esencial determinar si la campaña publicitaria genera efectos significativos en la 
+                 conversión de clientes.
+
+                 </p>
+            </div>
+          </div>
+        </div>
+      <div class="divider"></div>
+        <div class="section">
+          <h5 class="header">Análisis Exploratorio Y Limpieza de Datos:</h5>
+          <div class="row">
+            <div class="col s12 m12 l12">
+             <p>Antes de crear el modelo test A/B y desplegarlo en Streamlit, se llevó a cabo un análisis preliminar y 
+              limpieza de la tabla usando Jupyter Notebook.</p>
+              <p> Durante el análisis exploratorio, se realizaron tareas como la revisión de registros, 
+                la detección de tipos de datos, evaluación de estadísticas principales y la identificación
+                de valores nulos. No se detectaron valores nulos en este proceso.</p> 
+              <p> A continuación mostramos la información principal del Data Frame: </p>
+            </div>
+            <div class="col s12 m6 offset-m3 l6 offset-l3">
+              <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/prueba-ab-strmlit/img-3-tit.png">
+            </div>
+            <div class="col s12 m12 l12">
+              <p>Además se realizaron distintos agrupamientos por campo para conocer, de forma preliminar,
+                la proporción de clientes que recibieron anuncios respecto a los que no recibieron,
+                los porcentajes de conversión (compra) de los clientes, y la combinacion de ambas relaciones.
+              </p>
+              <p>
+                A continuación se muestra un gráfico de torta con una de las relaciones 
+                antes mencionadas:<br>
+              </p>
+            </div>
+            <div class="col s12 m6 offset-m1 l4 offset-l2">
+              <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/prueba-ab-strmlit/img-7-tit.png">
+            </div>
+            <div class="col s12 m5 l6">
+              <i><span><b>Ad:</b> Clientes que recibieron aviso. <br> <b>Psa:</b> Clientes con avisos públicos o sin avisos.</span></i>
+            </div>
+            <div class="col s12 m12 l12">
+              <p>Para crear el gráfico se uso la librería <b>Matplotlib.</b>
+              </p>
+              <p>La limpieza de la tabla incluyó principalmente el renombramiento de algunas columnas 
+                para mejorar la legibilidad y la eliminación de la columna <i>unnamed:_0</i>, que coincidía
+                 con los índices del Data Frame, es decir, estaba duplicada. </p>
+                <p>Estas acciones se llevaron a cabo utilizando la librería Pandas y las propiedades del 
+                  objeto DataFrame. A conntinuación se muestran algunos registros de la tabla luego de su limpieza:
+                </p>
+            </div>
+            <div class="col s12 m10 offset-m1 l10 offset-l1">
+              <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/prueba-ab-strmlit/img-4-tit.png">
+            </div>
+            <div class="col s12 m12 l12">
+              <p>Durante esta etapa se buscó asegurar que los datos estén en condiciones de 
+                ser utilizados en la prueba de hipótesis. También se buscaron conclusiones 
+                iniciales o preliminares que permitieron desarrollar el modelo A/B que se explicará a continuación.</p>
+            </div>
+          </div>  
+        </div>
+        <div class="section">
+          <h5 class="header">Análisis A/B (Modelo de Prueba de Hipótesis)</h5>
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <p>Para llevar a cabo el análisis A/B, dentro del notebook antes utilizado, se siguieron los siguientes pasos:</p>
+              <p><b>1-Definición de Hipótesis:</b><br><br>H0: No existen diferencias de conversión entre realizar o 
+                no realizar campañas publicitarias.<br> H1: Existen diferencias de conversión al realizar 
+                campañas o no.</p>
+              <p><b>2-Definición del Nivel de Confianza:</b><br><br>Durante el desarrollo del modelo, se 
+                definió un nivel de confianza del 95%, lo que implica un alpha del 5%. En la aplicación
+                 desplegada en Streamlit, se agregó la opción de cambiar este valor.</p>
+              <p><b>3-Cálculos, Estadístico de Contraste y p-valor:</b><br><br>Para este paso, se utilizó 
+                el módulo proportions_ztest de Statsmodel para obtener el p-valor. Comparar este valor 
+                con el alpha determina si se acepta o rechaza la hipótesis nula. Se detalla el código:<br><br>
+              </p>
+            </div>
+             <div class="col s12 m10 offset-m1 l10 offset-l1">
+               <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/prueba-ab-strmlit/img-5-tit.png">
+             </div>
+          </div> 
+          <i>Al final de esta página se dejará el link al repositorio de Github del proyecto donde se encuentra el Jupyter Notebook completo.</i> 
+        </div>  
+        <div class="section">
+          <h5 class="header">Despliegue En Streamlit</h5>
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <p>Finalmente, el proyecto se desplegó en Streamlit, permitiendo a cualquier persona 
+                detectar los resultados de la prueba al ajustar los niveles de confianza y el tamaño 
+                de la muestra. Un slider permite variar el tamaño de la población, mientras que un 
+                checkbox de tres posiciones ajusta el nivel de confianza a valores del 99%, 95% y 90%</p>
+              <p>La prueba de hipótesis se lleva a cabo considerando estos parámetros ajustables. 
+                La aplicación no solo informa sobre la superación de la prueba, confirmando la 
+                presencia de efectos positivos de la campaña, sino que también presenta visualmente 
+                los resultados. Gráficos de torta muestran la distribución de personas expuestas a la 
+                publicidad y tasas de conversión correspondientes.</p>
+              <p>La aplicación también ofrece una interpretación detallada del resultado, proporcionando
+                una conclusión clara sobre si se rechaza o no la hipótesis nula. Este enfoque holístico 
+                brinda a los usuarios una comprensión profunda de la efectividad de las campañas 
+                publicitarias mediante datos experimentales y análisis estadístico riguroso.<br><br>
+              A continuación se muestra la visualización inicial de la aplicación:</p>
+            </div>
+             <div class="col s12 m10 offset-m1 l10 offset-l1">
+               <img class="responsive-img materialboxed" src="/public/assets/img/portafolio-img/prueba-ab-strmlit/img-6-tit.png">
+             </div>
+          </div>  
+        </div>     
+        <div class="divider"></div>
+        <div class="section">
+          <h5 class="header">Conclusión del Proyecto</h5>
+          <div class="row">
+            <div class="col s12 m10 offset-m1 l12">
+              <p>En resumen, este proyecto ha examinado de manera exhaustiva la influencia de la 
+                campaña publicitaria en la decision de compra de los clientes. Desde la limpieza
+                 y análisis inicial de datos hasta la aplicación de pruebas A/B mediante una prueba de
+                  hipótesis Z de proporciones, el estudio buscó determinar la efectividad de la 
+                  campaña.</p>
+                           
+               <p>La implementación en Streamlit ofreció una experiencia interactiva, permitiendo a 
+                cualquier usuario explorar los resultados ajustando parámetros clave. La presentación 
+                visual mediante gráficos de torta complementó la información numérica, brindando una 
+                comprensión completa de la distribución y tasas de conversión entre los grupos.</p>
+                
+                <p>Además de confirmar el éxito de la campaña, la aplicación proporciona una 
+                  interpretación detallada, ofreciendo a los usuarios una visión profunda respaldada 
+                  por datos experimentales y análisis estadístico riguroso. En última instancia, este 
+                  proyecto no solo responde a la pregunta inicial, sino que también establece un 
+                  sólido marco para futuros análisis y decisiones basadas en datos.</p>
+                
+            </div>
+          </div>
+          <div class="divider"></div><br>
+          <div class="row">
+            <div class="col s12 m10 offset-m1 l12">
+            <i>A continuación se dejan los accesos al repositorio de Github y a la aplicación 
+              desplegada en Streamlit:</i><br><br><br>
+              <div class="row" style="display: flex; gap: 10px; justify-content: center;">
+                <a class="waves-effect waves-light grey darken-4 btn-large center btn tooltipped" data-position="bottom" id="btn-github-Large" data-tooltip="Ver repositorio de Github." href="https://github.com/martinbat89/Proyecto-AB-Con-Streamlit" target="_blank">
+                  <svg id="btnContBoostrp" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg>
+                  <span style="margin-left: 1rem;">Github</span></a>
+                  <a target="_blank" href="https://proyecto-ab-con-app.streamlit.app/" class="waves-effect waves-light red darken-1 btn-large tooltipped" data-position="bottom" data-tooltip="Ver app en Streamlit."><i class="material-icons left">ads_click</i>Streamlit</a>
+              </div>  
+              </div>
+          </div>
+        </div> 
+        <div class="divider"></div>
+        
+        <a class="waves-effect waves-teal btn-flat right" href="/index.html"><b>Volver al Home</b></a>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="page-footer teal darken-4" id="pieCont">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">¡Antes que nada...Gracias!</h5>
+        <p class="grey-text text-lighten-4">Si llegaste hasta acá, es porque te tomaste el tiempo para ver mi portafolio. En estos tiempos tan acelerados, en los que nos cuesta parar un poco, solamente puedo decirte gracias por tu visita.</p>
+        <text class="right" id="mi_mirm"><b>Martin.</b></text>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links de Interés</h5>
+        <ul>
+          <li>
+            <div id="icon-redes22">
+              <a class="white-text" href="https://www.linkedin.com/in/martin-batarev-9a48b849/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg></a>
+              <a class="white-text" href="https://github.com/martinbat89" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li><h6><a class="grey-text text-lighten-3 teal darken-2 btn tooltipped" id="resumeImg2" data-position="bottom" data-tooltip="Descargá mi Curriculum Vitae en formato PDF (Español)"><i class="material-icons left">file_download</i>Descarga Mi CV En Español</a></h6></li>
+          <li><h6><a class="grey-text text-lighten-3 teal darken-2 btn tooltipped" id="resumeImg3" data-position="bottom" data-tooltip="Descargá mi Curriculum Vitae en formato PDF (Inglés)"><i class="material-icons left">file_download</i>Descarga Mi CV En Inglés</a></h6></li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+  <div class="footer-copyright teal darken-3">
+    <div class="container">
+    Portafolio de Martin Batarev
+    <b><a class="grey-text text-lighten-4 right" href="#par_inicio">Volver al Principio</a></b>
+    </div>
+  </div>
+</footer>
+
+  
+    <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="../js/materialize.min.js"></script>
+  <script type="text/javascript" src="../js/proy-app.js"></script>
+   <!--Import i18next traductor-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.5.1/i18next.min.js" integrity="sha512-C2hlr1aDo7JovvX0ek3m40fkT5+/DDgHY6rL+mcYODMLn2sZ+rKBDSIdO0NU7Yzai7WMJdhTUNEeWICljXrycQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script type="text/javascript" src="../translations/tran-ab-streamlit.js"></script>
+</body>
+</html>

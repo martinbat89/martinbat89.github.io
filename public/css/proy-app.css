@@ -170,6 +170,15 @@ background: #00695c ;
     80% {width: 60%;text-align: right;}
     100% {width: 100%;text-align: right;}
 }
+
+#btn-github-Large {
+  display: flex;
+  align-items: center;
+  max-width: 170px;  
+  flex-direction: row;
+  position: relative;
+
+}
   
 
 }
@@ -217,7 +226,14 @@ span{
     100% {width: 100%;text-align: right;}
 }
 
-
+/*animación btn github contacto*/
+#btn-github-Large {
+  display: flex;
+  align-items: center;
+  max-width: 170px;
+  position: relative;
+  
+}
 }
 
 /* Estilos para escritorio */
@@ -257,5 +273,13 @@ span{
     100% {width: 100%;text-align: right;}
 }
 
+/*animación btn github contacto*/
+#btn-github-Large {
+  display: flex;
+  align-items: center;
+  max-width: 170px;
+  position: relative;
+  
+}
 
 }
