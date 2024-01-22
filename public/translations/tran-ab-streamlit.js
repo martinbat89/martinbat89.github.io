@@ -21,22 +21,18 @@ i18next.init({
                   <p>Este proyecto tuvo como finalidad desarrollar una aplicación en Streamlit que
                     permita identificar si una campaña publicitaria puede ser exitosa, y en que medida
                     ese éxito se puede atribuir a los avisos recibidos por los clientes. <br><br>
-    
-                    
                     La base de datos empleada (Fuente : 
                     <a href="https://www.kaggle.com/datasets/faviovaz/marketing-ab-testing?resource=download" target="_blank">Kaggle - Marketing A/B Testing</a>) proviene de un experimento donde los participantes se dividieron 
-                    en dos grupos:
+                    en dos grupos:</p>
                     <ol>
                       <li>Aquellos expuestos a anuncios (Grupo AD). </li>
                       <li>Aquellos que solo recibieron anuncios públicos (PSA) o ninguno. A estos últimos los llamamos grupo de control.</li>
                     </ol> 
-                     <br>
-    
+                    <p>
                     La elección de realizar una prueba de hipótesis Z de proporciones se basa en la 
                     necesidad de comparar la proporción de personas que realizaron compras en ambos grupos.
                      Es esencial determinar si la campaña publicitaria genera efectos significativos en la 
                      conversión de clientes.
-    
                      </p>
                 </div>
               </div>
@@ -276,15 +272,13 @@ i18next.init({
                     <div class="col s12 m12 l12">
                         <p>
                         This project had the goal of creating a Streamlit application to assess the effectiveness of an advertising campaign and determine how much of that success can be attributed to customer-exposed ads. <br><br>
-        
-                        The database used (Source: <a href="https://www.kaggle.com/datasets/faviovaz/marketing-ab-testing?resource=download" target="_blank">Kaggle - Marketing A/B Testing</a>) comes from an experiment where participants were divided into two groups:
+                        The database used (Source: <a href="https://www.kaggle.com/datasets/faviovaz/marketing-ab-testing?resource=download" target="_blank">Kaggle - Marketing A/B Testing</a>) comes from an experiment where participants were divided into two groups:</p>
                         <ol>
                             <li>Those exposed to ads (AD Group).</li>
                             <li>Those who only received public service ads (PSA) or none. These are referred to as the control group.</li>
                         </ol>
-                        <br>
-        
-                        The choice to perform a Z-test is based on the need to compare the proportion of people who made purchases in both groups. It is essential to determine if the advertising campaign generates significant effects on customer conversion.</p>
+                        
+                        <p>The choice to perform a Z-test is based on the need to compare the proportion of people who made purchases in both groups. It is essential to determine if the advertising campaign generates significant effects on customer conversion.</p>
                     </div>
                 </div>
             </div>
