@@ -152,6 +152,10 @@ background: #00695c ;
     font-size: 45px;
   }
 
+  label{
+    font-size: 17px;
+  }
+
   #mi_mirm{
     font-family: 'Brush Script MT', cursive;
     font-size: 25px;
@@ -207,6 +211,11 @@ span{
   line-height:1.6;
 }  
 
+label{
+  font-size: 18px;
+}
+
+
   #mi_mirm{
     font-family: 'Brush Script MT', cursive;
     font-size: 25px;
@@ -253,6 +262,10 @@ span{
   font-size: 15px;
   line-height:1.5;
 } 
+
+label{
+  font-size: 15px;
+}
 
   #mi_mirm{
     font-family: 'Brush Script MT', cursive;

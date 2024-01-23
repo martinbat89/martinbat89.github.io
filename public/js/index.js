@@ -37,8 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inicializa la página con el contenido predeterminado en el idioma especificado
     changeLanguage('es');
 
-    //quitamos el preloader
-    setTimeout(function(){document.getElementById('contenedorCargador').className = "hide"}, "1000")
+    
 
     
     //cargamos el maximo para el input range de certificados
@@ -50,6 +49,17 @@ document.addEventListener('DOMContentLoaded', function() {
     let maxCertif = document.getElementById('mis_cert').querySelectorAll('.card').length
     document.getElementById('rangeCertif').setAttribute('max', maxCertif)
 
+    //quitamos el preloader
+    setTimeout(function(){document.getElementById('contenedorCargador').className = "hide"}, "1000")
+
+    //inicializamos feature discovery
+    var elemsFeat = document.querySelectorAll('.tap-target');
+    var instances = M.TapTarget.init(elemsFeat, {});
+    var feat = document.querySelector('.tap-target')
+    var elemFeat = M.TapTarget.getInstance(feat);
+
+    setTimeout(function(){elemFeat.open()}, "1500") //después de 1,5 seg se muestra
+    
 
   });
 

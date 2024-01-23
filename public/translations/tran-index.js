@@ -77,7 +77,9 @@ i18next.init({
              "links-Int": "Links de Interés",
              "cv-esp": "<i class='material-icons left'>file_download</i>Mi CV En Español",
              "cv-ing": "<i class='material-icons left'>file_download</i>Mi CV En Inglés",
-             "pie-izq": "Portafolio de Martin Batarev<b><a class='grey-text text-lighten-4 right' href='#ppio_sli'>Volver al Principio</a></b>"
+             "pie-izq": "Portafolio de Martin Batarev<b><a class='grey-text text-lighten-4 right' href='#ppio_sli'>Volver al Principio</a></b>",
+             "featureMenu":`  <h5>Navegación Rápida</h5>
+             <p>Dale un toque al botón de menú y navegá fácilmente por mi portafolio.</p>`
              
 
             
@@ -158,6 +160,8 @@ i18next.init({
             "cv-esp": "<i class='material-icons left'>file_download</i>My Resume in Spanish",
             "cv-ing": "<i class='material-icons left'>file_download</i>My Resume in English",
             "pie-izq": "Martin Batarev's Portfolio<b><a class='grey-text text-lighten-4 right' href='#ppio_sli'>Start Again</a></b>",
+            "featureMenu":`  <h5>Simple Navigation</h5>
+             <p>Click on the menu button and easily explore my portfolio.</p>`
             
 
           }
@@ -253,7 +257,9 @@ function changeLanguage(language) {
         document.getElementById('resumeImg2').innerHTML = t('cv-esp');
         document.getElementById('resumeImg3').innerHTML = t('cv-ing');
         document.getElementById('pieIzq1').innerHTML = t('pie-izq');
-       
+        
+        //feature discovery
+        document.getElementById('contFeature').innerHTML = t('featureMenu');
         
         
     });
@@ -261,17 +267,48 @@ function changeLanguage(language) {
 
 document.getElementById('ch-lang').addEventListener('click', ev => {
 
+    //Aparece cargador
+    document.getElementById('contenedorCargador').className = "contpreloader"
+
     if(ev.target.checked === true){
         changeLanguage('en');
         console.log(ev.target.checked)  
         M.AutoInit();
         activaButtOpt()
+
+        //quitamos el preloader
+        setTimeout(function(){document.getElementById('contenedorCargador').className = "hide"}, "1000")
+
+        //mostramos feature menu
+        setTimeout(function(){
+            
+            var elemsFeat = document.querySelectorAll('.tap-target');
+            var instances = M.TapTarget.init(elemsFeat, {});
+            var feat = document.querySelector('.tap-target')
+            var elemFeat = M.TapTarget.getInstance(feat);
+            elemFeat.open()
+        
+        }, "1500") //después de 1,5 seg se muestra
         
     }else if(ev.target.checked === false){
         changeLanguage('es');
         console.log(ev.target.checked)
         M.AutoInit();
         activaButtOpt()
+        
+        //quitamos el preloader
+        setTimeout(function(){document.getElementById('contenedorCargador').className = "hide"}, "1000")
+
+        //mostramos feature menu
+        setTimeout(function(){
+            
+            var elemsFeat = document.querySelectorAll('.tap-target');
+            var instances = M.TapTarget.init(elemsFeat, {});
+            var feat = document.querySelector('.tap-target')
+            var elemFeat = M.TapTarget.getInstance(feat);
+            elemFeat.open()
+        
+        }, "1500") //después de 1,5 seg se muestra
         
     }
 })

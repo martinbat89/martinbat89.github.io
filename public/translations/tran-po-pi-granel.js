@@ -344,13 +344,18 @@ function changeLanguage(language) {
 
 document.getElementById('ch-lang').addEventListener('click', ev => {
 
+    //Aparece cargador
+    document.getElementById('contenedorCargador').className = "contpreloader"
+
     if(ev.target.checked === true){
         changeLanguage('en');
         M.AutoInit();
-        console.log(ev.target.checked)
+        //quitamos el preloader
+        setTimeout(function(){document.getElementById('contenedorCargador').className = "hide"}, "1000")
     }else if(ev.target.checked === false){
         changeLanguage('es');
         M.AutoInit();
-        console.log(ev.target.checked)
+        //quitamos el preloader
+        setTimeout(function(){document.getElementById('contenedorCargador').className = "hide"}, "1000")
     }
 })
