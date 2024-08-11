@@ -14,7 +14,7 @@ i18next.init({
             "titu7": "Mejora tus procesos internos con el uso de las nuevas tecnologías.",
             "ttip-1": "Acerca de mi",
             "ttip-2": "Servicios",
-            "ttip-3": "Certificados",
+            "ttip-3": "Formación",
             "ttip-4": "Herramientas",
             "ttip-5": "Portafolio",
             "ttip-6": "Contacto",
@@ -99,7 +99,7 @@ i18next.init({
             "titu7": "Improve your internal processes with the use of new technologies.",
             "ttip-1": "About Me",
             "ttip-2": "Services",
-            "ttip-3": "Certificates",
+            "ttip-3": "Education",
             "ttip-4": "Tools",
             "ttip-5": "Portfolio",
             "ttip-6": "Contact",
@@ -187,13 +187,13 @@ function changeLanguage(language) {
         document.getElementById('tit-cinco').textContent = t('titu5');
         document.getElementById('tit-seis').textContent = t('titu6');
         document.getElementById('tit-siete').textContent = t('titu7');
-        document.getElementById('ttp-1').setAttribute("data-tooltip", t('ttip-1'));
-        document.getElementById('ttp-2').setAttribute("data-tooltip", t('ttip-2'));
-        document.getElementById('ttp-3').setAttribute("data-tooltip", t('ttip-3'));
-        document.getElementById('ttp-4').setAttribute("data-tooltip", t('ttip-4'));
-        document.getElementById('ttp-5').setAttribute("data-tooltip", t('ttip-5'));
-        document.getElementById('ttp-6').setAttribute("data-tooltip", t('ttip-6'));
-        document.getElementById('ttp-7').setAttribute("data-tooltip", t('ttip-7'));
+        document.getElementById('ttp-1').textContent = t('ttip-1');
+        document.getElementById('ttp-2').textContent = t('ttip-2');
+        document.getElementById('ttp-3').textContent = t('ttip-3');
+        document.getElementById('ttp-4').textContent = t('ttip-4');
+        document.getElementById('ttp-5').textContent = t('ttip-5');
+        document.getElementById('ttp-6').textContent = t('ttip-6');
+        document.getElementById('ttp-7').textContent = t('ttip-7');
         document.getElementById('yo1').textContent = t('yo-1');
         document.getElementById('yo2').innerHTML = t('yo-2');
         document.getElementById('yo3').innerHTML = t('yo-3');

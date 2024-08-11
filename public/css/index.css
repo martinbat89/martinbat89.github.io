@@ -80,6 +80,25 @@ body {
   }
 }
 
+/* span ayuda en btn*/
+
+.cont-subbtn-list, li{
+  position: relative;
+}
+
+.ayuda-subbtn-text {
+  background-color: #37474F; /* Gris oscuro azulado */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  position: absolute;
+  left: -100px; /* Ajusta esta distancia según sea necesario */
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  font-size: 14px;
+}
+
 
 
 /*animación bichito fondo*/
@@ -180,6 +199,19 @@ body {
     font-size: 17px;
     line-height:1.6;
    
+  }
+
+  .ayuda-subbtn-text {
+    background-color: #37474F; /* Gris oscuro azulado */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    position: absolute;
+    left: -230%; /* Ajusta esta distancia según sea necesario */
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    font-size: 17px;
   }
 
   label{
@@ -303,6 +335,19 @@ span{
   line-height:1.6;
 } 
 
+.ayuda-subbtn-text {
+  background-color: #37474F; /* Gris oscuro azulado */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  position: absolute;
+  left: -230%; /* Ajusta esta distancia según sea necesario */
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  font-size: 18px;
+}
+
 label{
   font-size: 18px;
 }
@@ -422,6 +467,19 @@ li{
 span{
   font-size: 15px;
   line-height:1.5;
+}
+
+.ayuda-subbtn-text {
+  background-color: #37474F; /* Gris oscuro azulado */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  position: absolute;
+  left: -210%; /* Ajusta esta distancia según sea necesario */
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  font-size: 15px;
 }
 
 label{
