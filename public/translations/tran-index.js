@@ -155,7 +155,7 @@ i18next.init({
             "certif-7": "First Certificate In English (Cambridge)",
             "certif-8": "University degree",
             "certif-9": "Codo a Codo 4.0 - Big Data / Data Analytics",
-            "certif-10": "Codo a Codo 4.0 - Data Science Fundamentals",
+            "certif-10": "Codo a Codo 4.0 - Data Science Fundamentals.",
             "tit-ver": "View degree",
             "parax-4": "Automation: Speeding up tasks, reducing errors, and enhancing productivity.",
             "titConoc-1": "Skills",
