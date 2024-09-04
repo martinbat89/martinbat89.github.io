@@ -38,8 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
     changeLanguage('es');
 
     
-
-    
     //cargamos el maximo para el input range de certificados
     let maxPorta = document.getElementById('mi_porta').querySelectorAll('.card').length
     document.getElementById('rangePorta').setAttribute('max', maxPorta)

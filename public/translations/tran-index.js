@@ -69,6 +69,7 @@ i18next.init({
              "certif-7": "First Certificate In English (Cambridge)",
              "certif-8": "Título Universitario",
              "certif-9": "Codo a Codo 4.0 - Big Data / Data Analytics",
+             "certif-10": "Codo a Codo 4.0 - Fundamentos de Ciencia de Datos",
              "tit-ver": "Ver Título",
              "parax-4": "Automatización: Acelerar tareas, reducir errores y potenciar la productividad.",
              "titConoc-1": "Conocimientos",
@@ -154,6 +155,7 @@ i18next.init({
             "certif-7": "First Certificate In English (Cambridge)",
             "certif-8": "University degree",
             "certif-9": "Codo a Codo 4.0 - Big Data / Data Analytics",
+            "certif-10": "Codo a Codo 4.0 - Data Science Fundamentals",
             "tit-ver": "View degree",
             "parax-4": "Automation: Speeding up tasks, reducing errors, and enhancing productivity.",
             "titConoc-1": "Skills",
@@ -243,7 +245,7 @@ function changeLanguage(language) {
         
         document.getElementById('certif0').textContent = t('certif-tit');
         document.getElementById('labSlidCert').innerHTML = t('slid-cert');
-        for(let ce = 1;ce < 9; ce++ ){
+        for(let ce = 1;ce < 11; ce++ ){
             let IdCert = 'certif' + ce;
             let tradCert = 'certif-' + ce
             document.getElementById(IdCert).innerHTML = t(tradCert);
