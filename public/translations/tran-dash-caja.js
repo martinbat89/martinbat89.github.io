@@ -405,7 +405,7 @@ i18next.init({
             </div>
             </div>
             <div class="divider"></div>
-            <a class="waves-effect waves-teal btn-flat right" href="/index.html"><b>Return to Home</b></a>
+            <a class="waves-effect waves-teal btn-flat right" href="/index.html"><b>Back to Home</b></a>
             </div>
         `,
         "pieComp": `<div class="container">
@@ -481,11 +481,17 @@ document.getElementById('ch-lang').addEventListener('click', ev => {
     if(ev.target.checked === true){
         changeLanguage('en');
         M.AutoInit();
+
+        //cargamos idioma session
+        sessionStorage.setItem('userLanguage', "en");
         //quitamos el preloader
         setTimeout(function(){document.getElementById('contenedorCargador').className = "hide"}, "1000")
     }else if(ev.target.checked === false){
         changeLanguage('es');
         M.AutoInit();
+
+        //cargamos idioma session
+        sessionStorage.setItem('userLanguage', "es");
         //quitamos el preloader
         setTimeout(function(){document.getElementById('contenedorCargador').className = "hide"}, "1000")
     }

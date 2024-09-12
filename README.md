@@ -12,6 +12,8 @@ Este es mi portafolio personal, donde muestro mis proyectos y habilidades como a
 
 - [i18next](https://www.i18next.com/) (Licencia MIT): Se emplea para agregar las traducciónes de español a ingles y viceversa.
 
+- [Handlebars js](https://handlebarsjs.com/) (Licencia MIT): Se emplea para la reutilización de plantillas.
+
 ## Instalación
 
 1. Clona este repositorio en tu máquina local:

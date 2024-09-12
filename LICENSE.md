@@ -26,6 +26,7 @@ Este proyecto utiliza las siguientes bibliotecas con licencia MIT:
 - Materialize CSS: [Ver Licencia MIT](https://github.com/Dogfalo/materialize/blob/master/LICENSE)
 - Bootstrap Icons: [Ver Licencia MIT](https://github.com/twbs/bootstrap/blob/main/LICENSE)
 - i18next: [Ver Licencia MIT](https://github.com/i18next/i18next/blob/master/LICENSE)
+- Handlebars js: [Ver Licencia MIT](https://github.com/handlebars-lang/handlebars.js/blob/master/LICENSE)
 
 ------------------------------------------------------------------------------
 Este proyecto utiliza las siguientes bibliotecas con licencia APACHE 2.0:

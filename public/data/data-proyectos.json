@@ -1,0 +1,240 @@
+{
+    "contenidos_esp": [
+      {
+        "id": 1,
+        "imgEncabezado": "../assets/img/bannerme_5.jpeg",
+        "titulo": "Ejemplo de prueba JSON 1",
+        "subtitulo": "Análisis Riguroso de la Influencia Publicitaria en Decisiones de Compra: Datos, Pruebas Estadísticas y Resultados.",
+        "vermaslink": {"link": "#seccion1",
+                        "icono": "arrow_downward",
+                        "clase": "btn-large waves-effect waves-light teal lighten-1"
+                        },
+        "textParacaidas": "PROYECTO DE BUSINESS INTELLIGENCE",
+        "herramientas": "Jupyter Notebook - VS Code - Python - Streamlit - Pandas - Numpy - Matplotlib - Statsmodels.",
+        "introd55": "Introducción",
+        "detalle55": "Detalle Del Proyecto",
+        "conclu55": "Conclusión",
+        "introduccion": ["Este proyecto tuvo como finalidad desarrollar una aplicación en Streamlit que permita identificar si una campaña publicitaria puede ser exitosa, y en que medida ese éxito se puede atribuir a los avisos recibidos por los clientes.",
+                         "La base de datos empleada (Fuente : Kaggle - Marketing A/B Testing) proviene de un experimento donde los participantes se dividieron en dos grupos:",
+                         "La elección de realizar una prueba de hipótesis Z de proporciones se basa en la necesidad de comparar la proporción de personas que realizaron compras en ambos grupos. Es esencial determinar si la campaña publicitaria genera efectos significativos en la conversión de clientes."
+                        ],
+        "desarrollo": [
+                        {
+                            
+                            "texto": "Este es el primer párrafo con una imagen al inicio.",
+                            "img": "../assets/img/portafolio-img/prueba-ab-strmlit/img-5-tit.png"
+                        },
+                        {
+                            "texto": "Este es el primer párrafo con una imagen al inicio.",
+                            "img": ""
+                        },
+                        {
+                            "texto": "Este es el primer párrafo con una imagen al inicio.",
+                            "img": "../assets/img/portafolio-img/prueba-ab-strmlit/img-5-tit.png"
+                        },
+                        {
+                            "texto": "Este es el primer párrafo con una imagen al inicio.",
+                            "img": "../assets/img/portafolio-img/prueba-ab-strmlit/img-5-tit.png"
+                        }
+                    ],
+        "conclusion": ["Este proyecto tuvo como finalidad desarrollar una aplicación en Streamlit que permita identificar si una campaña publicitaria puede ser exitosa, y en que medida ese éxito se puede atribuir a los avisos recibidos por los clientes.",
+                        "La base de datos empleada (Fuente : Kaggle - Marketing A/B Testing) proviene de un experimento donde los participantes se dividieron en dos grupos:",
+                        "La elección de realizar una prueba de hipótesis Z de proporciones se basa en la necesidad de comparar la proporción de personas que realizaron compras en ambos grupos. Es esencial determinar si la campaña publicitaria genera efectos significativos en la conversión de clientes."
+                        ],
+        "textoSeccionEnlaces": "A continuación se dejan los enlaces relacionados con el proyecto:",
+        "linkGithub": "https://github.com/martinbat89/Proyecto-AB-Con-Streamlit",
+        "linkEnlaces1": {
+                        "link": "https://proyecto-ab-con-app.streamlit.app/",
+                        "textoBtn": "Streamlit",
+                        "tooltip": "Ver app en streamlit.",
+                        "icono": "ads_click",
+                        "clase": "waves-effect waves-light red darken-1 btn-large tooltipped center"
+                        },
+        "linkEnlaces2": {
+                        "link": "https://proyecto-ab-con-app.streamlit.app/",
+                        "textoBtn": "Streamlit",
+                        "tooltip": "Ver app en streamlit.",
+                        "icono": "ads_click",
+                        "clase": "waves-effect waves-light red darken-1 btn-large tooltipped"
+                        }
+            
+      },
+      {
+        "id": 7,
+        "imgEncabezado": "../assets/img/bannerme_5.jpeg",
+        "titulo": "Etapa I - Proyecto Final Curso Big Data - Data Analytics Codo a Codo 4.0",
+        "subtitulo": "Etapa I del proyecto final para obtener el certificado de Big Data - Data Analytics del programa Codo a Codo 4.0",
+        "vermaslink": {"link": "#seccion1",
+                        "icono": "arrow_downward",
+                        "clase": "btn-large waves-effect waves-light teal lighten-1"
+                        },
+        "textParacaidas": "PROYECTO DE DATA ANALYTICS",
+        "herramientas": "SQL - SQLite - Deepnote",
+        "introd55": "Introducción",
+        "detalle55": "Detalle Del Proyecto",
+        "conclu55": "Conclusión",
+        "introduccion": ["En este proyecto de análisis de datos, se utilizó SQL para explorar un conjunto de datos de películas de Netflix, con el objetivo de comprender mejor la composición y las características clave de su catálogo. El análisis exploratorio de datos (EDA) es una etapa crítica en cualquier proyecto de ciencia de datos, ya que permite descubrir patrones, identificar anomalías y establecer hipótesis iniciales. A través de una serie de consultas SQL, se realizó una investigación detallada que proporcionó una visión profunda del contenido disponible en la plataforma."
+                           ],
+        "desarrollo": [
+                        {
+                            
+                            "texto": "El análisis comenzó con un enfoque en la estructura general de la base de datos, utilizando consultas SQL para contar el número total de registros en las tablas clave. Por ejemplo, se realizó un recuento total de las filas en las tablas content y production, lo que permitió tener una idea clara del volumen de datos disponibles para el análisis.",
+                            "img": ""
+                        },
+                        {
+                            "texto": "A continuación, se exploró la distribución de idiomas en las producciones disponibles. Para ello, se ejecutaron dos consultas clave. La primera consulta agrupó y contó el número de producciones en varios idiomas, incluidos Portugués, Francés, Alemán, Italiano y todas las variantes del Español. Esta consulta ofreció una visión global de los idiomas predominantes en el catálogo. La segunda consulta, más restrictiva, se centró únicamente en las producciones que estaban exclusivamente en uno de los idiomas mencionados, excluyendo cualquier contenido multilingüe. Este análisis fue esencial para comprender la diversidad lingüística de las producciones de Netflix.",
+                            "img": ""
+                        },
+                        {
+                            "texto": "El siguiente paso fue examinar la clasificación y el tipo de contenido disponible. Se utilizó una consulta que agrupó el contenido según su tipo (por ejemplo, película o serie) y su clasificación (como G, PG, etc.), proporcionando un resumen del contenido disponible por categoría y su respectiva clasificación. Este análisis fue útil para entender cómo se distribuye el contenido en términos de su adecuación para diferentes audiencias.",
+                            "img": ""
+                        },
+                        {
+                            "texto": "Además, se realizaron consultas específicas para obtener detalles sobre contenido clasificado bajo la categoría 'G' y para recuperar información detallada de un contenido específico basado en su id_content. Por ejemplo, se extrajo el título, país de origen, duración y categorías listadas para una pieza de contenido específica, lo que permitió un análisis más profundo de casos particulares dentro del catálogo.",
+                            "img": ""
+                        }
+                    ],
+        "conclusion": ["El análisis exploratorio realizado proporcionó una base sólida para comprender la composición del catálogo de la plataforma. Desde la distribución de idiomas hasta la clasificación y tipos de contenido, cada consulta aportó información valiosa que ayudará en la toma de decisiones futuras. Este proceso no solo permitió una mayor comprensión de los datos disponibles, sino que también estableció un marco robusto para análisis más complejos y detallados en etapas posteriores del proyecto. La capacidad de SQL para manejar grandes volúmenes de datos y realizar consultas detalladas fue fundamental para el éxito de esta etapa del proyecto."
+                        ],
+        "textoSeccionEnlaces": "A continuación se deja el link al notebook alojado en Deepnote, con todo el trabajo detallado y explicado:",
+        "linkGithub": "",
+        "linkEnlaces1": {
+                        "link": "https://deepnote.com/workspace/martin1989-123c1f53-f57d-4bbf-9fef-0309c25663e8/project/C23679-Martin-Batarev-TPintegrador-6c13ed99-475c-4c70-a284-0d5ac8195c31/notebook/2.%20Consigna%20%232-0a7866ec6b7c47e28a297ea88c997c44",
+                        "textoBtn": "Deepnote",
+                        "tooltip": "Ver notebook en Deepnote.",
+                        "icono": "ads_click",
+                        "clase": "waves-effect waves-light blue darken-1 btn-large tooltipped"
+                        },
+        "linkEnlaces2": {
+                        "link": "",
+                        "textoBtn": "Streamlit",
+                        "tooltip": "Ver app en streamlit.",
+                        "icono": "ads_click",
+                        "clase": "waves-effect waves-light red darken-1 btn-large tooltipped"
+                        },
+        "txt-volver": "Volver al Inicio"
+            
+      }
+    ],
+    "contenidos_eng": [
+      {
+        "id": 1,
+        "imgEncabezado": "../../assets/img/bannerme_5.jpeg",
+        "titulo": "Example 1",
+        "subtitulo": "Análisis Riguroso de la Influencia Publicitaria en Decisiones de Compra: Datos, Pruebas Estadísticas y Resultados.",
+        "vermaslink": {"link": "#seccion1",
+                        "icono": "arrow_downward",
+                        "clase": "btn-large waves-effect waves-light teal lighten-1"
+                        },
+        "textParacaidas": "PROYECTO DE BUSINESS INTELLIGENCE",
+        "herramientas": "Jupyter Notebook - VS Code - Python - Streamlit - Pandas - Numpy - Matplotlib - Statsmodels.",
+        "introd55": "Introduction",
+        "detalle55": "Detailed Project",
+        "conclu55": "Conclusion",
+        "introduccion": ["Este proyecto tuvo como finalidad desarrollar una aplicación en Streamlit que permita identificar si una campaña publicitaria puede ser exitosa, y en que medida ese éxito se puede atribuir a los avisos recibidos por los clientes.",
+                         "La base de datos empleada (Fuente : Kaggle - Marketing A/B Testing) proviene de un experimento donde los participantes se dividieron en dos grupos:",
+                         "La elección de realizar una prueba de hipótesis Z de proporciones se basa en la necesidad de comparar la proporción de personas que realizaron compras en ambos grupos. Es esencial determinar si la campaña publicitaria genera efectos significativos en la conversión de clientes."
+                        ],
+        "desarrollo": [
+                        {
+                            
+                            "texto": "Este es el primer párrafo con una imagen al inicio.",
+                            "img": "../../assets/img/portafolio-img/prueba-ab-strmlit/img-5-tit.png"
+                        },
+                        {
+                            "texto": "Este es el primer párrafo con una imagen al inicio.",
+                            "img": ""
+                        },
+                        {
+                            "texto": "Este es el primer párrafo con una imagen al inicio.",
+                            "img": "../../assets/img/portafolio-img/prueba-ab-strmlit/img-5-tit.png"
+                        },
+                        {
+                            "texto": "Este es el primer párrafo con una imagen al inicio.",
+                            "img": "../../assets/img/portafolio-img/prueba-ab-strmlit/img-5-tit.png"
+                        }
+                    ],
+        "conclusion": ["Este proyecto tuvo como finalidad desarrollar una aplicación en Streamlit que permita identificar si una campaña publicitaria puede ser exitosa, y en que medida ese éxito se puede atribuir a los avisos recibidos por los clientes.",
+                        "La base de datos empleada (Fuente : Kaggle - Marketing A/B Testing) proviene de un experimento donde los participantes se dividieron en dos grupos:",
+                        "La elección de realizar una prueba de hipótesis Z de proporciones se basa en la necesidad de comparar la proporción de personas que realizaron compras en ambos grupos. Es esencial determinar si la campaña publicitaria genera efectos significativos en la conversión de clientes."
+                        ],
+        "textoSeccionEnlaces": "A continuación se dejan los enlaces relacionados con el proyecto:",
+        "linkGithub": "https://github.com/martinbat89/Proyecto-AB-Con-Streamlit",
+        "linkEnlaces1": {
+                        "link": "https://proyecto-ab-con-app.streamlit.app/",
+                        "textoBtn": "Streamlit",
+                        "tooltip": "Ver app en streamlit.",
+                        "icono": "ads_click",
+                        "clase": "waves-effect waves-light red darken-1 btn-large tooltipped"
+                        },
+        "linkEnlaces2": {
+                        "link": "https://proyecto-ab-con-app.streamlit.app/",
+                        "textoBtn": "Streamlit",
+                        "tooltip": "Ver app en streamlit.",
+                        "icono": "ads_click",
+                        "clase": "waves-effect waves-light red darken-1 btn-large tooltipped"
+                        }
+            
+      },
+      {
+        "id": 7,
+        "imgEncabezado": "../assets/img/bannerme_5.jpeg",
+        "titulo": "Stage I - Final Project Big Data Course - Data Analytics Codo a Codo 4.0",
+        "subtitulo": "Stage I of the final project to obtain the Big Data - Data Analytics certificate from the Codo a Codo 4.0 program",
+        "vermaslink": {
+            "link": "#seccion1",
+            "icono": "arrow_downward",
+            "clase": "btn-large waves-effect waves-light teal lighten-1"
+        },
+        "textParacaidas": "DATA ANALYTICS PROJECT",
+        "herramientas": "SQL - SQLite - Deepnote",
+        "introd55": "Introduction",
+        "detalle55": "Detailed Project",
+        "conclu55": "Conclusion",
+        "introduccion": [
+            "In this data analysis project, SQL was used to explore a Netflix movie dataset to better understand the composition and key characteristics of its catalog. Exploratory data analysis (EDA) is a critical stage in any data science project as it allows for the discovery of patterns, identification of anomalies, and the establishment of initial hypotheses. Through a series of SQL queries, a detailed investigation was conducted that provided deep insight into the content available on the platform."
+        ],
+        "desarrollo": [
+            {
+                "texto": "The analysis began with a focus on the general structure of the database, using SQL queries to count the total number of records in the key tables. For example, a total count of rows in the content and production tables was performed, giving a clear idea of the volume of data available for analysis.",
+                "img": ""
+            },
+            {
+                "texto": "Next, the distribution of languages in the available productions was explored. Two key queries were executed for this. The first query grouped and counted the number of productions in various languages, including Portuguese, French, German, Italian, and all variants of Spanish. This query provided a global view of the predominant languages in the catalog. The second, more restrictive query focused solely on productions that were exclusively in one of the mentioned languages, excluding any multilingual content. This analysis was essential to understanding the linguistic diversity of Netflix productions.",
+                "img": ""
+            },
+            {
+                "texto": "The next step was to examine the classification and type of content available. A query was used that grouped the content by its type (e.g., movie or series) and its rating (such as G, PG, etc.), providing a summary of the available content by category and its respective rating. This analysis was useful in understanding how content is distributed in terms of its suitability for different audiences.",
+                "img": ""
+            },
+            {
+                "texto": "Additionally, specific queries were made to obtain details about content classified under the 'G' category and to retrieve detailed information about specific content based on its id_content. For example, the title, country of origin, duration, and listed categories for a specific piece of content were extracted, allowing for a deeper analysis of particular cases within the catalog.",
+                "img": ""
+            }
+        ],
+        "conclusion": [
+            "The exploratory analysis provided a solid foundation for understanding the composition of the platform's catalog. From the distribution of languages to the classification and types of content, each query provided valuable information that will aid in future decision-making. This process not only allowed for a greater understanding of the available data but also established a robust framework for more complex and detailed analyses in later stages of the project. SQL's ability to handle large volumes of data and perform detailed queries was crucial to the success of this stage of the project."
+        ],
+        "textoSeccionEnlaces": "Below is the link to the notebook hosted on Deepnote, with all the work detailed and explained:",
+        "linkGithub": "",
+        "linkEnlaces1": {
+            "link": "https://deepnote.com/workspace/martin1989-123c1f53-f57d-4bbf-9fef-0309c25663e8/project/C23679-Martin-Batarev-TPintegrador-6c13ed99-475c-4c70-a284-0d5ac8195c31/notebook/2.%20Consigna%20%232-0a7866ec6b7c47e28a297ea88c997c44",
+            "textoBtn": "Streamlit",
+            "tooltip": "View notebook on Deepnote.",
+            "icono": "ads_click",
+            "clase": "waves-effect waves-light blue darken-1 btn-large tooltipped"
+        },
+        "linkEnlaces2": {
+            "link": "",
+            "textoBtn": "Deepnote",
+            "tooltip": "View app on Streamlit.",
+            "icono": "ads_click",
+            "clase": "waves-effect waves-light red darken-1 btn-large tooltipped"
+        },
+        "txt-volver": "Back to home"
+    }
+    
+    ]
+
+  }
+  

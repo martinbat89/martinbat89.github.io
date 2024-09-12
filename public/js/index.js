@@ -35,7 +35,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Inicializa la página con el contenido predeterminado en el idioma especificado
-    changeLanguage('es');
+    var idiomaUser
+
+    //checkeo idioma + render template
+    if(sessionStorage.getItem('userLanguage')){
+
+      idiomaUser = sessionStorage.getItem('userLanguage')
+      changeLanguage(idiomaUser);
+      document.getElementById('ch-lang').checked = idiomaUser === "es" ? false : true;
+
+    } else {
+      changeLanguage('es');
+    }
 
     
     //cargamos el maximo para el input range de certificados

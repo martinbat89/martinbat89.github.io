@@ -317,11 +317,18 @@ document.getElementById('ch-lang').addEventListener('click', ev => {
     if(ev.target.checked === true){
         changeLanguage('en');
         M.AutoInit();
+
+        //cargamos idioma session
+        sessionStorage.setItem('userLanguage', "en");
+
         //quitamos el preloader
         setTimeout(function(){document.getElementById('contenedorCargador').className = "hide"}, "1000")
     }else if(ev.target.checked === false){
         changeLanguage('es');
         M.AutoInit();
+
+        //cargamos idioma session
+        sessionStorage.setItem('userLanguage', "es");
         //quitamos el preloader
         setTimeout(function(){document.getElementById('contenedorCargador').className = "hide"}, "1000")
     }
