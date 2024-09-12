@@ -125,7 +125,9 @@ body {
   100% {color:#252017;left:350px; top:20px;rotate: 0deg;}
 }
 
-.card:hover{
+
+
+.card:hover{  
   background: #2d9481;
   color: white;
   backface-visibility:visible;

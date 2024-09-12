@@ -1,0 +1,296 @@
+{
+    "contenidos_esp":
+
+            {
+                "proyectos": [
+                                {
+                                    "id": 1,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/DASH HTML CON MAPA/dashCaj3-COLLAGE.jpg",
+                                    "titulo": "Dashboard Gestión Cajas",
+                                    "vermaslink1": {"link": "./public/views/proy-dash-caja.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Ver Proyecto Completo",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    },
+                                    "tutuloResumen": "Resumen del Proyecto",
+                                    "resumen": ["Descubre cómo un dashboard en HTML creado con papaparse y Chart.js permitió a una empresa de retail conocer el estado mensual de la gestión administrativa de cajas en diferentes locales.", 
+                                                "Con Leaflet, se creó un mapa web que mostraba el progreso del trabajo y se utilizó una pequeña red neuronal para predecir la fecha de finalización. Además, se incluyen gráficos de torta y doughnut para un análisis más detallado.",
+                                                "¡Entra para ver los detalles y visualizaciones!"
+                                                ],
+                                    "vermaslink2": {"link": "./public/views/proy-dash-caja.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Ver Proyecto Completo",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    }
+                                },                                
+                                {
+                                    "id": 2,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/COMP ELECTR ADRI/comprob1.png",
+                                    "titulo": "Envío automático de comprobantes",
+                                    "vermaslink1": {"link": "./public/views/proy-comp-adri.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Ver Proyecto Completo",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    },
+                                    "tutuloResumen": "Resumen del Proyecto",
+                                    "resumen": ["Con ayuda de Google Apps Scripts, se desarrolló un sistema automatizado para enviar facturas y comprobantes a los clientes.", 
+                                                "Con esta herramienta, es posible cargar los datos de los nuevos clientes y escanear las facturas desde el celular para enviarlas automáticamente al correo electrónico previamente cargado.",
+                                                "Esto significa que no hay necesidad de preocuparse por el envío manual de facturas, lo que ahorra tiempo y reduce errores.",
+                                                "Si te interesa este apartado, dale click para ver mas."
+                                                ],
+                                    "vermaslink2": {"link": "./public/views/proy-comp-adri.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Ver Proyecto Completo",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    }
+                                },
+                                {
+                                    "id": 3,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/DASHBOARDS POWERBI/fotodashcompleto22.png",
+                                    "titulo": "Dashboard Power BI Tienda Granel",
+                                    "vermaslink1": {"link": "./public/views/proy-po-bi-granel.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Ver Proyecto Completo",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    },
+                                    "tutuloResumen": "Resumen del Proyecto",
+                                    "resumen": ["Creación de un panel de control utilizando Power BI para una tienda de productos naturales.",
+                                                "Este panel muestra información importante sobre las ventas y el inventario para tomar decisiones informadas sobre la gestión de productos."
+                                                ],
+                                    "vermaslink2": {"link": "./public/views/proy-po-bi-granel.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Ver Proyecto Completo",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    }
+                                },
+                                {
+                                    "id": 4,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/gestion-ctas-ctes/dashctasCtes.png",
+                                    "titulo": "Gestión En Cuentas Corrientes",
+                                    "vermaslink1": {"link": "./public/views/proy-ctas-ctes.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Ver Proyecto Completo",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    },
+                                    "tutuloResumen": "Resumen del Proyecto",
+                                    "resumen": ["En este proyecto se utilizó Google Apps Script para procesar y agrupar comentarios sobre la gestión de cuentas corrientes, eliminando los registros sin información relevante y generando totales por región y estado de cuentas corrientes.",
+                                                "Los datos procesados se visualizaron en un panel de control creado en Google Looker (Data Studio), lo que permitió una gestión eficiente y atractiva de los datos."
+                                                ],
+                                    "vermaslink2": {"link": "./public/views/proy-ctas-ctes.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Ver Proyecto Completo",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    }
+                                },
+                                {
+                                    "id": 5,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/prueba-ab-strmlit/img-2-tit.png",
+                                    "titulo": "Prueba A/B Marketing En Streamlit",
+                                    "vermaslink1": {"link": "./public/views/proy-prueba-ab-strlit.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Ver Proyecto Completo",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    },
+                                    "tutuloResumen": "Resumen del Proyecto",
+                                    "resumen": ["A través de un conjunto de datos obtenidos de Kaggle, se realiza una prueba Z de proporciones, para evaluar la influencia de una campaña publicitaria en las conversiones de clientes de una empresa.", 
+                                                "La aplicación, implementada en Streamlit, permite al usuario ajustar parámetros como el tamaño de la muestra y el nivel de confianza, visualizando resultados detallados y gráficos informativos."
+                                                ],
+                                    "vermaslink2": {"link": "./public/views/proy-prueba-ab-strlit.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Ver Proyecto Completo",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    }
+                                },
+                                {
+                                    "id": 6,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/macro-cierre-caja/img-8-tit.png",
+                                    "titulo": "Macro Cierre Diario de Caja",
+                                    "vermaslink1": {"link": "./public/views/proy-macro-cierre-caja.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Ver Proyecto Completo",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    },
+                                    "tutuloResumen": "Resumen del Proyecto",
+                                    "resumen": ["Se desarrolló una herramienta que permitó realizar el cierre y arqueo de caja diario de forma automatizada utilizando Microsoft Access.",
+                                                 "¿Qué significa esto?",
+                                                 "Que podes conocer el faltante o sobrante de tu caja en tiempo real, ahorrando tiempo y evitando errores humanos.",  
+                                                "Además, al existír un registro de cada movimiento, fue posible preparar un reporte automátivo diario en PDF para la revisión de los clientes internos."
+                                                ],
+                                    "vermaslink2": {"link": "./public/views/proy-macro-cierre-caja.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Ver Proyecto Completo",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    }
+                                },
+                                {
+                                    "id": 7,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/cac-bdda-2023/Portada-BDA1-cac.png",
+                                    "titulo": "Etapa I - Proyecto Big Data Codo a Codo 4.0",
+                                    "vermaslink1": {"link": "./public/views/tmp-project-det.html?id=7",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Ver Proyecto Completo",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    },
+                                    "tutuloResumen": "Resumen del Proyecto",
+                                    "resumen": ["Etapa I del proyecto final para obtener el certificado de Big Data - Data Analytics del programa Codo a Codo 4.0 2023.",
+                                                 "En esta etapa se desarrollan tareas de exploración de datos utilizando SQL",
+                                                 "Fuente de datos: Catálogo de películas de Netflix."  
+                                                ],
+                                    "vermaslink2": {"link": "./public/views/tmp-project-det.html?id=7",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Ver Proyecto Completo",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    }
+                                }
+                            ]
+
+            },
+    "contenidos_eng": 
+
+            {
+                "proyectos": [
+                                {
+                                    "id": 1,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/DASH HTML CON MAPA/dashCaj3-COLLAGE.jpg",
+                                    "titulo": "Admnistrative Dashboard",
+                                    "vermaslink1": {"link": "./public/views/proy-dash-caja.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Read Complete Project",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    },
+                                    "tutuloResumen": "Project Summary",                                                    
+                                    "resumen": ["Discover how an HTML dashboard created with PapaParse and Chart.js allowed a retail company to track the monthly status of cash management in different locations.", 
+                                                "With Leaflet, a web map was created to display the progress of the work, and a small neural network was used to predict the completion date. In addition, pie and doughnut charts are included for a more detailed analysis.", 
+                                                "¡Enter to see the details and visualizations!"
+                                                ],
+                                    "vermaslink2": {"link": "./public/views/proy-dash-caja.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Read Complete Project",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    }
+                                },
+                                {
+                                    "id": 2,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/COMP ELECTR ADRI/comprob1.png",
+                                    "titulo": "Automatic Invoice Sending",
+                                    "vermaslink1": {"link": "./public/views/proy-comp-adri.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Read Complete Project",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    },
+                                    "tutuloResumen": "Project Summary",
+                                    "resumen": ["With the help of Google Apps Script, an automated system was developed to send invoices and receipts to customers.", 
+                                                "With this tool, it is possible to enter the data of new customers and scan invoices from a mobile device to send them automatically to the previously loaded email address.",
+                                                "This means there is no need to worry about manually sending invoices, saving time and reducing errors.",
+                                                "If you are interested in this section, click to learn more."
+                                                ],
+                                    "vermaslink2": {"link": "./public/views/proy-comp-adri.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Read Complete Project",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    }
+                                },
+                                {
+                                    "id": 3,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/DASHBOARDS POWERBI/fotodashcompleto22.png",
+                                    "titulo": "Dashboard Natural Store",
+                                    "vermaslink1": {"link": "./public/views/proy-po-bi-granel.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Read Complete Project",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    },
+                                    "tutuloResumen": "Project Summary",
+                                    "resumen": ["Creating a dashboard using Power BI for a natural products store.", 
+                                                "This dashboard displays important information about sales and inventory to make informed decisions about product management."
+                                                ],
+                                    "vermaslink2": {"link": "./public/views/proy-po-bi-granel.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Read Complete Project",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    }
+                                },
+                                {
+                                    "id": 4,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/gestion-ctas-ctes/dashctasCtes.png",
+                                    "titulo": "Customers Accounts Management",
+                                    "vermaslink1": {"link": "./public/views/proy-ctas-ctes.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Read Complete Project",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    },
+                                    "tutuloResumen": "Project Summary",
+                                    "resumen": ["In this project, Google Apps Script was used to process and group feedback on current customers account management, removing records without relevant information and generating totals by region and current account status.",
+                                                "The processed data was visualized on a dashboard created in Google Looker (Data Studio), enabling efficient and engaging data management."
+                                                ],
+                                    "vermaslink2": {"link": "./public/views/proy-ctas-ctes.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Read Complete Project",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    }
+                                },
+                                {
+                                    "id": 5,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/gestion-ctas-ctes/dashctasCtes.png",
+                                    "titulo": "A/B Test Marketing In Streamlit",
+                                    "vermaslink1": {"link": "./public/views/proy-prueba-ab-strlit.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Read Complete Project",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    },
+                                    "tutuloResumen": "Project Summary",
+                                    "resumen": ["Through a dataset from Kaggle, a proportions Z-test is conducted to assess the impact of an advertising campaign on a company's customer conversions.",
+                                                "The application, deployed on Streamlit, enables users to adjust parameters such as sample size and confidence level, presenting detailed results and informative graphics."
+                                                ],
+                                    "vermaslink2": {"link": "./public/views/proy-prueba-ab-strlit.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Read Complete Project",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    }
+                                },
+                                {
+                                    "id": 6,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/macro-cierre-caja/img-8-tit.png",
+                                    "titulo": "Macro for Daily Cash Closing",
+                                    "vermaslink1": {"link": "./public/views/proy-macro-cierre-caja.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Read Complete Project",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    },
+                                    "tutuloResumen": "Project Summary",
+                                    "resumen": ["A tool was developed to automate the daily cash register closure and reconciliation using Microsoft Access.", 
+                                                "What does this mean?", 
+                                                "It allows you to track your cash surplus or shortage in real-time, saving time and avoiding human errors.",
+                                                "Furthermore, with a record of each transaction, it was possible to generate a daily automated PDF report for internal client review."
+                                                ],
+                                    "vermaslink2": {"link": "./public/views/proy-macro-cierre-caja.html",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Read Complete Project",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    }
+                                },
+                                {
+                                    "id": 7,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/cac-bdda-2023/Portada-BDA1-cac.png",
+                                    "titulo": "Stage I - Big Data Project Codo a Codo 4.0",
+                                    "vermaslink1": {"link": "./public/views/tmp-project-det.html?id=7",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Read Complete Project",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    },
+                                    "tutuloResumen": "Project Summary",
+                                    "resumen": [
+                                                "Stage I of the final project to obtain the Big Data - Data Analytics certificate from the Codo a Codo 4.0 2023 program.",
+                                                "In this stage, data exploration tasks are performed using SQL.",
+                                                "Data source: Netflix movie catalog."
+                                                ],
+                                    "vermaslink2": {"link": "./public/views/tmp-project-det.html?id=7",
+                                                    "icono": "arrow_downward",
+                                                    "labelText": "Read Complete Project",
+                                                    "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                                    }
+                                }
+                            ]
+
+            }
+
+  }

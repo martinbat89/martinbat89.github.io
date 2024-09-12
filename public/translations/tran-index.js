@@ -42,20 +42,7 @@ i18next.init({
             "parax-2": "Convertir los datos en oportunidades de negocio.",
             "porta-Tit": "Portafolio",
             "slid-porta": "Mostrar/Ocultar Proyectos",
-            "porta-ver": "Ver Proyecto Completo",
-            "porta-2": "Dashboard Gestión Cajas<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
-            "porta-Res": "Resumen del Proyecto<i class='material-icons right'>close</i>",
-            "porta-3": "Descubre cómo un dashboard en HTML creado con papaparse y Chart.js permitió a una empresa de retail conocer el estado mensual de la gestión administrativa de cajas en diferentes locales.  <br> <br> Con Leaflet, se creó un mapa web que mostraba el progreso del trabajo y se utilizó una pequeña red neuronal para predecir la fecha de finalización.  <br> <br> Además, se incluyen gráficos de torta y doughnut para un análisis más detallado. <br> <br> ¡Entra para ver los detalles y visualizaciones!",
-            "porta-4": "Con ayuda de Google Apps Scripts, se desarrolló un sistema automatizado para enviar facturas y comprobantes a los clientes.<br><br> Con esta herramienta, es posible cargar los datos de los nuevos clientes y escanear las facturas desde el celular para enviarlas automáticamente al correo electrónico previamente cargado. <br><br>Esto significa que no hay necesidad de preocuparse por el envío manual de facturas, lo que ahorra tiempo y reduce errores. <br> <br> Si te interesa este apartado, dale click para ver mas.",
-            "porta-5": "Creación de un panel de control utilizando Power BI para una tienda de productos naturales.<br><br>Este panel muestra información importante sobre las ventas y el inventario para tomar decisiones informadas sobre la gestión de productos.",
-            "porta-6": "En este proyecto se utilizó Google Apps Script para procesar y agrupar comentarios sobre la gestión de cuentas corrientes, eliminando los registros sin información relevante y generando totales por región y estado de cuentas corrientes. <br><br>Los datos procesados se visualizaron en un panel de control creado en Google Looker (Data Studio), lo que permitió una gestión eficiente y atractiva de los datos.",
-            "porta-7": "Envío Automático de Comprobantes <i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
-            "porta-8": "Dashboard Power BI Tienda Granel<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
-            "porta-9": "Gestión En Cuentas Corrientes<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
-            "porta-10": "Prueba A/B Marketing En Streamlit<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
-            "porta-11": "A través de un conjunto de datos obtenidos de Kaggle, se realiza una prueba Z de proporciones, para evaluar la influencia de una campaña publicitaria en las conversiones de clientes de una empresa. <br><br> La aplicación, implementada en Streamlit, permite al usuario ajustar parámetros como el tamaño de la muestra y el nivel de confianza, visualizando resultados detallados y gráficos informativos.",
-            "porta-12": "Macro Cierre Diario de Caja<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
-            "porta-13": "Se desarrolló una herramienta que permitó realizar el cierre y arqueo de caja diario de forma automatizada utilizando Microsoft Access. ¿Qué significa esto?<br><br>Que podes conocer el faltante o sobrante de tu caja en tiempo real, ahorrando tiempo y evitando errores humanos. <br><br> Además, al existír un registro de cada movimiento, fue posible preparar un reporte automátivo diario en PDF para la revisión de los clientes internos.",
+            "porta-ver": "Ver Proyecto Completo",                    
              "parax-3": "Las decisiones basadas en datos impulsan el éxito empresarial.",
              "certif-tit": "Mis Certificados",
              "slid-cert": "Mostrar/Ocultar Certificados",
@@ -128,20 +115,7 @@ i18next.init({
             "parax-2": "Turn data into business opportunities.",
             "porta-Tit": "Portfolio",
             "slid-porta": "Show/Hide Projects",
-            "porta-ver": "Read Complete Project",
-            "porta-2": "Admnistrative Dashboard <i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
-            "porta-Res": "Project Summary<i class='material-icons right'>close</i>",
-            "porta-3": "Discover how an HTML dashboard created with PapaParse and Chart.js allowed a retail company to track the monthly status of cash management in different locations. <br> <br> With Leaflet, a web map was created to display the progress of the work, and a small neural network was used to predict the completion date. <br> <br> In addition, pie and doughnut charts are included for a more detailed analysis. <br> <br> ¡Enter to see the details and visualizations!",
-            "porta-4": "With the help of Google Apps Script, an automated system was developed to send invoices and receipts to customers.<br><br>With this tool, it is possible to enter the data of new customers and scan invoices from a mobile device to send them automatically to the previously loaded email address.<br><br>This means there is no need to worry about manually sending invoices, saving time and reducing errors.<br><br>If you are interested in this section, click to learn more.",
-            "porta-5": "Creating a dashboard using Power BI for a natural products store.<br><br>This dashboard displays important information about sales and inventory to make informed decisions about product management.",
-            "porta-6": "In this project, Google Apps Script was used to process and group feedback on current customers account management, removing records without relevant information and generating totals by region and current account status. <br><br>The processed data was visualized on a dashboard created in Google Looker (Data Studio), enabling efficient and engaging data management.",
-            "porta-7": "Automatic Invoice Sending <i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
-            "porta-8": "Dashboard Natural Store<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
-            "porta-9": "Customers Accounts Management<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
-            "porta-10": "A/B Test Marketing In Streamlit<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
-            "porta-11": "Through a dataset from Kaggle, a proportions Z-test is conducted to assess the impact of an advertising campaign on a company's customer conversions. <br><br> The application, deployed on Streamlit, enables users to adjust parameters such as sample size and confidence level, presenting detailed results and informative graphics.",
-            "porta-12": "Macro for Daily Cash Closing<i class='material-icons right' id='flecha-porta'>arrow_upward</i>",
-            "porta-13": "A tool was developed to automate the daily cash register closure and reconciliation using Microsoft Access. What does this mean?<br><br>It allows you to track your cash surplus or shortage in real-time, saving time and avoiding human errors.<br><br>Furthermore, with a record of each transaction, it was possible to generate a daily automated PDF report for internal client review.",
+            "porta-ver": "Read Complete Project",            
             "parax-3": "Data-based decisions drive business success.",
             "slid-cert": "Show/Hide Certificates",
             "certif-tit": "My Certificates",
@@ -223,12 +197,14 @@ function changeLanguage(language) {
         verProyArr.forEach(x =>{
             x.textContent = t('porta-ver');
         })
-        document.getElementById('porta2').innerHTML = t('porta-2');
+      
+       // document.getElementById('porta2').innerHTML = t('porta-2');
         var resProyArr = document.querySelectorAll('#portaRes')
         resProyArr.forEach(y =>{
             y.innerHTML = t('porta-Res');
             
         })
+          /*
         document.getElementById('porta3').innerHTML = t('porta-3');
         document.getElementById('porta4').innerHTML = t('porta-4');
         document.getElementById('porta5').innerHTML = t('porta-5');
@@ -240,7 +216,7 @@ function changeLanguage(language) {
         document.getElementById('porta11').innerHTML = t('porta-11');
         document.getElementById('porta12').innerHTML = t('porta-12');
         document.getElementById('porta13').innerHTML = t('porta-13');
-
+        */
         document.getElementById('parax3').textContent = t('parax-3');
         
         document.getElementById('certif0').textContent = t('certif-tit');
@@ -281,8 +257,12 @@ document.getElementById('ch-lang').addEventListener('click', ev => {
     document.getElementById('contenedorCargador').className = "contpreloader"
 
     if(ev.target.checked === true){
-        changeLanguage('en');
         
+        //fc traduce seccion portafolio conhandlebrs
+        tmpCargaProy("contenidos_eng")
+        
+        //fc cambia idioma gral
+        changeLanguage('en');
 
         M.AutoInit();
         activaButtOpt()
@@ -305,8 +285,13 @@ document.getElementById('ch-lang').addEventListener('click', ev => {
         }, "1500") //después de 1,5 seg se muestra
         
     }else if(ev.target.checked === false){
+
+        //fc traduce seccion portafolio conhandlebrs
+        tmpCargaProy("contenidos_esp")
+
+        //fc cambia idioma gral
         changeLanguage('es');
-        
+
         M.AutoInit();
         activaButtOpt()
 

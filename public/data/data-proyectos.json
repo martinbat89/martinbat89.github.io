@@ -6,6 +6,7 @@
         "titulo": "Ejemplo de prueba JSON 1",
         "subtitulo": "Análisis Riguroso de la Influencia Publicitaria en Decisiones de Compra: Datos, Pruebas Estadísticas y Resultados.",
         "vermaslink": {"link": "#seccion1",
+                        "texto": "Ver Más",
                         "icono": "arrow_downward",
                         "clase": "btn-large waves-effect waves-light teal lighten-1"
                         },
@@ -65,6 +66,7 @@
         "titulo": "Etapa I - Proyecto Final Curso Big Data - Data Analytics Codo a Codo 4.0",
         "subtitulo": "Etapa I del proyecto final para obtener el certificado de Big Data - Data Analytics del programa Codo a Codo 4.0",
         "vermaslink": {"link": "#seccion1",
+                        "texto": "Ver Más",
                         "icono": "arrow_downward",
                         "clase": "btn-large waves-effect waves-light teal lighten-1"
                         },
@@ -79,18 +81,26 @@
                         {
                             
                             "texto": "El análisis comenzó con un enfoque en la estructura general de la base de datos, utilizando consultas SQL para contar el número total de registros en las tablas clave. Por ejemplo, se realizó un recuento total de las filas en las tablas content y production, lo que permitió tener una idea clara del volumen de datos disponibles para el análisis.",
-                            "img": ""
+                            "img": "../assets/img/portafolio-img/etapa1-bigdata-cac/5_count_row_prod.png"
                         },
                         {
                             "texto": "A continuación, se exploró la distribución de idiomas en las producciones disponibles. Para ello, se ejecutaron dos consultas clave. La primera consulta agrupó y contó el número de producciones en varios idiomas, incluidos Portugués, Francés, Alemán, Italiano y todas las variantes del Español. Esta consulta ofreció una visión global de los idiomas predominantes en el catálogo. La segunda consulta, más restrictiva, se centró únicamente en las producciones que estaban exclusivamente en uno de los idiomas mencionados, excluyendo cualquier contenido multilingüe. Este análisis fue esencial para comprender la diversidad lingüística de las producciones de Netflix.",
-                            "img": ""
+                            "img": "../assets/img/portafolio-img/etapa1-bigdata-cac/19_consulta_H.png"
+                        },
+                        {
+                            "texto": "La segunda consulta, más restrictiva, se centró únicamente en las producciones que estaban exclusivamente en uno de los idiomas mencionados, excluyendo cualquier contenido multilingüe. Este análisis fue esencial para comprender la diversidad lingüística de las producciones de Netflix.",
+                            "img": "../assets/img/portafolio-img/etapa1-bigdata-cac/18_consulta_H.png"
                         },
                         {
                             "texto": "El siguiente paso fue examinar la clasificación y el tipo de contenido disponible. Se utilizó una consulta que agrupó el contenido según su tipo (por ejemplo, película o serie) y su clasificación (como G, PG, etc.), proporcionando un resumen del contenido disponible por categoría y su respectiva clasificación. Este análisis fue útil para entender cómo se distribuye el contenido en términos de su adecuación para diferentes audiencias.",
-                            "img": ""
+                            "img": "../assets/img/portafolio-img/etapa1-bigdata-cac/17_consulta_G.png"
                         },
                         {
                             "texto": "Además, se realizaron consultas específicas para obtener detalles sobre contenido clasificado bajo la categoría 'G' y para recuperar información detallada de un contenido específico basado en su id_content. Por ejemplo, se extrajo el título, país de origen, duración y categorías listadas para una pieza de contenido específica, lo que permitió un análisis más profundo de casos particulares dentro del catálogo.",
+                            "img": "../assets/img/portafolio-img/etapa1-bigdata-cac/10_consulta_A.png"
+                        },
+                        {
+                            "texto": "El presente desarrollo solo muestra algunos ejemplos de consultas realizadas en SQL. Al final de esta página se dejará el link al notebook detallado.",
                             "img": ""
                         }
                     ],
@@ -123,6 +133,7 @@
         "titulo": "Example 1",
         "subtitulo": "Análisis Riguroso de la Influencia Publicitaria en Decisiones de Compra: Datos, Pruebas Estadísticas y Resultados.",
         "vermaslink": {"link": "#seccion1",
+                        "texto": "Read More",
                         "icono": "arrow_downward",
                         "clase": "btn-large waves-effect waves-light teal lighten-1"
                         },
@@ -183,6 +194,7 @@
         "subtitulo": "Stage I of the final project to obtain the Big Data - Data Analytics certificate from the Codo a Codo 4.0 program",
         "vermaslink": {
             "link": "#seccion1",
+            "texto": "Read More",
             "icono": "arrow_downward",
             "clase": "btn-large waves-effect waves-light teal lighten-1"
         },
@@ -197,18 +209,26 @@
         "desarrollo": [
             {
                 "texto": "The analysis began with a focus on the general structure of the database, using SQL queries to count the total number of records in the key tables. For example, a total count of rows in the content and production tables was performed, giving a clear idea of the volume of data available for analysis.",
-                "img": ""
+                "img": "..//assets/img/portafolio-img/etapa1-bigdata-cac/5_count_row_prod.png"
             },
             {
-                "texto": "Next, the distribution of languages in the available productions was explored. Two key queries were executed for this. The first query grouped and counted the number of productions in various languages, including Portuguese, French, German, Italian, and all variants of Spanish. This query provided a global view of the predominant languages in the catalog. The second, more restrictive query focused solely on productions that were exclusively in one of the mentioned languages, excluding any multilingual content. This analysis was essential to understanding the linguistic diversity of Netflix productions.",
-                "img": ""
+                "texto": "Next, the distribution of languages in the available productions was explored. Two key queries were executed for this. The first query grouped and counted the number of productions in various languages, including Portuguese, French, German, Italian, and all variants of Spanish. This query provided a global view of the predominant languages in the catalog. ",
+                 "img": "../assets/img/portafolio-img/etapa1-bigdata-cac/19_consulta_H.png"
+            },
+            {
+                "texto": "The second, more restrictive query focused solely on productions that were exclusively in one of the mentioned languages, excluding any multilingual content. This analysis was essential to understanding the linguistic diversity of Netflix productions.",
+                "img": "../assets/img/portafolio-img/etapa1-bigdata-cac/18_consulta_H.png"
             },
             {
                 "texto": "The next step was to examine the classification and type of content available. A query was used that grouped the content by its type (e.g., movie or series) and its rating (such as G, PG, etc.), providing a summary of the available content by category and its respective rating. This analysis was useful in understanding how content is distributed in terms of its suitability for different audiences.",
-                "img": ""
+                "img": "../assets/img/portafolio-img/etapa1-bigdata-cac/17_consulta_G.png"
             },
             {
                 "texto": "Additionally, specific queries were made to obtain details about content classified under the 'G' category and to retrieve detailed information about specific content based on its id_content. For example, the title, country of origin, duration, and listed categories for a specific piece of content were extracted, allowing for a deeper analysis of particular cases within the catalog.",
+                "img": "../assets/img/portafolio-img/etapa1-bigdata-cac/10_consulta_A.png"
+            },
+            {
+                "texto": "This development only shows some examples of SQL queries. A link to the detailed notebook will be provided at the end of this page.",
                 "img": ""
             }
         ],
@@ -219,7 +239,7 @@
         "linkGithub": "",
         "linkEnlaces1": {
             "link": "https://deepnote.com/workspace/martin1989-123c1f53-f57d-4bbf-9fef-0309c25663e8/project/C23679-Martin-Batarev-TPintegrador-6c13ed99-475c-4c70-a284-0d5ac8195c31/notebook/2.%20Consigna%20%232-0a7866ec6b7c47e28a297ea88c997c44",
-            "textoBtn": "Streamlit",
+            "textoBtn": "Deepnote",
             "tooltip": "View notebook on Deepnote.",
             "icono": "ads_click",
             "clase": "waves-effect waves-light blue darken-1 btn-large tooltipped"

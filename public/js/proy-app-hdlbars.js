@@ -108,7 +108,7 @@ function tmpCargaProy(clave_lang, id){
       // Registrar el helper de Handlebars
       Handlebars.registerHelper("link", function(text, vermas) {
           var url = Handlebars.escapeExpression(vermas.link),
-              text = Handlebars.escapeExpression(text),
+              text = Handlebars.escapeExpression(vermas.texto),
               icono = Handlebars.escapeExpression(vermas.icono),
               clase = Handlebars.escapeExpression(vermas.clase);
               
