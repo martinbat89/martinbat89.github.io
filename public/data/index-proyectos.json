@@ -141,7 +141,31 @@
                                                     "labelText": "Ver Proyecto Completo",
                                                     "clase": "btn-large waves-effect waves-light teal lighten-1"
                                                     }
-                                }
+                                },
+                                {
+                                    "id": 8,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/camping-res/img_camping1.jpg",
+                                    "titulo": "Aplicación de Reservas de Camping",
+                                    "vermaslink1": {
+                                      "link": "./public/views/tmp-project-det.html?id=8",
+                                      "icono": "arrow_downward",
+                                      "labelText": "Ver Proyecto Completo",
+                                      "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                    },
+                                    "tutuloResumen": "Gestión de Reservas de Camping con Google Apps Script",
+                                    "resumen": [
+                                      "Desarrollamos una aplicación web para gestionar reservas en un camping, utilizando Google Apps Script, Drive, y Sheets como base de datos. El sistema incluye un mapa interactivo de parcelas y una vista de tabla con funcionalidades CRUD de reservas.",
+                                      "La aplicación es ideal para campings o hostels que aún usan métodos manuales, permitiendo digitalizar el proceso con costos mínimos utilizando Google Drive.",
+                                      "¡Explora más sobre cómo esta solución simplifica la gestión de reservas!"
+                                    ],
+                                    "vermaslink2": {
+                                      "link": "./public/views/tmp-project-det.html?id=8",
+                                      "icono": "arrow_downward",
+                                      "labelText": "Ver Proyecto Completo",
+                                      "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                    }
+                                  }
+                                  
                             ]
 
             },
@@ -155,7 +179,7 @@
                                     "titulo": "Admnistrative Dashboard",
                                     "vermaslink1": {"link": "./public/views/proy-dash-caja.html",
                                                     "icono": "arrow_downward",
-                                                    "labelText": "Read Complete Project",
+                                                    "labelText": "View full project",
                                                     "clase": "btn-large waves-effect waves-light teal lighten-1"
                                                     },
                                     "tutuloResumen": "Project Summary",                                                    
@@ -165,7 +189,7 @@
                                                 ],
                                     "vermaslink2": {"link": "./public/views/proy-dash-caja.html",
                                                     "icono": "arrow_downward",
-                                                    "labelText": "Read Complete Project",
+                                                    "labelText": "View full project",
                                                     "clase": "btn-large waves-effect waves-light teal lighten-1"
                                                     }
                                 },
@@ -175,7 +199,7 @@
                                     "titulo": "Automatic Invoice Sending",
                                     "vermaslink1": {"link": "./public/views/proy-comp-adri.html",
                                                     "icono": "arrow_downward",
-                                                    "labelText": "Read Complete Project",
+                                                    "labelText": "View full project",
                                                     "clase": "btn-large waves-effect waves-light teal lighten-1"
                                                     },
                                     "tutuloResumen": "Project Summary",
@@ -186,7 +210,7 @@
                                                 ],
                                     "vermaslink2": {"link": "./public/views/proy-comp-adri.html",
                                                     "icono": "arrow_downward",
-                                                    "labelText": "Read Complete Project",
+                                                    "labelText": "View full project",
                                                     "clase": "btn-large waves-effect waves-light teal lighten-1"
                                                     }
                                 },
@@ -196,7 +220,7 @@
                                     "titulo": "Dashboard Natural Store",
                                     "vermaslink1": {"link": "./public/views/proy-po-bi-granel.html",
                                                     "icono": "arrow_downward",
-                                                    "labelText": "Read Complete Project",
+                                                    "labelText": "View full project",
                                                     "clase": "btn-large waves-effect waves-light teal lighten-1"
                                                     },
                                     "tutuloResumen": "Project Summary",
@@ -205,7 +229,7 @@
                                                 ],
                                     "vermaslink2": {"link": "./public/views/proy-po-bi-granel.html",
                                                     "icono": "arrow_downward",
-                                                    "labelText": "Read Complete Project",
+                                                    "labelText": "View full project",
                                                     "clase": "btn-large waves-effect waves-light teal lighten-1"
                                                     }
                                 },
@@ -215,7 +239,7 @@
                                     "titulo": "Customers Accounts Management",
                                     "vermaslink1": {"link": "./public/views/proy-ctas-ctes.html",
                                                     "icono": "arrow_downward",
-                                                    "labelText": "Read Complete Project",
+                                                    "labelText": "View full project",
                                                     "clase": "btn-large waves-effect waves-light teal lighten-1"
                                                     },
                                     "tutuloResumen": "Project Summary",
@@ -224,7 +248,7 @@
                                                 ],
                                     "vermaslink2": {"link": "./public/views/proy-ctas-ctes.html",
                                                     "icono": "arrow_downward",
-                                                    "labelText": "Read Complete Project",
+                                                    "labelText": "View full project",
                                                     "clase": "btn-large waves-effect waves-light teal lighten-1"
                                                     }
                                 },
@@ -234,7 +258,7 @@
                                     "titulo": "A/B Test Marketing In Streamlit",
                                     "vermaslink1": {"link": "./public/views/proy-prueba-ab-strlit.html",
                                                     "icono": "arrow_downward",
-                                                    "labelText": "Read Complete Project",
+                                                    "labelText": "View full project",
                                                     "clase": "btn-large waves-effect waves-light teal lighten-1"
                                                     },
                                     "tutuloResumen": "Project Summary",
@@ -243,7 +267,7 @@
                                                 ],
                                     "vermaslink2": {"link": "./public/views/proy-prueba-ab-strlit.html",
                                                     "icono": "arrow_downward",
-                                                    "labelText": "Read Complete Project",
+                                                    "labelText": "View full project",
                                                     "clase": "btn-large waves-effect waves-light teal lighten-1"
                                                     }
                                 },
@@ -253,7 +277,7 @@
                                     "titulo": "Macro for Daily Cash Closing",
                                     "vermaslink1": {"link": "./public/views/proy-macro-cierre-caja.html",
                                                     "icono": "arrow_downward",
-                                                    "labelText": "Read Complete Project",
+                                                    "labelText": "View full project",
                                                     "clase": "btn-large waves-effect waves-light teal lighten-1"
                                                     },
                                     "tutuloResumen": "Project Summary",
@@ -264,7 +288,7 @@
                                                 ],
                                     "vermaslink2": {"link": "./public/views/proy-macro-cierre-caja.html",
                                                     "icono": "arrow_downward",
-                                                    "labelText": "Read Complete Project",
+                                                    "labelText": "View full project",
                                                     "clase": "btn-large waves-effect waves-light teal lighten-1"
                                                     }
                                 },
@@ -274,7 +298,7 @@
                                     "titulo": "Stage I - Big Data Project Codo a Codo 4.0",
                                     "vermaslink1": {"link": "./public/views/tmp-project-det.html?id=7",
                                                     "icono": "arrow_downward",
-                                                    "labelText": "Read Complete Project",
+                                                    "labelText": "View full project",
                                                     "clase": "btn-large waves-effect waves-light teal lighten-1"
                                                     },
                                     "tutuloResumen": "Project Summary",
@@ -285,10 +309,34 @@
                                                 ],
                                     "vermaslink2": {"link": "./public/views/tmp-project-det.html?id=7",
                                                     "icono": "arrow_downward",
-                                                    "labelText": "Read Complete Project",
+                                                    "labelText": "View full project",
                                                     "clase": "btn-large waves-effect waves-light teal lighten-1"
                                                     }
-                                }
+                                },
+                                {
+                                    "id": 8,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/camping-res/img_camping1.jpg",
+                                    "titulo": "Camping Reservation App",
+                                    "vermaslink1": {
+                                      "link": "./public/views/tmp-project-det.html?id=8",
+                                      "icono": "arrow_downward",
+                                      "labelText": "View Full Project",
+                                      "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                    },
+                                    "tutuloResumen": "Camping Reservation Management with Google Apps Script",
+                                    "resumen": [
+                                      "We developed a web application to manage camping reservations using Google Apps Script, Drive, and Sheets as the database. The system includes an interactive map of the camping plots and a table view with CRUD functionalities for reservations.",
+                                      "This app is ideal for campgrounds or hostels still relying on manual methods, allowing them to digitize the process with minimal costs using Google Drive.",
+                                      "Discover more about how this solution simplifies the reservation management process!"
+                                    ],
+                                    "vermaslink2": {
+                                      "link": "./public/views/tmp-project-det.html?id=8",
+                                      "icono": "arrow_downward",
+                                      "labelText": "View Full Project",
+                                      "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                    }
+                                  }
+                                  
                             ]
 
             }

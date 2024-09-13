@@ -124,7 +124,82 @@
                         },
         "txt-volver": "Volver al Inicio"
             
+      },
+      {
+        "id": 8,
+        "imgEncabezado": "../assets/img/bannerme_5.jpeg",
+        "titulo": "Aplicación Web de Reservas de Camping",
+        "subtitulo": "Automatización de reservas para campings y hostels con Google Apps Script",
+        "vermaslink": {
+          "link": "#seccion1",
+          "texto": "Ver Más",
+          "icono": "arrow_downward",
+          "clase": "btn-large waves-effect waves-light teal lighten-1"
+        },
+        "textParacaidas": "SISTEMAS DE GESTIÓN ACCESIBLES",
+        "herramientas": "Google Apps Script, HTML, CSS, Javascript, Google Sheets, Materialize CSS, Flatpickr",
+        "introduccion": [
+          "Este proyecto presenta una solución de bajo costo para la gestión de reservas en campings y hostels, desarrollada utilizando Google Apps Script. La aplicación permite digitalizar el proceso de reservas, aprovechando las herramientas de Google Drive y Sheets como base de datos, lo que facilita su implementación y mantenimiento."
+        ],
+        "desarrollo": [
+            {
+                "texto": "La aplicación está organizada en diferentes vistas, comenzando por una pantalla de inicio de sesión sencilla que permite a los usuarios ingresar al sistema utilizando una contraseña personal. Esto garantiza un acceso seguro y controlado a las funcionalidades de gestión de reservas.",
+                "img": "../assets/img/portafolio-img/camping-res/img_campingdet1.png"
+            },
+            {
+                "texto": "La pantalla principal ofrece una tarjeta interactiva que facilita la selección de la fecha deseada. Con solo un clic, los usuarios pueden ver el estado actualizado de las reservas del día. Se puede optar por dos tipos de visualización: una vista de mapa para una representación gráfica del camping o una vista de tabla que muestra las reservas de manera estructurada.",
+                "img": "../assets/img/portafolio-img/camping-res/img_campingdet2.png"
+            },
+            {
+                "texto": "La vista de mapa proporciona un esquema interactivo de las parcelas del camping. Los usuarios pueden hacer clic en cada parcela para ver un modal que les permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre las reservas. Este esquema visual hace que la gestión de las parcelas sea rápida e intuitiva.",
+                "img": "../assets/img/portafolio-img/camping-res/img_campingdet4.png"
+            },
+            {
+                "texto": "La funcionalidad CRUD también está disponible en la vista de tabla, donde la información de las reservas se presenta de forma detallada y ordenada. Los usuarios pueden gestionar sus reservas directamente desde esta vista, lo que ofrece flexibilidad en la gestión de datos.",
+                "img": "../assets/img/portafolio-img/camping-res/img_campingdet3.png"
+            },
+            {
+                "texto": "La aplicación incluye un modal de ayuda interactivo que orienta a los usuarios sobre el significado de los iconos y colores en la vista de mapa y tabla. Por ejemplo, un ícono 'rojo con destello' indica una reserva que ha hecho check-in pero aún no ha realizado el check-out. Esto permite un seguimiento más eficiente del estado de las reservas.",
+                "img": "../assets/img/portafolio-img/camping-res/img_campingdet6.png"
+            },
+            {
+                "texto": "Además, existe una sección de configuración independiente donde se pueden personalizar las opciones del camping, adaptando la aplicación a las necesidades específicas de cada establecimiento.",
+                "img": "../assets/img/portafolio-img/camping-res/img_campingdet7.png"
+            },
+            {
+                "texto": "Toda la información se almacena en Google Sheets, lo que facilita el acceso a los datos en tiempo real. Además, ofrece la posibilidad de conectarse con otros servicios como Looker para generar visualizaciones de datos atractivas o BigQuery para análisis avanzados.",
+                "img": ""
+            }
+        ],
+        "conclusion": [
+          "Esta aplicación es una herramienta poderosa para campings o hostels que buscan digitalizar su proceso de reservas sin incurrir en costos elevados. Con solo una cuenta de Google Drive, la aplicación se puede implementar y gestionar fácilmente, ofreciendo una solución intuitiva y eficiente para la administración de reservas.",
+          "Gracias a su interfaz amigable y la integración con Google Apps, esta solución es especialmente útil para pequeñas empresas que desean optimizar sus operaciones con un sistema digital."
+        ],
+        "textoSeccionEnlaces": "",
+        "linkGithub": {
+          "link": "https://github.com/usuario/proyecto-reservas-camping",
+          "textoBtn": "GitHub",
+          "tooltip": "Ver código en GitHub",
+          "icono": "code",
+          "clase": "waves-effect waves-light btn-large tooltipped"
+        },
+        "linkEnlaces1": {
+          "link": "https://example.com/demo-proyecto-reservas-camping",
+          "textoBtn": "Demo",
+          "tooltip": "Ver demo en vivo",
+          "icono": "visibility",
+          "clase": "waves-effect waves-light btn-large tooltipped"
+        },
+        "linkEnlaces2": {
+          "link": "https://drive.google.com/",
+          "textoBtn": "Documentación",
+          "tooltip": "Ver documentación",
+          "icono": "description",
+          "clase": "waves-effect waves-light btn-large tooltipped"
+        },
+        "txt-volver": "Volver al Inicio"
       }
+      
     ],
     "contenidos_eng": [
       {
@@ -252,7 +327,82 @@
             "clase": "waves-effect waves-light red darken-1 btn-large tooltipped"
         },
         "txt-volver": "Back to home"
+    },
+    {
+        "id": 8,
+        "imgEncabezado": "../assets/img/bannerme_5.jpeg",
+        "titulo": "Camping Reservation Web Application",
+        "subtitulo": "Automating Reservations for Campgrounds and Hostels with Google Apps Script",
+        "vermaslink": {
+            "link": "#seccion1",
+            "texto": "See More",
+            "icono": "arrow_downward",
+            "clase": "btn-large waves-effect waves-light teal lighten-1"
+        },
+        "textParacaidas": "ACCESSIBLE MANAGEMENT SYSTEMS",
+        "herramientas": "Google Apps Script, HTML, CSS, Javascript, Google Sheets, Materialize CSS, Flatpickr",
+        "introduccion": [
+            "This project presents a low-cost solution for managing reservations in campgrounds and hostels, developed using Google Apps Script. The application digitizes the reservation process by leveraging Google Drive and Sheets as a database, making it easy to implement and maintain."
+        ],
+        "desarrollo": [
+            {
+                "texto": "The application is organized into various views, starting with a simple login screen that allows users to securely access the system with a personal password. This ensures controlled and secure access to the reservation management features.",
+                "img": "../assets/img/portafolio-img/camping-res/img_campingdet1.png"
+            },
+            {
+                "texto": "The main screen offers an interactive card to easily select the desired date. With just one click, users can view the updated status of the day's reservations. Two display options are available: a map view for a graphical representation of the campground or a table view that shows structured booking information.",
+                "img": "../assets/img/portafolio-img/camping-res/img_campingdet2.png"
+            },
+            {
+                "texto": "The map view provides an interactive layout of the campground plots. Users can click on each plot to open a modal that allows them to perform CRUD (Create, Read, Update, Delete) operations on the bookings. This visual scheme makes managing the plots quick and intuitive.",
+                "img": "../assets/img/portafolio-img/camping-res/img_campingdet4.png"
+            },
+            {
+                "texto": "CRUD functionality is also available in the table view, where reservation information is presented in a detailed and organized manner. Users can manage their bookings directly from this view, offering flexibility in data management.",
+                "img": "../assets/img/portafolio-img/camping-res/img_campingdet3.png"
+            },
+            {
+                "texto": "The application includes an interactive help modal that guides users on the meaning of icons and colors in the map and table views. For example, a 'flashing red' icon indicates a reservation with check-in but without check-out. This helps users track the status of reservations more efficiently.",
+                "img": "../assets/img/portafolio-img/camping-res/img_campingdet6.png"
+            },
+            {
+                "texto": "Additionally, there is an independent settings section where users can customize the camping options, allowing the app to be tailored to the specific needs of each establishment.",
+                "img": "../assets/img/portafolio-img/camping-res/img_campingdet7.png"
+            },
+            {
+                "texto": "All information is stored in Google Sheets, allowing real-time access to data. It also offers the possibility of connecting to other services like Looker to create attractive data visualizations or BigQuery for advanced analysis.",
+                "img": ""
+            }
+        ],
+        "conclusion": [
+            "This application is a powerful tool for campgrounds or hostels looking to digitize their reservation process without high costs. With just a Google Drive account, the app can be easily implemented and managed, offering an intuitive and efficient solution for reservation management.",
+            "Thanks to its user-friendly interface and Google Apps integration, this solution is especially useful for small businesses seeking to optimize their operations with a digital system."
+        ],
+        "textoSeccionEnlaces": "",
+        "linkGithub": {
+            "link": "https://github.com/usuario/proyecto-reservas-camping",
+            "textoBtn": "GitHub",
+            "tooltip": "View code on GitHub",
+            "icono": "code",
+            "clase": "waves-effect waves-light btn-large tooltipped"
+        },
+        "linkEnlaces1": {
+            "link": "https://example.com/demo-proyecto-reservas-camping",
+            "textoBtn": "Demo",
+            "tooltip": "View live demo",
+            "icono": "visibility",
+            "clase": "waves-effect waves-light btn-large tooltipped"
+        },
+        "linkEnlaces2": {
+            "link": "https://drive.google.com/",
+            "textoBtn": "Documentation",
+            "tooltip": "View documentation",
+            "icono": "description",
+            "clase": "waves-effect waves-light btn-large tooltipped"
+        },
+        "txt-volver": "Back to Home"
     }
+    
     
     ]
 
