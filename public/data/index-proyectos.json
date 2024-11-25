@@ -164,6 +164,30 @@
                                       "labelText": "Ver Proyecto Completo",
                                       "clase": "btn-large waves-effect waves-light teal lighten-1"
                                     }
+                                  },
+                                  {
+                                    "id": 9,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/cac-bdda-2023/Portada-BDA1-cac.png",
+                                    "titulo": "Etapa II - Proyecto Big Data Codo a Codo 4.0",
+                                    "vermaslink1": {
+                                      "link": "./public/views/tmp-project-det.html?id=9",
+                                      "icono": "arrow_downward",
+                                      "labelText": "Ver Proyecto Completo",
+                                      "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                    },
+                                    "tutuloResumen": "Resumen del Proyecto",
+                                    "resumen": [
+                                      "Etapa II del proyecto final para obtener el certificado de Big Data - Data Analytics del programa Codo a Codo 4.0 2023.",
+                                      "Esta fase se centra en el análisis de datos de películas de Netflix y su relación con los Premios Oscar, utilizando SQL y SQLite.",
+                                      "Se creó una nueva tabla 'oscar' en la base de datos de Netflix para almacenar información sobre nominaciones y ganadores del Oscar, importando datos desde un archivo CSV.",
+                                      "Se realizaron diversas consultas SQL para explorar la relación entre las películas de Netflix, sus características y los premios Oscar."
+                                    ],
+                                    "vermaslink2": {
+                                      "link": "./public/views/tmp-project-det.html?id=9",
+                                      "icono": "arrow_downward",
+                                      "labelText": "Ver Proyecto Completo",
+                                      "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                    }
                                   }
                                   
                             ]
@@ -333,6 +357,30 @@
                                       "link": "./public/views/tmp-project-det.html?id=8",
                                       "icono": "arrow_downward",
                                       "labelText": "View Full Project",
+                                      "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                    }
+                                  },
+                                  {
+                                    "id": 9,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/cac-bdda-2023/Portada-BDA1-cac.png",
+                                    "titulo": "Stage II - Big Data Project Codo a Codo 4.0",
+                                    "vermaslink1": {
+                                      "link": "./public/views/tmp-project-det.html?id=9",
+                                      "icono": "arrow_downward",
+                                      "labelText": "See Full Project",
+                                      "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                    },
+                                    "tutuloResumen": "Project Summary",
+                                    "resumen": [
+                                      "Stage II of the final project to obtain the Big Data - Data Analytics certificate from the Codo a Codo 4.0 2023 program.",
+                                      "This stage focuses on analyzing Netflix movie data and its relationship with the Oscar Awards, using SQL and SQLite.",
+                                      "A new 'oscar' table was created in the Netflix database to store information about Oscar nominations and winners, importing data from a CSV file.",
+                                      "Several SQL queries were executed to explore the relationship between Netflix movies, their characteristics, and the Oscar awards."
+                                    ],
+                                    "vermaslink2": {
+                                      "link": "./public/views/tmp-project-det.html?id=9",
+                                      "icono": "arrow_downward",
+                                      "labelText": "See Full Project",
                                       "clase": "btn-large waves-effect waves-light teal lighten-1"
                                     }
                                   }

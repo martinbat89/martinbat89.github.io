@@ -132,7 +132,7 @@ i18next.init({
             "certif-10": "Codo a Codo 4.0 - Data Science Fundamentals.",
             "tit-ver": "View degree",
             "parax-4": "Automation: Speeding up tasks, reducing errors, and enhancing productivity.",
-            "titConoc-1": "Skills",
+            "titConoc-1": "Tools",
             "parax-5": "Small ERPs empower businesses and simplify management.",
             "contact-tit": "¡Let's work together!",
             "det-Contacto": "Do you have an idea or want to make a question? Here are my contact channels:",

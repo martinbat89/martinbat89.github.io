@@ -138,6 +138,9 @@
         },
         "textParacaidas": "SISTEMAS DE GESTIÓN ACCESIBLES",
         "herramientas": "Google Apps Script, HTML, CSS, Javascript, Google Sheets, Materialize CSS, Flatpickr",
+        "introd55": "Introducción",
+        "detalle55": "Detalle Del Proyecto",
+        "conclu55": "Conclusión",
         "introduccion": [
           "Este proyecto presenta una solución de bajo costo para la gestión de reservas en campings y hostels, desarrollada utilizando Google Apps Script. La aplicación permite digitalizar el proceso de reservas, aprovechando las herramientas de Google Drive y Sheets como base de datos, lo que facilita su implementación y mantenimiento."
         ],
@@ -196,6 +199,62 @@
           "tooltip": "Ver documentación",
           "icono": "description",
           "clase": "waves-effect waves-light btn-large tooltipped"
+        },
+        "txt-volver": "Volver al Inicio"
+      },
+      {
+        "id": 9,
+        "imgEncabezado": "../assets/img/bannerme_5.jpeg",
+        "titulo": "Etapa II - Proyecto Final Curso Big Data - Data Analytics Codo a Codo 4.0",
+        "subtitulo": "Análisis de datos de películas de Netflix y su relación con los Premios Oscar, como parte del curso Big Data - Data Analytics de Codo a Codo 4.0 (2023).",
+        "vermaslink": {
+          "link": "#seccion1",
+          "texto": "Ver Más",
+          "icono": "arrow_downward",
+          "clase": "btn-large waves-effect waves-light teal lighten-1"
+        },
+        "textParacaidas": "PROYECTO DE DATA ANALYTICS",
+        "herramientas": "Python, SQL, SQLite",
+        "introd55": "Introducción",
+        "detalle55": "Detalle Del Proyecto",
+        "conclu55": "Conclusión",
+        "introduccion": [
+          "Este proyecto se enfoca en el análisis de datos relacionados con las películas disponibles en Netflix y su conexión con los Premios Oscar. El objetivo principal fue explorar la base de datos de Netflix y un conjunto de datos de los Oscar para obtener información sobre las películas nominadas y ganadoras, así como su relación con las características de las películas en el catálogo de Netflix."
+        ],
+        "desarrollo": [
+          {
+            "texto": "El primer paso fue crear una tabla llamada 'oscar' en la base de datos de Netflix. Esta tabla se diseñó para almacenar información relevante sobre los premios Oscar, incluyendo el título de la película, el año de la ceremonia, la categoría, el nombre del nominado o ganador, y si ganó o no el premio.  Se utilizó SQL para definir la estructura de la tabla, especificando los tipos de datos y restricciones para cada columna.",
+            "img": "../assets/img/portafolio-img/etapa2-bigdata-cac/1_sql.png"
+          },
+          {
+            "texto": "Una vez creada la tabla 'oscar', se importaron los datos desde un archivo CSV llamado 'oscar.csv'. Este archivo contenía información histórica sobre los premios Oscar. Se utilizó la librería 'csv' de Python en conjunto con SQLite para leer el archivo CSV e insertar los datos en la tabla 'oscar' de la base de datos. Se verificó la integridad de los datos importados asegurándose de que todas las filas del CSV se insertaran correctamente en la tabla.",
+            "img": "../assets/img/portafolio-img/etapa2-bigdata-cac/2_sql.png"
+          },
+          {
+            "texto": "Después de la importación de datos, se realizaron varias consultas SQL para analizar la información. Estas consultas se enfocaron en explorar diferentes aspectos de la relación entre las películas de Netflix y los Premios Oscar. Por ejemplo, se buscaron películas que estuvieran presentes tanto en la base de datos de Netflix como en el conjunto de datos de los Oscar, se filtraron películas por género, año de lanzamiento, y otras características relevantes. Se vuelca una imágen de una de las consultas ejecutadas:",
+            "img": "../assets/img/portafolio-img/etapa2-bigdata-cac/3_sql.png"
+          },
+          {
+            "texto": "Un desafío importante durante el proyecto fue la inconsistencia en los IDs de contenido (id_content) entre las tablas 'oscar', 'content' y 'productions'.  Esta inconsistencia dificultó la realización de algunas consultas que requerían unir información de estas tablas.  Se documentaron estos problemas y se propusieron posibles soluciones para futuras iteraciones del proyecto, como la limpieza y estandarización de los IDs de contenido. Se vuelca un caso de ejemplo de la mencionada inconsistencia:",
+            "img": "../assets/img/portafolio-img/etapa2-bigdata-cac/4_sql.png"
+          },
+          {
+            "texto": "Además de las consultas principales, se realizaron consultas adicionales como desafíos. Estas consultas exploraron aspectos más específicos de los datos, como la distribución de los tipos de contenido en Netflix, la búsqueda de películas con duraciones específicas, y la identificación de películas con altas puntuaciones en Metacritic que también ganaron premios Oscar.  Se vuelca una imágen de una de las consultas ejecutadas:",
+            "img": "../assets/img/portafolio-img/etapa2-bigdata-cac/5_sql.png"
+          }
+        ],
+        "conclusion": [
+          "Este proyecto proporcionó una valiosa experiencia en el análisis de datos utilizando SQL y SQLite. Se logró crear una nueva tabla en una base de datos, importar datos desde un CSV, y realizar diversas consultas para explorar la relación entre las películas de Netflix y los Premios Oscar.  La documentación detallada del proceso, incluyendo las consultas SQL, las capturas de pantalla y la descripción de los desafíos encontrados, facilita la comprensión del proyecto y su reproducibilidad.",
+          "A pesar de las inconsistencias encontradas en los IDs de contenido, se obtuvieron resultados significativos que demuestran el potencial del análisis de datos para obtener información valiosa sobre el catálogo de Netflix y su relación con la industria cinematográfica.  En futuras iteraciones del proyecto, se podrían abordar las inconsistencias de datos y ampliar el análisis para incluir otras variables y fuentes de información."
+        ],
+        "textoSeccionEnlaces": "A continuación se deja el link al notebook alojado en Deepnote con todo el trabajo detallado y explicado:",
+        "linkGithub": "",
+        "linkEnlaces1": {
+          "link": "https://deepnote.com/workspace/Martin1989-123c1f53-f57d-4bbf-9fef-0309c25663e8/project/c23679-Martin-Batarev-TPintegrador-941f5dd6-134a-43a2-8f7a-6e8bcbbe15f8/notebook/3-Consigna-3-59ee16693dac476583db479d17d8cec3?utm_source=share-modal&utm_medium=product-shared-content&utm_campaign=notebook&utm_content=941f5dd6-134a-43a2-8f7a-6e8bcbbe15f8",
+          "textoBtn": "Deepnote",
+          "tooltip": "Ver notebook en Deepnote.",
+          "icono": "ads_click",
+          "clase": "waves-effect waves-light blue darken-1 btn-large tooltipped"
         },
         "txt-volver": "Volver al Inicio"
       }
@@ -341,6 +400,9 @@
         },
         "textParacaidas": "ACCESSIBLE MANAGEMENT SYSTEMS",
         "herramientas": "Google Apps Script, HTML, CSS, Javascript, Google Sheets, Materialize CSS, Flatpickr",
+        "introd55": "Introduction",
+        "detalle55": "Detailed Project",
+        "conclu55": "Conclusion",
         "introduccion": [
             "This project presents a low-cost solution for managing reservations in campgrounds and hostels, developed using Google Apps Script. The application digitizes the reservation process by leveraging Google Drive and Sheets as a database, making it easy to implement and maintain."
         ],
@@ -401,7 +463,63 @@
             "clase": "waves-effect waves-light btn-large tooltipped"
         },
         "txt-volver": "Back to Home"
-    }
+    },
+    {
+        "id": 9,
+        "imgEncabezado": "../assets/img/bannerme_5.jpeg",
+        "titulo": "Stage II - Final Project Big Data Course - Data Analytics Codo a Codo 4.0",
+        "subtitulo": "Data analysis of Netflix movies and their relationship with the Oscar Awards, as part of the Big Data - Data Analytics course at Codo a Codo 4.0 (2023).",
+        "vermaslink": {
+          "link": "#seccion1",
+          "texto": "See More",
+          "icono": "arrow_downward",
+          "clase": "btn-large waves-effect waves-light teal lighten-1"
+        },
+        "textParacaidas": "DATA ANALYTICS PROJECT",
+        "herramientas": "Python, SQL, SQLite",
+        "introd55": "Introduction",
+        "detalle55": "Detailed Project",
+        "conclu55": "Conclusion",
+        "introduccion": [
+          "This project focuses on the data analysis of movies available on Netflix and their connection to the Oscar Awards. The main objective was to explore the Netflix database and an Oscar dataset to gain insights into nominated and winning films, as well as their relationship with the characteristics of movies in the Netflix catalog."
+        ],
+        "desarrollo": [
+          {
+            "texto": "The first step was to create a table named 'oscar' in the Netflix database. This table was designed to store relevant information about the Oscar awards, including the movie title, ceremony year, category, nominee or winner name, and whether they won the award. SQL was used to define the table structure, specifying data types and constraints for each column.",
+            "img": "../assets/img/portafolio-img/etapa2-bigdata-cac/1_sql.png"
+          },
+          {
+            "texto": "Once the 'oscar' table was created, data was imported from a CSV file named 'oscar.csv'. This file contained historical information about the Oscar awards. Python's 'csv' library, along with SQLite, was used to read the CSV file and insert the data into the 'oscar' table in the database. The integrity of the imported data was verified by ensuring that all rows from the CSV were correctly inserted into the table.",
+            "img": "../assets/img/portafolio-img/etapa2-bigdata-cac/2_sql.png"
+          },
+          {
+            "texto": "After data importation, several SQL queries were executed to analyze the information. These queries focused on exploring different aspects of the relationship between Netflix movies and the Oscar Awards. For instance, movies present in both the Netflix database and the Oscar dataset were searched, and movies were filtered by genre, release year, and other relevant characteristics. An image of one of the executed queries is displayed:",
+            "img": "../assets/img/portafolio-img/etapa2-bigdata-cac/3_sql.png"
+          },
+          {
+            "texto": "A significant challenge during the project was the inconsistency in content IDs (id_content) between the 'oscar', 'content', and 'productions' tables. This inconsistency made it difficult to perform some queries that required joining information from these tables. These issues were documented, and potential solutions for future project iterations were proposed, such as cleaning and standardizing content IDs. An example of the mentioned inconsistency is presented:",
+            "img": "../assets/img/portafolio-img/etapa2-bigdata-cac/4_sql.png"
+          },
+          {
+            "texto": "In addition to the main queries, further queries were performed as challenges. These queries explored more specific aspects of the data, such as the distribution of content types on Netflix, searching for movies with specific durations, and identifying movies with high Metacritic scores that also won Oscar awards. An image of one of the executed queries is displayed:",
+            "img": "../assets/img/portafolio-img/etapa2-bigdata-cac/5_sql.png"
+          }
+        ],
+        "conclusion": [
+          "This project provided valuable experience in data analysis using SQL and SQLite.  We successfully created a new table in a database, imported data from a CSV file, and performed various queries to explore the relationship between Netflix movies and the Oscar Awards. The detailed documentation of the process, including SQL queries, screenshots, and a description of the challenges encountered, facilitates understanding and reproducibility of the project.",
+          "Despite the inconsistencies found in content IDs, significant results were obtained, demonstrating the potential of data analysis to gain valuable insights into the Netflix catalog and its relationship with the film industry. In future iterations of the project, data inconsistencies could be addressed, and the analysis could be expanded to include other variables and information sources."
+        ],
+        "textoSeccionEnlaces": "Below is the link to the Deepnote notebook with all the detailed work and explanations:",
+        "linkGithub": "",
+        "linkEnlaces1": {
+          "link": "https://deepnote.com/workspace/Martin1989-123c1f53-f57d-4bbf-9fef-0309c25663e8/project/c23679-Martin-Batarev-TPintegrador-941f5dd6-134a-43a2-8f7a-6e8bcbbe15f8/notebook/3-Consigna-3-59ee16693dac476583db479d17d8cec3?utm_source=share-modal&utm_medium=product-shared-content&utm_campaign=notebook&utm_content=941f5dd6-134a-43a2-8f7a-6e8bcbbe15f8",
+          "textoBtn": "Deepnote",
+          "tooltip": "See notebook in Deepnote.",
+          "icono": "ads_click",
+          "clase": "waves-effect waves-light blue darken-1 btn-large tooltipped"
+        },
+        "txt-volver": "Back to Home"
+      }
     
     
     ]

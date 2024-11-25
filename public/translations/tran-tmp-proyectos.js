@@ -5,9 +5,6 @@ i18next.init({
   resources: {
       es: {
           translation: {
-            "introd": "Introducción",
-            'detalle': "Proyecto Detallado",
-            "conclu": "Conclusión",
             "ttip-subir": "Subir",
             "ttip-volver": "Volver al Inicio",
             "paracaidas": "PROYECTO DE BUSINESS INTELLIGENCE",
