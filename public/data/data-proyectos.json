@@ -11,6 +11,7 @@
                         "clase": "btn-large waves-effect waves-light teal lighten-1"
                         },
         "textParacaidas": "PROYECTO DE BUSINESS INTELLIGENCE",
+        "clase_cont_audio": "hide",
         "herramientas": "Jupyter Notebook - VS Code - Python - Streamlit - Pandas - Numpy - Matplotlib - Statsmodels.",
         "introd55": "Introducción",
         "detalle55": "Detalle Del Proyecto",
@@ -71,6 +72,7 @@
                         "clase": "btn-large waves-effect waves-light teal lighten-1"
                         },
         "textParacaidas": "PROYECTO DE DATA ANALYTICS",
+        "clase_cont_audio": "hide",
         "herramientas": "SQL - SQLite - Deepnote",
         "introd55": "Introducción",
         "detalle55": "Detalle Del Proyecto",
@@ -131,12 +133,15 @@
         "titulo": "Aplicación Web de Reservas de Camping",
         "subtitulo": "Automatización de reservas para campings y hostels con Google Apps Script",
         "vermaslink": {
-          "link": "#seccion1",
+          "link": "#cont-audio",
           "texto": "Ver Más",
           "icono": "arrow_downward",
           "clase": "btn-large waves-effect waves-light teal lighten-1"
         },
         "textParacaidas": "SISTEMAS DE GESTIÓN ACCESIBLES",
+        "clase_cont_audio": "hide",
+        "titulo_audio": "Ecuchá el audio",
+        "src_audio": "../assets/audio/proy_9.wav",
         "herramientas": "Google Apps Script, HTML, CSS, Javascript, Google Sheets, Materialize CSS, Flatpickr",
         "introd55": "Introducción",
         "detalle55": "Detalle Del Proyecto",
@@ -214,6 +219,9 @@
           "clase": "btn-large waves-effect waves-light teal lighten-1"
         },
         "textParacaidas": "PROYECTO DE DATA ANALYTICS",
+        "clase_cont_audio": "hide",
+        "titulo_audio": "Ecuchá el audio",
+        "src_audio": "",
         "herramientas": "Python, SQL, SQLite",
         "introd55": "Introducción",
         "detalle55": "Detalle Del Proyecto",
@@ -257,6 +265,80 @@
           "clase": "waves-effect waves-light blue darken-1 btn-large tooltipped"
         },
         "txt-volver": "Volver al Inicio"
+      },
+      {
+        "id": 10,
+        "imgEncabezado": "../assets/img/bannerme_5.jpeg",
+        "titulo": "Predicción de Crímenes en Buenos Aires",
+        "subtitulo": "Proyecto de Ciencia de Datos para predecir la cantidad de crímenes por tipo, barrio y franja horaria en la Ciudad de Buenos Aires.",
+        "vermaslink": {
+          "link": "#seccion1",
+          "texto": "Ver Más",
+          "icono": "arrow_downward",
+          "clase": "btn-large waves-effect waves-light teal lighten-1"
+        },
+        "textParacaidas": "PROYECTO DE CIENCIA DE DATOS",
+        "clase_cont_audio": "row",
+        "titulo_audio": "Escuchá el audio",
+        "src_audio": "../assets/audio/proy_10_esp.wav",
+        "herramientas": "Pandas - Pandas Profiling - Jupyter Notebooks - KNNImputer - scikit-learn - Fitter - Regresión con Árboles de Decisión - Regresión con Bosques Aleatorios (Random Forest Regressor) - Pipeline - StandardScaler - PCA - RandomizedSearchCV - Streamlit - GitHub - ChatGPT - Google Drive",
+        "introd55": "Introducción",
+        "detalle55": "Detalle Del Proyecto",
+        "conclu55": "Conclusión",
+        "introduccion": [
+          "Este proyecto, desarrollado por el Equipo D del curso de Fundamentos de Ciencia de Datos, aborda el desafío de predecir la cantidad de crímenes por tipo en la Ciudad de Buenos Aires.  Se utilizaron datos históricos proporcionados, abarcando un período de varios años, para construir un modelo de machine learning capaz de estimar la ocurrencia de crímenes. El objetivo principal es proporcionar una herramienta que pueda ser útil para la toma de decisiones en áreas como la asignación de recursos de seguridad y la planificación urbana. El proyecto se desarrolló siguiendo una metodología iterativa, que incluyó la exploración y limpieza de datos, la ingeniería de características, la selección y evaluación de modelos, y finalmente, el despliegue de una aplicación web interactiva para visualizar las predicciones."
+        ],
+        "desarrollo": [
+          {
+            "texto": "La etapa inicial del proyecto se centró en la definición precisa del problema y la variable objetivo. La consigna original, que solicitaba predecir la 'cantidad de crímenes por tipo', generó cierta ambigüedad.  El equipo tuvo que refinar esta definición, transformando un dataset de crímenes individuales en uno adecuado para un modelo predictivo.  Finalmente, se estableció que la variable objetivo sería la cantidad de crímenes mensuales por barrio, tipo de crimen y franja horaria. Esta definición permitió alinear el proyecto con las necesidades de predicción y facilitar la construcción del modelo.",
+            "img": "../assets/img/portafolio-img/cac-fs-ccdatos-2024/img1.png"
+          },
+          {
+            "texto": "La exploración y el preprocesamiento de los datos (EDA) constituyeron una fase crucial. Se analizaron cinco archivos de datos, que luego se unieron en un único dataset con más de 600,000 registros.  Se emplearon herramientas como Pandas y Pandas Profiling para realizar un análisis estadístico exhaustivo, identificar valores faltantes y repetidos, y analizar la distribución de las variables.  Se prestó especial atención a la homogeneidad de los datasets antes de su unión.  Los valores faltantes en campos como barrio, latitud y longitud se eliminaron, mientras que los faltantes en la franja horaria se imputaron utilizando el algoritmo KNNImputer, dada su baja proporción y la importancia de la precisión en la ubicación.",
+            "img": "../assets/img/portafolio-img/cac-fs-ccdatos-2024/img2.png"
+          },
+          {
+            "texto": "Un aspecto clave del preprocesamiento fue el tratamiento de los datos correspondientes a los meses de la pandemia de COVID-19.  Se observaron patrones atípicos en la ocurrencia de crímenes durante este período, lo que llevó a la decisión de eliminar estos registros del dataset.  Se asumió que las condiciones externas, como las restricciones de movilidad, habían alterado significativamente los patrones de criminalidad, y que su inclusión podría sesgar el modelo.  Esta decisión se tomó buscando que el modelo se basara en condiciones más estables y representativas.",
+            "img": "../assets/img/portafolio-img/cac-fs-ccdatos-2024/img3.png"
+          },
+          {
+            "texto": "La ingeniería de características y la agrupación de datos fueron fundamentales para la creación de la variable respuesta.  Se exploraron diversas combinaciones de variables, como la ubicación (barrio), el tiempo (año, mes, día de la semana) y el tipo de crimen.  Se extrajeron características de la fecha, como el cuatrimestre y el semestre, pero muchas fueron descartadas debido a su alta correlación o baja utilidad predictiva.  La franja horaria se agrupó en cuatro categorías (madrugada, mañana, tarde y noche) para simplificar el análisis.  Los tipos de crímenes también se agruparon en tres categorías principales (violentos, no violentos y viales), que luego se codificaron numéricamente. Se utilizó la librería Fitter para analizar la distribución de la variable respuesta resultante, identificando una distribución cercana a la log-normal.",
+            "img": "../assets/img/portafolio-img/cac-fs-ccdatos-2024/img4.png"
+          },
+          {
+            "texto": "En la fase de modelado, se probaron varios modelos de regresión utilizando pipelines de scikit-learn.  Inicialmente, se consideró un modelo de regresión lineal, pero no arrojó resultados satisfactorios.  Finalmente, se seleccionaron dos modelos: Decision Tree Regressor y Random Forest Regressor.  Ambos modelos alcanzaron un R² de 0.86 después de optimizar los hiperparámetros y descartar la variable 'mes' del entrenamiento.  Se utilizó StandardScaler para estandarizar las variables y PCA para la selección de componentes principales.  El análisis de los residuos reveló una distribución sesgada, pero el gráfico de valores reales vs. predichos mostró una buena correspondencia, especialmente para valores reales más bajos. Se utilizó RandomizedSearchCV, de Scikit Learn, para la optimización de hiperparámetros.",
+            "img": "../assets/img/portafolio-img/cac-fs-ccdatos-2024/img5.png"
+          },
+          {
+            "texto": "Para facilitar la interacción con el modelo y la visualización de las predicciones, se desarrolló una aplicación web interactiva utilizando Streamlit.  La aplicación permite al usuario ajustar diversos parámetros, como el tamaño de la muestra y los hiperparámetros del modelo (específicamente para Random Forest).  La aplicación re-entrena el modelo con los parámetros seleccionados y muestra la exactitud general, la cantidad total de crímenes estimada para un mes, un mapa con zonas de mayor riesgo, gráficos de agrupamiento por franja horaria y tipo de crimen, y un detalle de las cantidades estimadas por barrio, tipo y franja. El despliegue con Streamlit permitió una rápida implementación y una interfaz amigable para el usuario.",
+            "img": "../assets/img/portafolio-img/cac-fs-ccdatos-2024/img6.png"
+          }
+        ],
+        "conclusion": [
+          "El proyecto demuestra la aplicación efectiva de los fundamentos de ciencia de datos para abordar un problema real y complejo: la predicción de crímenes en la Ciudad de Buenos Aires.  A pesar de los desafíos iniciales en la definición del problema y el procesamiento de un dataset extenso y complejo, el equipo logró desarrollar un modelo predictivo funcional y una herramienta de visualización interactiva.  Se aplicaron conceptos aprendidos en el curso, como la exploración y limpieza de datos, la ingeniería de características, la selección y evaluación de modelos, y el despliegue de aplicaciones web.",
+          "El proyecto también resalta la importancia de la iteración y la adaptación en el proceso de ciencia de datos.  El equipo tuvo que realizar múltiples ajustes en la definición del problema, el preprocesamiento de los datos y la selección de modelos para lograr resultados satisfactorios.  Las lecciones aprendidas y los resultados obtenidos sientan una base sólida para futuras investigaciones y mejoras en este ámbito, como la incorporación de variables socioeconómicas, la exploración de otros modelos de regresión o técnicas de series de tiempo, y la optimización del rendimiento de la aplicación Streamlit."
+        ],
+        "textoSeccionEnlaces": "A continuación, se presentan enlaces de interés relacionados con el proyecto:",
+        "linkGithub": {
+          "tooltip": "Repositorio Github",
+          "link": "https://github.com/martinbat89/stcr_codo_codo"
+
+        },
+        "linkEnlaces1": {
+          "link": "https://colab.research.google.com/drive/1ebbIeSjWsQo5TB7BF6zF9utDig7MiKLy?usp=sharing",
+          "textoBtn": "Colab Notebook Final",
+          "tooltip": "Ver el notebook completo en Google Colab.",
+          "icono": "ads_click",
+          "clase": "waves-effect waves-light blue darken-1 btn-large tooltipped"
+        },
+        "linkEnlaces2": {
+          "link": "https://stcrcodocodo-ljp5ydfwxptp2j5gjaekra.streamlit.app/",
+          "textoBtn": "Streamlit App",
+          "tooltip": "Access to the streamlit model web app.",
+          "icono": "ads_click",
+          "clase": "waves-effect waves-light red darken-1 btn-large tooltipped"
+        },
+        "txt-volver": "Volver al Inicio"
       }
       
     ],
@@ -272,6 +354,7 @@
                         "clase": "btn-large waves-effect waves-light teal lighten-1"
                         },
         "textParacaidas": "PROYECTO DE BUSINESS INTELLIGENCE",
+        "clase_cont_audio": "hide",
         "herramientas": "Jupyter Notebook - VS Code - Python - Streamlit - Pandas - Numpy - Matplotlib - Statsmodels.",
         "introd55": "Introduction",
         "detalle55": "Detailed Project",
@@ -333,6 +416,7 @@
             "clase": "btn-large waves-effect waves-light teal lighten-1"
         },
         "textParacaidas": "DATA ANALYTICS PROJECT",
+        "clase_cont_audio": "hide",
         "herramientas": "SQL - SQLite - Deepnote",
         "introd55": "Introduction",
         "detalle55": "Detailed Project",
@@ -399,6 +483,7 @@
             "clase": "btn-large waves-effect waves-light teal lighten-1"
         },
         "textParacaidas": "ACCESSIBLE MANAGEMENT SYSTEMS",
+        "clase_cont_audio": "hide",
         "herramientas": "Google Apps Script, HTML, CSS, Javascript, Google Sheets, Materialize CSS, Flatpickr",
         "introd55": "Introduction",
         "detalle55": "Detailed Project",
@@ -476,6 +561,9 @@
           "clase": "btn-large waves-effect waves-light teal lighten-1"
         },
         "textParacaidas": "DATA ANALYTICS PROJECT",
+        "clase_cont_audio": "hide",
+        "titulo_audio": "Ecuchá el audio",
+        "src_audio": "",
         "herramientas": "Python, SQL, SQLite",
         "introd55": "Introduction",
         "detalle55": "Detailed Project",
@@ -517,6 +605,80 @@
           "tooltip": "See notebook in Deepnote.",
           "icono": "ads_click",
           "clase": "waves-effect waves-light blue darken-1 btn-large tooltipped"
+        },
+        "txt-volver": "Back to Home"
+      },
+      {
+        "id": 10,
+        "imgEncabezado": "../assets/img/bannerme_5.jpeg",
+        "titulo": "Crime Prediction in Buenos Aires",
+        "subtitulo": "Data Science Project to predict the number of crimes by type, neighborhood, and time slot in the City of Buenos Aires.",
+        "vermaslink": {
+          "link": "#seccion1",
+          "texto": "See More",
+          "icono": "arrow_downward",
+          "clase": "btn-large waves-effect waves-light teal lighten-1"
+        },
+        "textParacaidas": "DATA SCIENCE PROJECT",
+        "clase_cont_audio": "row",
+        "titulo_audio": "Listen to audio",
+        "src_audio": "../assets/audio/proy_10_eng.wav",
+        "herramientas": "Pandas - Pandas Profiling - Jupyter Notebooks - KNNImputer - scikit-learn - Fitter - Decision Tree Regression - Random Forest Regression - Pipeline - StandardScaler - PCA - RandomizedSearchCV - Streamlit - GitHub - ChatGPT - Google Drive",
+        "introd55": "Introduction",
+        "detalle55": "Project Details",
+        "conclu55": "Conclusion",
+        "introduccion": [
+          "This project, developed by Team D of the Data Science Fundamentals course, addresses the challenge of predicting the number of crimes by type in the City of Buenos Aires. Historical data provided, spanning several years, was used to build a machine learning model capable of estimating crime occurrence. The main objective is to provide a tool that can be useful for decision-making in areas such as security resource allocation and urban planning. The project was developed following an iterative methodology, which included data exploration and cleaning, feature engineering, model selection and evaluation, and finally, the deployment of an interactive web application to visualize the predictions."
+        ],
+        "desarrollo": [
+          {
+            "texto": "The initial stage of the project focused on the precise definition of the problem and the target variable. The original assignment, which requested to predict the 'number of crimes by type', generated some ambiguity. The team had to refine this definition, transforming a dataset of individual crimes into one suitable for a predictive model. Finally, it was established that the target variable would be the number of monthly crimes by neighborhood, type of crime, and time slot. This definition allowed the project to be aligned with prediction needs and facilitated the construction of the model.",
+            "img": "../assets/img/portafolio-img/cac-fs-ccdatos-2024/img1.png"
+          },
+          {
+            "texto": "Data exploration and preprocessing (EDA) constituted a crucial phase. Five data files were analyzed, which were then merged into a single dataset with more than 600,000 records. Tools such as Pandas and Pandas Profiling were used to perform a comprehensive statistical analysis, identify missing and repeated values, and analyze the distribution of variables. Special attention was paid to the homogeneity of the datasets before their union. Missing values in fields such as neighborhood, latitude, and longitude were removed, while missing values in the time slot were imputed using the KNNImputer algorithm, given their low proportion and the importance of location accuracy.",
+            "img": "../assets/img/portafolio-img/cac-fs-ccdatos-2024/img2.png"
+          },
+          {
+            "texto": "A key aspect of preprocessing was the handling of data corresponding to the months of the COVID-19 pandemic. Atypical patterns in crime occurrence were observed during this period, which led to the decision to remove these records from the dataset. It was assumed that external conditions, such as mobility restrictions, had significantly altered crime patterns, and that their inclusion could bias the model. This decision was made seeking that the model was based on more stable and representative conditions.",
+            "img": "../assets/img/portafolio-img/cac-fs-ccdatos-2024/img3.png"
+          },
+          {
+            "texto": "Feature engineering and data grouping were fundamental for the creation of the response variable. Various combinations of variables were explored, such as location (neighborhood), time (year, month, day of the week), and type of crime. Features were extracted from the date, such as the quarter and semester, but many were discarded due to their high correlation or low predictive utility. The time slot was grouped into four categories (early morning, morning, afternoon, and night) to simplify the analysis. Crime types were also grouped into three main categories (violent, non-violent, and traffic-related), which were then numerically encoded. The Fitter library was used to analyze the distribution of the resulting response variable, identifying a distribution close to log-normal.",
+            "img": "../assets/img/portafolio-img/cac-fs-ccdatos-2024/img4.png"
+          },
+          {
+            "texto": "In the modeling phase, several regression models were tested using scikit-learn pipelines. Initially, a linear regression model was considered, but it did not yield satisfactory results. Finally, two models were selected: Decision Tree Regressor and Random Forest Regressor. Both models achieved an R² of 0.86 after optimizing the hyperparameters and discarding the 'month' variable from the training. StandardScaler was used to standardize the variables and PCA for the selection of principal components. The analysis of the residuals revealed a skewed distribution, but the graph of actual vs. predicted values showed a good correspondence, especially for lower actual values. RandomizedSearchCV (Scikit Learn) was used for hyperparameter optimization.",
+            "img": "../assets/img/portafolio-img/cac-fs-ccdatos-2024/img5.png"
+          },
+          {
+            "texto": "To facilitate interaction with the model and visualization of predictions, an interactive web application was developed using Streamlit. The application allows the user to adjust various parameters, such as the sample size and model hyperparameters (specifically for Random Forest). The application retrains the model with the selected parameters and displays the overall accuracy, the total number of crimes estimated for a month, a map with higher-risk areas, graphs grouping by time slot and type of crime, and a detail of the estimated amounts by neighborhood, type, and time slot. Deployment with Streamlit allowed for rapid implementation and a user-friendly interface.",
+            "img": "../assets/img/portafolio-img/cac-fs-ccdatos-2024/img6.png"
+          }
+        ],
+        "conclusion": [
+          "The project demonstrates the effective application of data science fundamentals to address a real and complex problem: crime prediction in the City of Buenos Aires. Despite the initial challenges in defining the problem and processing a large and complex dataset, the team managed to develop a functional predictive model and an interactive visualization tool. Concepts learned in the course were applied, such as data exploration and cleaning, feature engineering, model selection and evaluation, and web application deployment.",
+          "The project also highlights the importance of iteration and adaptation in the data science process. The team had to make multiple adjustments to the problem definition, data preprocessing, and model selection to achieve satisfactory results. The lessons learned and the results obtained lay a solid foundation for future research and improvements in this area, such as the incorporation of socioeconomic variables, the exploration of other regression models or time series techniques, and the optimization of the performance of the Streamlit application."
+        ],
+        "textoSeccionEnlaces": "Below are links of interest related to the project:",
+        "linkGithub": {
+          "tooltip": "Github repository",
+          "link": "https://github.com/martinbat89/stcr_codo_codo"
+
+        },
+        "linkEnlaces1": {
+          "link": "https://colab.research.google.com/drive/1ebbIeSjWsQo5TB7BF6zF9utDig7MiKLy?usp=sharing",
+          "textoBtn": "Colab Final Notebook",
+          "tooltip": "View the complete notebook in Google Colab.",
+          "icono": "ads_click",
+          "clase": "waves-effect waves-light blue darken-1 btn-large tooltipped"
+        },
+        "linkEnlaces2": {
+          "link": "https://stcrcodocodo-ljp5ydfwxptp2j5gjaekra.streamlit.app/",
+          "textoBtn": "Streamlit App",
+          "tooltip": "Access to the streamlit model web app.",
+          "icono": "ads_click",
+          "clase": "waves-effect waves-light red darken-1 btn-large tooltipped"
         },
         "txt-volver": "Back to Home"
       }

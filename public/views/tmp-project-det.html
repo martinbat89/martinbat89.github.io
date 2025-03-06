@@ -71,14 +71,30 @@
       <div id="boxParaIco" class="waves-effect waves-light card teal lighten-2 white-text pulse center-align">
       {{textParacaidas}}</div>
     </div>
-    <div class="row">
-      <br>
+    <div class="{{clase_cont_audio}}" id="cont-audio">
+        <div class="col s12">
+            <div class="audio-card">
+                <p class="audio-title">🎧 {{titulo_audio}}</p>
+                <audio controls class="audio-player">
+                    <source src="{{src_audio}}" type="audio/mpeg">
+                    Tu navegador no soporta el audio.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="row" style="margin-top: 0.5rem;">
       <div class="col s12 m12 l12 teal lighten-4">
         <blockquote>
-          <span  id="herram-p1">{{herramientas}}</span>
+          <span  id="herram-p1"><b>Herramientas:</b> {{herramientas}}</span>
+            <!-- Modal Trigger -->
         </blockquote>
       </div>
     </div>
+
+    
+    
 
     <div class="row" id="contCuerpo">
       <div class="col s12 m12 l12">
@@ -126,7 +142,7 @@
         <i>{{textoSeccionEnlaces}}</i><br><br>
         <div class="row">
           <div class="col s7 offset-s3 m12 l10 offset-l1">
-            <div class="row" >
+            <div class="row center-align" id="links-pie-vista">
                 <div class="col s12 m4 l4" style="margin-top: 1rem;">
                   {{#if linkGithub}}
                     <a class="waves-effect waves-light grey darken-4 btn-large center btn tooltipped" data-position="bottom" id="btn-github-Large" data-tooltip="{{linkGithub.tooltip}}" href="{{linkGithub.link}}" target="_blank">
@@ -197,6 +213,17 @@
   </div>
 </footer>
 
+<!--Modal audio-->
+<!-- Modal Structure -->
+<div id="modal1" class="modal bottom-sheet">
+  <div class="modal-content">
+    <h4>Modal Header</h4>
+    <p>A bunch of text</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
   
   
   

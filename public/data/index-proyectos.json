@@ -188,6 +188,29 @@
                                       "labelText": "Ver Proyecto Completo",
                                       "clase": "btn-large waves-effect waves-light teal lighten-1"
                                     }
+                                  },
+                                  {
+                                    "id": 10,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/cac-fs-ccdatos-2024/index-img.png",
+                                    "titulo": "Proyecto Final Codo a Codo 2024 - Fundamentos de Ciencia de datos",
+                                    "vermaslink1": {
+                                      "link": "./public/views/tmp-project-det.html?id=10",
+                                      "icono": "arrow_downward",
+                                      "labelText": "Ver Proyecto Completo",
+                                      "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                    },
+                                    "tutuloResumen": "Resumen del Proyecto",
+                                    "resumen": [
+                                      "El Equipo D del curso de Fundamentos de Ciencia de Datos desarrolló un proyecto para predecir la cantidad de crímenes por tipo en la Ciudad de Buenos Aires, utilizando datos históricos.",
+                                      "El proyecto abarcó desde la exploración y preprocesamiento de datos hasta la selección de modelos de machine learning y el despliegue de una aplicación web interactiva con Streamlit.",
+                                      "A pesar de los desafíos, se logró un modelo de regresión (Random Forest Regressor) con un R² de 0.86 y una aplicación web funcional."
+                                    ],
+                                    "vermaslink2": {
+                                      "link": "./public/views/tmp-project-det.html?id=10",
+                                      "icono": "arrow_downward",
+                                      "labelText": "Ver Proyecto Completo",
+                                      "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                    }
                                   }
                                   
                             ]
@@ -381,6 +404,29 @@
                                       "link": "./public/views/tmp-project-det.html?id=9",
                                       "icono": "arrow_downward",
                                       "labelText": "See Full Project",
+                                      "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                    }
+                                  },
+                                  {
+                                    "id": 10,
+                                    "imgEncabezado": "public/assets/img/portafolio-img/cac-fs-ccdatos-2024/index-img.png",
+                                    "titulo": "Final Project Codo a Codo 2024 - Fundamentals of Data Science",
+                                    "vermaslink1": {
+                                      "link": "./public/views/tmp-project-det.html?id=10",
+                                      "icono": "arrow_downward",
+                                      "labelText": "View Full Project",
+                                      "clase": "btn-large waves-effect waves-light teal lighten-1"
+                                    },
+                                    "tutuloResumen": "Project Summary",
+                                    "resumen": [
+                                      "Team D from the Data Science Fundamentals course developed a project to predict the number of crimes by type in the City of Buenos Aires, using historical data.",
+                                      "The project covered data exploration and preprocessing, machine learning model selection, and the deployment of an interactive web application with Streamlit.",
+                                      "Despite the challenges, a regression model (Random Forest Regressor) with an R² of 0.86 and a functional web application were achieved."
+                                    ],
+                                    "vermaslink2": {
+                                      "link": "./public/views/tmp-project-det.html?id=10",
+                                      "icono": "arrow_downward",
+                                      "labelText": "View Full Project",
                                       "clase": "btn-large waves-effect waves-light teal lighten-1"
                                     }
                                   }

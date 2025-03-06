@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
   /**ejecutamos fc que carga template */
   tmpCargaProy(tmp_idioma, id_proy)
 
+  
+
   // Quitar el preloader después de un breve retraso
   setTimeout(function() {
       document.getElementById('contenedorCargador').className = "hide";
