@@ -141,9 +141,9 @@
         <div class="divider"></div><br>
         <i>{{textoSeccionEnlaces}}</i><br><br>
         <div class="row">
-          <div class="col s7 offset-s3 m12 l10 offset-l1">
-            <div class="row center-align" id="links-pie-vista">
-                <div class="col s12 m4 l4" style="margin-top: 1rem;">
+          <div class="col s7 offset-s3">
+            <div class="row" id="links-pie-vista">
+                <div class="col s12" style="margin-top: 1rem;">
                   {{#if linkGithub}}
                     <a class="waves-effect waves-light grey darken-4 btn-large center btn tooltipped" data-position="bottom" id="btn-github-Large" data-tooltip="{{linkGithub.tooltip}}" href="{{linkGithub.link}}" target="_blank">
                       <svg id="btnContBoostrp" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -153,12 +153,12 @@
                     </a>
                   {{/if}}
                 </div>
-                <div class="col s12 m4 l4" style="margin-top: 1rem;">
+                <div class="col s12" style="margin-top: 1rem;">
                   {{#if linkEnlaces1.link}}
                     <a target="_blank" href="{{linkEnlaces1.link}}" class="{{linkEnlaces1.clase}}" data-position="bottom" data-tooltip="{{linkEnlaces1.tooltip}}"><i class="material-icons left">{{linkEnlaces1.icono}}</i>{{linkEnlaces1.textoBtn}}</a>
                   {{/if}}
                 </div>
-                <div class="col s12 m4 l4" style="margin-top: 1rem;">
+                <div class="col s12" style="margin-top: 1rem;">
                   {{#if linkEnlaces2.link}}
                     <a target="_blank" href="{{linkEnlaces2.link}}" class="{{linkEnlaces2.clase}}" data-position="bottom" data-tooltip="{{linkEnlaces2.tooltip}}"><i class="material-icons left">{{linkEnlaces2.icono}}</i>{{linkEnlaces2.textoBtn}}</a>
                   {{/if}}

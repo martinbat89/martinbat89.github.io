@@ -246,10 +246,16 @@
                 <div class="card-image waves-effect waves-block waves-light" style="border-bottom: 1px solid rgb(124, 136, 136);">
                   <img class="activator" src="{{imgEncabezado}}">
                 </div>
-                <div class="card-content" >
-                  <span class="card-title activator" id="porta2">{{titulo}}<i class="material-icons right" id="flecha-porta">arrow_upward</i></span>
-                  <br> 
-                  <p><a class="white-text btn-small"  href="{{vermaslink1.link}}" id="portaVer"><i class="material-icons left">touch_app</i>{{vermaslink1.labelText}}</a></p>
+                <div class="card-content">
+                  <p class="{{claseicon-audio}}" >
+                    <span class="badge white tooltipped" data-tooltip="{{ttip-audio}}" data-position="top" style="border-radius: 10px;"><i class="material-icons">record_voice_over</i></span>
+                  </p>
+                  <span class="card-title activator" id="porta2" style="margin-bottom: 1rem;">{{titulo}}<i class="material-icons right" id="flecha-porta">arrow_upward</i></span>
+                  <p><a class="white-text btn-small"  href="{{vermaslink1.link}}" id="portaVer"><i class="material-icons left">touch_app</i>{{vermaslink1.labelText}}</a>
+                    
+                  </p>
+                  
+                  
                 </div>
                 <div class="card-reveal">
                   <span class="card-title grey-text text-darken-4" id="portaRes">{{tutuloResumen}}<i class="material-icons right">close</i></span>
